@@ -89,6 +89,7 @@ export default function ItemCombobox({
   const [loadingLocs, setLoadingLocs] = useState(false);
   const [locsExpanded, setLocsExpanded] = useState(false);
   const [systemFilter, setSystemFilter] = useState<string | null>(null);
+  const [showAllLocs, setShowAllLocs] = useState(false);
   const prevItemIdRef = useRef<number | null>(null);
 
   const matchedItem = useMemo(
@@ -102,6 +103,7 @@ export default function ItemCombobox({
     setLocations(null);
     setLocsExpanded(false);
     setSystemFilter(null);
+    setShowAllLocs(false);
     setLoadingLocs(true);
     fetchItemLocations(matchedItem.id)
       .then(setLocations)
@@ -114,6 +116,7 @@ export default function ItemCombobox({
       setLocations(null);
       setLocsExpanded(false);
       setSystemFilter(null);
+      setShowAllLocs(false);
     }
   }, [matchedItem]);
 
@@ -270,7 +273,7 @@ export default function ItemCombobox({
             </div>
           )}
           <div className="flex flex-col gap-0.5">
-            {filteredLocs.slice(0, MAX_LOCATIONS).map((loc, i) => (
+            {(showAllLocs ? filteredLocs : filteredLocs.slice(0, MAX_LOCATIONS)).map((loc, i) => (
               <div key={i} className="flex items-baseline justify-between text-[11px]">
                 <span className="text-text-dim truncate">{loc.location}</span>
                 <span className="text-text-muted font-mono ml-2 shrink-0">
@@ -278,10 +281,23 @@ export default function ItemCombobox({
                 </span>
               </div>
             ))}
-            {filteredLocs.length > MAX_LOCATIONS && (
-              <span className="text-[11px] text-text-muted italic">
+            {!showAllLocs && filteredLocs.length > MAX_LOCATIONS && (
+              <button
+                type="button"
+                onClick={() => setShowAllLocs(true)}
+                className="text-[11px] text-accent-amber/70 hover:text-accent-amber transition-colors"
+              >
                 +{filteredLocs.length - MAX_LOCATIONS} more
-              </span>
+              </button>
+            )}
+            {showAllLocs && filteredLocs.length > MAX_LOCATIONS && (
+              <button
+                type="button"
+                onClick={() => setShowAllLocs(false)}
+                className="text-[11px] text-text-muted hover:text-accent-amber transition-colors"
+              >
+                show less
+              </button>
             )}
             {filteredLocs.length === 0 && systemFilter && (
               <span className="text-[11px] text-text-muted italic">
