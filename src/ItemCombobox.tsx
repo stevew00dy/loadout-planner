@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { MapPin } from "lucide-react";
+import { MapPin, ChevronDown } from "lucide-react";
 import type { UexItem, ItemLocation } from "./uex-api";
 import { getItemsForSlot, findItemByName, fetchItemLocations } from "./uex-api";
 
@@ -12,6 +12,8 @@ interface Props {
 }
 
 const MAX_RESULTS = 10;
+const MAX_LOCATIONS = 5;
+const SYSTEM_ORDER = ["Stanton", "Pyro", "Nyx"];
 
 function HighlightMatch({ text, query }: { text: string; query: string }) {
   if (!query) return <>{text}</>;
@@ -23,130 +25,6 @@ function HighlightMatch({ text, query }: { text: string; query: string }) {
       <span className="text-accent-amber font-semibold">{text.slice(idx, idx + query.length)}</span>
       {text.slice(idx + query.length)}
     </>
-  );
-}
-
-const MAX_LOCATIONS = 5;
-
-function LocationsStrip({
-  locations,
-  loading,
-  expanded,
-  onToggle,
-  systemFilter,
-  onSystemFilter,
-}: {
-  locations: ItemLocation[] | null;
-  loading: boolean;
-  expanded: boolean;
-  onToggle: () => void;
-  systemFilter: string | null;
-  onSystemFilter: (s: string | null) => void;
-}) {
-  const systems = useMemo(() => {
-    if (!locations || locations.length === 0) return [];
-    const set = new Set(locations.map((l) => l.system));
-    const order = ["Stanton", "Pyro", "Nyx"];
-    return Array.from(set).sort(
-      (a, b) => (order.indexOf(a) === -1 ? 999 : order.indexOf(a)) - (order.indexOf(b) === -1 ? 999 : order.indexOf(b))
-    );
-  }, [locations]);
-
-  const filtered = useMemo(() => {
-    if (!locations) return [];
-    if (!systemFilter) return locations;
-    return locations.filter((l) => l.system === systemFilter);
-  }, [locations, systemFilter]);
-
-  if (loading) {
-    return (
-      <div className="mt-1">
-        <span className="text-[11px] text-text-muted animate-pulse">Loading locations…</span>
-      </div>
-    );
-  }
-
-  if (locations && locations.length === 0) {
-    return (
-      <div className="mt-1">
-        <span className="text-[11px] text-text-muted flex items-center gap-1">
-          <MapPin className="w-3 h-3" /> Not sold at shops
-        </span>
-      </div>
-    );
-  }
-
-  if (!locations || locations.length === 0) return null;
-
-  return (
-    <div className="mt-1">
-      <button
-        type="button"
-        onClick={onToggle}
-        className="flex items-center gap-1 text-[11px] text-text-muted hover:text-accent-amber transition-colors"
-      >
-        <MapPin className="w-3 h-3" />
-        {filtered.length} location{filtered.length !== 1 ? "s" : ""}
-        <span className="text-text-muted/60 ml-1">
-          from {(filtered[0]?.price ?? 0).toLocaleString()} aUEC
-        </span>
-      </button>
-      {expanded && (
-        <div className="mt-1">
-          {systems.length > 0 && (
-            <div className="flex gap-1 mb-1 pl-4 flex-wrap">
-              {systems.length > 1 && (
-                <button
-                  type="button"
-                  onClick={() => onSystemFilter(null)}
-                  className={`px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${
-                    systemFilter === null
-                      ? "bg-accent-amber/20 text-accent-amber"
-                      : "text-text-muted hover:text-text-secondary"
-                  }`}
-                >
-                  All
-                </button>
-              )}
-              {systems.map((sys) => (
-                <button
-                  key={sys}
-                  type="button"
-                  onClick={() => onSystemFilter(systems.length === 1 ? null : sys)}
-                  className={`px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${
-                    systems.length === 1 || systemFilter === sys
-                      ? "bg-accent-amber/20 text-accent-amber"
-                      : "text-text-muted hover:text-text-secondary"
-                  }`}
-                >
-                  {sys}
-                </button>
-              ))}
-            </div>
-          )}
-          <div className="flex flex-col gap-0.5">
-            {filtered.slice(0, MAX_LOCATIONS).map((loc, i) => (
-              <span key={i} className="text-[11px] text-text-dim pl-4">
-                {loc.location}
-                <span className="text-text-muted ml-1.5 font-mono">
-                  {loc.price.toLocaleString()} aUEC
-                </span>
-              </span>
-            ))}
-            {filtered.length > MAX_LOCATIONS && (
-              <span className="text-[11px] text-text-muted pl-4 italic">
-                +{filtered.length - MAX_LOCATIONS} more
-              </span>
-            )}
-            {filtered.length === 0 && systemFilter && (
-              <span className="text-[11px] text-text-muted pl-4 italic">
-                Not available in {systemFilter}
-              </span>
-            )}
-          </div>
-        </div>
-      )}
-    </div>
   );
 }
 
@@ -289,22 +167,128 @@ export default function ItemCombobox({
   );
 
   const showDropdown = open && slotItems.length > 0;
+  const hasLocs = matchedItem && !open && locations && locations.length > 0;
+  const noLocs = matchedItem && !open && locations && locations.length === 0;
+
+  const systems = useMemo(() => {
+    if (!locations || locations.length === 0) return [];
+    const set = new Set(locations.map((l) => l.system));
+    return Array.from(set).sort(
+      (a, b) =>
+        (SYSTEM_ORDER.indexOf(a) === -1 ? 999 : SYSTEM_ORDER.indexOf(a)) -
+        (SYSTEM_ORDER.indexOf(b) === -1 ? 999 : SYSTEM_ORDER.indexOf(b))
+    );
+  }, [locations]);
+
+  const filteredLocs = useMemo(() => {
+    if (!locations) return [];
+    if (!systemFilter) return locations;
+    return locations.filter((l) => l.system === systemFilter);
+  }, [locations, systemFilter]);
 
   return (
     <div ref={wrapperRef} className="relative">
-      <input
-        ref={inputRef}
-        className="slot-input"
-        placeholder={placeholder}
-        value={value}
-        onChange={(e) => {
-          onChange(e.target.value);
-          setOpen(true);
-        }}
-        onFocus={() => setOpen(true)}
-        onKeyDown={handleKeyDown}
-        autoComplete="off"
-      />
+      <div
+        className={`flex items-center bg-dark-800 border border-dark-700 transition-colors ${
+          locsExpanded && hasLocs
+            ? "rounded-t-lg border-b-0"
+            : "rounded-lg"
+        }`}
+      >
+        <input
+          ref={inputRef}
+          className="flex-1 bg-transparent px-3 py-2 text-sm text-text placeholder:text-text-muted outline-none min-w-0"
+          placeholder={placeholder}
+          value={value}
+          onChange={(e) => {
+            onChange(e.target.value);
+            setOpen(true);
+          }}
+          onFocus={() => setOpen(true)}
+          onKeyDown={handleKeyDown}
+          autoComplete="off"
+        />
+        {loadingLocs && matchedItem && !open && (
+          <span className="text-[11px] text-text-muted animate-pulse pr-3 shrink-0">loading…</span>
+        )}
+        {hasLocs && (
+          <button
+            type="button"
+            onClick={() => setLocsExpanded(!locsExpanded)}
+            className="flex items-center gap-1.5 pr-3 pl-2 py-2 text-[11px] text-text-muted hover:text-accent-amber transition-colors shrink-0"
+          >
+            <MapPin className="w-3 h-3" />
+            <span className="hidden sm:inline">
+              {filteredLocs.length} <span className="text-text-muted/50">from</span>{" "}
+              {(filteredLocs[0]?.price ?? 0).toLocaleString()} aUEC
+            </span>
+            <span className="sm:hidden">{filteredLocs.length}</span>
+            <ChevronDown className={`w-3 h-3 transition-transform ${locsExpanded ? "rotate-180" : ""}`} />
+          </button>
+        )}
+        {noLocs && (
+          <span className="flex items-center gap-1 pr-3 text-[11px] text-text-muted/50 shrink-0">
+            <MapPin className="w-3 h-3" /> —
+          </span>
+        )}
+      </div>
+
+      {locsExpanded && hasLocs && (
+        <div className="bg-dark-800 border border-dark-700 border-t-0 rounded-b-lg px-3 pb-2 pt-1">
+          {systems.length > 0 && (
+            <div className="flex gap-1 mb-1.5 flex-wrap">
+              {systems.length > 1 && (
+                <button
+                  type="button"
+                  onClick={() => setSystemFilter(null)}
+                  className={`px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${
+                    systemFilter === null
+                      ? "bg-accent-amber/20 text-accent-amber"
+                      : "text-text-muted hover:text-text-secondary"
+                  }`}
+                >
+                  All
+                </button>
+              )}
+              {systems.map((sys) => (
+                <button
+                  key={sys}
+                  type="button"
+                  onClick={() => setSystemFilter(systems.length === 1 ? null : sys)}
+                  className={`px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${
+                    systems.length === 1 || systemFilter === sys
+                      ? "bg-accent-amber/20 text-accent-amber"
+                      : "text-text-muted hover:text-text-secondary"
+                  }`}
+                >
+                  {sys}
+                </button>
+              ))}
+            </div>
+          )}
+          <div className="flex flex-col gap-0.5">
+            {filteredLocs.slice(0, MAX_LOCATIONS).map((loc, i) => (
+              <div key={i} className="flex items-baseline justify-between text-[11px]">
+                <span className="text-text-dim truncate">{loc.location}</span>
+                <span className="text-text-muted font-mono ml-2 shrink-0">
+                  {loc.price.toLocaleString()}
+                </span>
+              </div>
+            ))}
+            {filteredLocs.length > MAX_LOCATIONS && (
+              <span className="text-[11px] text-text-muted italic">
+                +{filteredLocs.length - MAX_LOCATIONS} more
+              </span>
+            )}
+            {filteredLocs.length === 0 && systemFilter && (
+              <span className="text-[11px] text-text-muted italic">
+                Not available in {systemFilter}
+              </span>
+            )}
+          </div>
+        </div>
+      )}
+
       {showDropdown && (
         <ul
           ref={listRef}
@@ -339,16 +323,6 @@ export default function ItemCombobox({
             </li>
           ) : null}
         </ul>
-      )}
-      {matchedItem && !open && (
-        <LocationsStrip
-          locations={locations}
-          loading={loadingLocs}
-          expanded={locsExpanded}
-          onToggle={() => setLocsExpanded(!locsExpanded)}
-          systemFilter={systemFilter}
-          onSystemFilter={setSystemFilter}
-        />
       )}
     </div>
   );
