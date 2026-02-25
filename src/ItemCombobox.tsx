@@ -212,10 +212,12 @@ export default function ItemCombobox({
           <span className="text-[11px] text-text-muted animate-pulse pr-3 shrink-0">loading…</span>
         )}
         {hasLocs && (
+          <>
+          <div className="w-px self-stretch bg-dark-700/60" />
           <button
             type="button"
             onClick={() => setLocsExpanded(!locsExpanded)}
-            className="flex items-center gap-1.5 pr-3 pl-2 py-2 text-[11px] text-text-muted hover:text-accent-amber transition-colors shrink-0"
+            className="flex items-center gap-1.5 pr-3 pl-2.5 py-2 text-[11px] text-text-muted hover:text-accent-amber transition-colors shrink-0"
           >
             <MapPin className="w-3 h-3" />
             <span className="hidden sm:inline">
@@ -225,6 +227,7 @@ export default function ItemCombobox({
             <span className="sm:hidden">{filteredLocs.length}</span>
             <ChevronDown className={`w-3 h-3 transition-transform ${locsExpanded ? "rotate-180" : ""}`} />
           </button>
+          </>
         )}
         {noLocs && (
           <span className="flex items-center gap-1 pr-3 text-[11px] text-text-muted/50 shrink-0">
