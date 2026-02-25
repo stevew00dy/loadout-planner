@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, createEmptyLoadout } from "./data";
-import { useLoadouts, exportAllData, importAllData } from "./hooks";
+import { useLoadouts, exportAllData, importAllData, exportSingleLoadout, importSingleLoadout } from "./hooks";
 import type { UexItem } from "./uex-api";
 import { getItems, clearUexCache } from "./uex-api";
 import ItemCombobox from "./ItemCombobox";
@@ -400,6 +400,13 @@ function LoadoutCard({
 
         <div className="flex items-center gap-1">
           <button
+            onClick={() => exportSingleLoadout(loadout)}
+            className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
+            title="Export loadout"
+          >
+            <Download className="w-4 h-4" />
+          </button>
+          <button
             onClick={() => onDuplicate(loadout.id)}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
             title="Duplicate"
@@ -543,6 +550,7 @@ export default function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [filter, setFilter] = useState<MissionType | "All">("All");
   const settingsRef = useRef<HTMLButtonElement>(null);
+  const importFileRef = useRef<HTMLInputElement>(null);
   const [uexItems, setUexItems] = useState<UexItem[]>([]);
   const [uexLoading, setUexLoading] = useState(false);
 
@@ -607,12 +615,38 @@ export default function App() {
           <>
             <div className="flex items-center justify-between gap-4 flex-wrap mb-5">
               <FilterBar active={filter} onSelect={setFilter} counts={counts} />
-              <button
-                onClick={() => setShowNew(true)}
-                className="btn-primary flex items-center gap-2"
-              >
-                <Plus className="w-4 h-4" /> New Loadout
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => importFileRef.current?.click()}
+                  className="btn-ghost flex items-center gap-2"
+                  title="Import a loadout from JSON"
+                >
+                  <Upload className="w-4 h-4" /> Import
+                </button>
+                <input
+                  ref={importFileRef}
+                  type="file"
+                  accept=".json"
+                  className="hidden"
+                  onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    try {
+                      const loadout = await importSingleLoadout(file);
+                      addLoadout(loadout);
+                    } catch (err) {
+                      alert((err as Error).message);
+                    }
+                    e.target.value = "";
+                  }}
+                />
+                <button
+                  onClick={() => setShowNew(true)}
+                  className="btn-primary flex items-center gap-2"
+                >
+                  <Plus className="w-4 h-4" /> New Loadout
+                </button>
+              </div>
             </div>
 
             <div className="flex flex-col gap-4">

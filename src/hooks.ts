@@ -89,6 +89,57 @@ export function useLoadouts() {
   return { loadouts, addLoadout, updateLoadout, deleteLoadout, duplicateLoadout, resetAll };
 }
 
+export function exportSingleLoadout(loadout: Loadout) {
+  const data = {
+    version: 1,
+    tool: "loadout-planner",
+    type: "single",
+    exportedAt: new Date().toISOString(),
+    loadout,
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  const safeName = loadout.name.replace(/[^a-zA-Z0-9-_ ]/g, "").replace(/\s+/g, "-").toLowerCase();
+  a.download = `loadout-${safeName}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+export function importSingleLoadout(file: File): Promise<Loadout> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const data = JSON.parse(e.target?.result as string);
+        if (typeof data !== "object" || !data) throw new Error("bad format");
+
+        let loadout: Loadout;
+        if (data.type === "single" && data.loadout) {
+          loadout = data.loadout;
+        } else if (Array.isArray(data.loadouts) && data.loadouts.length > 0) {
+          loadout = data.loadouts[0];
+        } else {
+          throw new Error("No loadout found in file");
+        }
+
+        if (!loadout.name || !loadout.slots) throw new Error("Invalid loadout data");
+
+        loadout.id = crypto.randomUUID();
+        const now = new Date().toISOString();
+        loadout.createdAt = now;
+        loadout.updatedAt = now;
+
+        resolve(loadout);
+      } catch {
+        reject(new Error("Invalid file. Expected a Loadout Planner JSON export."));
+      }
+    };
+    reader.readAsText(file);
+  });
+}
+
 export function exportAllData() {
   const data = {
     version: 1,
