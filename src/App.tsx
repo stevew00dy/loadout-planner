@@ -24,7 +24,7 @@ import {
   ShieldCheck,
   Package,
   Gauge,
-  Info,
+  BarChart2,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -676,6 +676,7 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           <button type="button" onClick={expandAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Expand all</button>
           <span className="text-dark-600">|</span>
           <button type="button" onClick={collapseAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Collapse all</button>
+          <BarChart2 className="w-4 h-4 text-text-muted shrink-0" aria-hidden />
         </div>
       </div>
 
@@ -685,9 +686,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           <Gauge className="w-3.5 h-3.5 text-accent-amber shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Weight & Speed</span>
           {openSections.weight ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
-          <button onClick={(e) => { e.stopPropagation(); setShowWeightInfo((v) => !v); }} className="w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors shrink-0" title="Weight milestones">
-            <Info className="w-3 h-3 text-text-muted" />
-          </button>
         </button>
         {openSections.weight && (
         <>
@@ -719,6 +717,9 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             </div>
           ))}
         </div>
+        <button type="button" onClick={() => setShowWeightInfo((v) => !v)} className="mt-2 text-[10px] text-text-muted hover:text-accent-amber transition-colors text-left cursor-pointer">
+          (click here for more info)
+        </button>
         {showWeightInfo && (
           <div className="mt-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
             <table className="w-full text-[10px]">
@@ -862,9 +863,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             <Crosshair className="w-3.5 h-3.5 text-accent-red shrink-0" />
             <span className="text-[11px] text-text-muted font-medium">Weapons</span>
             {openSections.weapons ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
-            <button onClick={(e) => { e.stopPropagation(); setShowWeaponInfo((v) => !v); }} className="w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors shrink-0" title="Stat abbreviations">
-              <Info className="w-3 h-3 text-text-muted" />
-            </button>
           </button>
           {openSections.weapons && (
           <>
@@ -946,6 +944,9 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
               );
             })}
           </div>
+          <button type="button" onClick={() => setShowWeaponInfo((v) => !v)} className="mt-2 text-[10px] text-text-muted hover:text-accent-amber transition-colors text-left cursor-pointer">
+            (click here for more info)
+          </button>
           {showWeaponInfo && (
             <div className="mt-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
               <div className="flex flex-col gap-1 text-[10px]">
