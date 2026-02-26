@@ -12,7 +12,7 @@
     "dmgPerPellet": 21,
     "dmgPerShot": 21,
     "rpm": 900,
-    "dps": 900,
+    "dps": 140,
     "dpsSustained": 140,
     "dpsBurst": 315,
     "ttk": [
@@ -41,7 +41,7 @@
     "dmgPerPellet": 17.5,
     "dmgPerShot": 17.5,
     "rpm": 600,
-    "dps": 600,
+    "dps": 175,
     "dpsSustained": 175,
     "dpsBurst": 175,
     "ttk": [
@@ -70,7 +70,7 @@
     "dmgPerPellet": 22,
     "dmgPerShot": 22,
     "rpm": 267.5,
-    "dps": 267.5,
+    "dps": 98.083,
     "dpsSustained": 98.083,
     "dpsBurst": 98.083,
     "ttk": [
@@ -99,7 +99,7 @@
     "dmgPerPellet": 12,
     "dmgPerShot": 12,
     "rpm": 810,
-    "dps": 810,
+    "dps": 162,
     "dpsSustained": 162,
     "dpsBurst": 162,
     "ttk": [
@@ -128,7 +128,7 @@
     "dmgPerPellet": 45,
     "dmgPerShot": 45,
     "rpm": 235,
-    "dps": 235,
+    "dps": 176.25,
     "dpsSustained": 176.25,
     "dpsBurst": 176.25,
     "ttk": [
@@ -157,7 +157,7 @@
     "dmgPerPellet": 7,
     "dmgPerShot": 7,
     "rpm": 600,
-    "dps": 600,
+    "dps": 210,
     "dpsSustained": 210,
     "dpsBurst": 210,
     "ttk": [
@@ -185,8 +185,8 @@
     "pellets": 1,
     "dmgPerPellet": 21.5,
     "dmgPerShot": 21.5,
-    "rpm": 500,
-    "dps": 420,
+    "rpm": 420,
+    "dps": 150.5,
     "dpsSustained": 150.5,
     "dpsBurst": 150.5,
     "ttk": [
@@ -215,7 +215,7 @@
     "dmgPerPellet": 11.5,
     "dmgPerShot": 11.5,
     "rpm": 800,
-    "dps": 800,
+    "dps": 153.333,
     "dpsSustained": 153.333,
     "dpsBurst": 153.333,
     "ttk": [
@@ -244,7 +244,7 @@
     "dmgPerPellet": 10,
     "dmgPerShot": 10,
     "rpm": 1200,
-    "dps": 1200,
+    "dps": 200,
     "dpsSustained": 200,
     "dpsBurst": 200,
     "ttk": [
@@ -273,7 +273,7 @@
     "dmgPerPellet": 9,
     "dmgPerShot": 9,
     "rpm": 550,
-    "dps": 550,
+    "dps": 173.25,
     "dpsSustained": 173.25,
     "dpsBurst": 82.5,
     "ttk": [
@@ -302,7 +302,7 @@
     "dmgPerPellet": 14.5,
     "dmgPerShot": 14.5,
     "rpm": 650,
-    "dps": 650,
+    "dps": 157.083,
     "dpsSustained": 157.083,
     "dpsBurst": 157.083,
     "ttk": [
@@ -331,7 +331,7 @@
     "dmgPerPellet": 27,
     "dmgPerShot": 27,
     "rpm": 355,
-    "dps": 355,
+    "dps": 159.75,
     "dpsSustained": 159.75,
     "dpsBurst": 159.75,
     "ttk": [
@@ -360,7 +360,7 @@
     "dmgPerPellet": 18,
     "dmgPerShot": 18,
     "rpm": 700,
-    "dps": 700,
+    "dps": 151.2,
     "dpsSustained": 151.2,
     "dpsBurst": 210,
     "ttk": [
@@ -418,7 +418,7 @@
     "dmgPerPellet": 13,
     "dmgPerShot": 13,
     "rpm": 950,
-    "dps": 950,
+    "dps": 205.833,
     "dpsSustained": 205.833,
     "dpsBurst": 205.833,
     "ttk": [
@@ -447,7 +447,7 @@
     "dmgPerPellet": 11.75,
     "dmgPerShot": 11.75,
     "rpm": 500,
-    "dps": 500,
+    "dps": 146.875,
     "dpsSustained": 146.875,
     "dpsBurst": 97.917,
     "ttk": [
@@ -475,8 +475,8 @@
     "pellets": 1,
     "dmgPerPellet": 22.5,
     "dmgPerShot": 22.5,
-    "rpm": 450,
-    "dps": 420,
+    "rpm": 420,
+    "dps": 157.5,
     "dpsSustained": 157.5,
     "dpsBurst": 157.5,
     "ttk": [
@@ -505,7 +505,7 @@
     "dmgPerPellet": 45,
     "dmgPerShot": 45,
     "rpm": 170,
-    "dps": 170,
+    "dps": 127.5,
     "dpsSustained": 127.5,
     "dpsBurst": 127.5,
     "ttk": [
@@ -534,7 +534,7 @@
     "dmgPerPellet": 12,
     "dmgPerShot": 36,
     "rpm": 60,
-    "dps": 60,
+    "dps": 108,
     "dpsSustained": 108,
     "dpsBurst": 108,
     "ttk": [
@@ -563,7 +563,7 @@
     "dmgPerPellet": 0,
     "dmgPerShot": 0,
     "rpm": 63,
-    "dps": 63,
+    "dps": 0,
     "dpsSustained": null,
     "dpsBurst": null,
     "ttk": null
@@ -581,7 +581,7 @@
     "dmgPerPellet": 32.5,
     "dmgPerShot": 32.5,
     "rpm": 350,
-    "dps": 350,
+    "dps": 225.13,
     "dpsSustained": 225.13,
     "dpsBurst": 189.583,
     "ttk": [
@@ -610,7 +610,7 @@
     "dmgPerPellet": 11,
     "dmgPerShot": 88,
     "rpm": 90,
-    "dps": 90,
+    "dps": 132,
     "dpsSustained": 132,
     "dpsBurst": 132,
     "ttk": [
@@ -639,7 +639,7 @@
     "dmgPerPellet": 9,
     "dmgPerShot": 72,
     "rpm": 50,
-    "dps": 50,
+    "dps": 120,
     "dpsSustained": 120,
     "dpsBurst": 120,
     "ttk": [
@@ -668,7 +668,7 @@
     "dmgPerPellet": 10,
     "dmgPerShot": 120,
     "rpm": 60,
-    "dps": 60,
+    "dps": 120,
     "dpsSustained": 120,
     "dpsBurst": 120,
     "ttk": [
@@ -697,7 +697,7 @@
     "dmgPerPellet": 50,
     "dmgPerShot": 50,
     "rpm": 200,
-    "dps": 200,
+    "dps": 166.667,
     "dpsSustained": 166.667,
     "dpsBurst": 166.667,
     "ttk": [
@@ -726,7 +726,7 @@
     "dmgPerPellet": 3.6,
     "dmgPerShot": 28.8,
     "rpm": 375,
-    "dps": 375,
+    "dps": 180,
     "dpsSustained": 180,
     "dpsBurst": 180,
     "ttk": [
@@ -755,7 +755,7 @@
     "dmgPerPellet": 6.5,
     "dmgPerShot": 52,
     "rpm": 350,
-    "dps": 350,
+    "dps": 303.333,
     "dpsSustained": 303.333,
     "dpsBurst": 303.333,
     "ttk": [
@@ -784,7 +784,7 @@
     "dmgPerPellet": 11.5,
     "dmgPerShot": 11.5,
     "rpm": 925,
-    "dps": 925,
+    "dps": 177.292,
     "dpsSustained": 177.292,
     "dpsBurst": 177.292,
     "ttk": [
@@ -813,7 +813,7 @@
     "dmgPerPellet": 13,
     "dmgPerShot": 13,
     "rpm": 800,
-    "dps": 800,
+    "dps": 173.333,
     "dpsSustained": 173.333,
     "dpsBurst": 173.333,
     "ttk": [
@@ -842,7 +842,7 @@
     "dmgPerPellet": 21,
     "dmgPerShot": 21,
     "rpm": 700,
-    "dps": 700,
+    "dps": 154.737,
     "dpsSustained": 154.737,
     "dpsBurst": 245,
     "ttk": [
@@ -871,7 +871,7 @@
     "dmgPerPellet": 13.75,
     "dmgPerShot": 13.75,
     "rpm": 800,
-    "dps": 800,
+    "dps": 183.333,
     "dpsSustained": 183.333,
     "dpsBurst": 183.333,
     "ttk": [
@@ -900,7 +900,7 @@
     "dmgPerPellet": 7.5,
     "dmgPerShot": 7.5,
     "rpm": 600,
-    "dps": 600,
+    "dps": 225,
     "dpsSustained": 225,
     "dpsBurst": 225,
     "ttk": [
@@ -929,7 +929,7 @@
     "dmgPerPellet": 5.5,
     "dmgPerShot": 5.5,
     "rpm": 800,
-    "dps": 800,
+    "dps": 165,
     "dpsSustained": 165,
     "dpsBurst": 165,
     "ttk": [
@@ -958,7 +958,7 @@
     "dmgPerPellet": 42.5,
     "dmgPerShot": 42.5,
     "rpm": 225,
-    "dps": 225,
+    "dps": 159.375,
     "dpsSustained": 159.375,
     "dpsBurst": 159.375,
     "ttk": [
@@ -987,7 +987,7 @@
     "dmgPerPellet": 50,
     "dmgPerShot": 50,
     "rpm": 70,
-    "dps": 70,
+    "dps": 58.333,
     "dpsSustained": 58.333,
     "dpsBurst": 58.333,
     "ttk": [
@@ -1016,7 +1016,7 @@
     "dmgPerPellet": 120,
     "dmgPerShot": 120,
     "rpm": 30,
-    "dps": 30,
+    "dps": 74.625,
     "dpsSustained": 74.625,
     "dpsBurst": 60,
     "ttk": [
@@ -1045,7 +1045,7 @@
     "dmgPerPellet": 100,
     "dmgPerShot": 100,
     "rpm": 55,
-    "dps": 55,
+    "dps": 91.667,
     "dpsSustained": 91.667,
     "dpsBurst": 91.667,
     "ttk": [
@@ -1074,7 +1074,7 @@
     "dmgPerPellet": 45,
     "dmgPerShot": 45,
     "rpm": 50,
-    "dps": 50,
+    "dps": 75,
     "dpsSustained": 75,
     "dpsBurst": 75,
     "ttk": [
@@ -1103,7 +1103,7 @@
     "dmgPerPellet": 42.5,
     "dmgPerShot": 42.5,
     "rpm": 325,
-    "dps": 325,
+    "dps": 230.208,
     "dpsSustained": 230.208,
     "dpsBurst": 230.208,
     "ttk": [
@@ -1132,7 +1132,7 @@
     "dmgPerPellet": 77,
     "dmgPerShot": 77,
     "rpm": 70,
-    "dps": 70,
+    "dps": 89.833,
     "dpsSustained": 89.833,
     "dpsBurst": 89.833,
     "ttk": [
@@ -1161,7 +1161,7 @@
     "dmgPerPellet": 11.3,
     "dmgPerShot": 11.3,
     "rpm": 750,
-    "dps": 750,
+    "dps": 141.25,
     "dpsSustained": 141.25,
     "dpsBurst": 141.25,
     "ttk": [
@@ -1190,7 +1190,7 @@
     "dmgPerPellet": 7.56,
     "dmgPerShot": 7.56,
     "rpm": 1500,
-    "dps": 1500,
+    "dps": 189,
     "dpsSustained": 189,
     "dpsBurst": 189,
     "ttk": [
@@ -1219,7 +1219,7 @@
     "dmgPerPellet": 17.1,
     "dmgPerShot": 17.1,
     "rpm": 1510,
-    "dps": 1510,
+    "dps": 430.35,
     "dpsSustained": 430.35,
     "dpsBurst": 430.35,
     "ttk": [
@@ -1248,7 +1248,7 @@
     "dmgPerPellet": 285020,
     "dmgPerShot": 285020,
     "rpm": 20,
-    "dps": 20,
+    "dps": 95006.667,
     "dpsSustained": 95006.667,
     "dpsBurst": 95006.667,
     "ttk": null
@@ -1266,7 +1266,7 @@
     "dmgPerPellet": 6270,
     "dmgPerShot": 6270,
     "rpm": 300,
-    "dps": 300,
+    "dps": 31350,
     "dpsSustained": null,
     "dpsBurst": 31350,
     "ttk": null

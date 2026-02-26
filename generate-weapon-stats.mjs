@@ -72,10 +72,12 @@ for (let i = dataStart; i < allRows.length; i++) {
   const pellets = parseInt(r[12]) || 1;
   const dmgPerPellet = parseFloat(r[14]) || 0;
   const dmgPerShot = parseFloat(r[15]) || 0;
-  const rpm = parseFloat(r[17]) || 0;
-  const dps = parseFloat(r[18]) || 0;
+  const rpmMax = parseFloat(r[17]) || 0;
+  const rpmChosen = parseFloat(r[18]) || 0;
+  const rpm = rpmChosen || rpmMax;
   const dpsSustained = parseFloat(r[19]) || 0;
   const dpsBurst = parseFloat(r[20]) || 0;
+  const dps = dpsSustained || dpsBurst || 0;
 
   // Determine category
   let category = "other";
