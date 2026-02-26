@@ -248,7 +248,6 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
 function Header({
   count,
   uexLoading,
-  uexItemCount,
   onReset,
   onRefreshData,
   isRefreshing,
@@ -257,7 +256,6 @@ function Header({
 }: {
   count: number;
   uexLoading: boolean;
-  uexItemCount: number;
   onReset: () => void;
   onRefreshData: () => void;
   isRefreshing: boolean;
@@ -289,11 +287,6 @@ function Header({
           </span>
           {uexLoading && (
             <span className="text-xs text-accent-amber animate-pulse ml-2">Loading items…</span>
-          )}
-          {!uexLoading && uexItemCount > 0 && (
-            <span className="text-xs text-text-muted ml-2 hidden sm:inline">
-              {uexItemCount.toLocaleString()} items
-            </span>
           )}
         </div>
         <div className="flex items-center gap-1">
@@ -356,17 +349,16 @@ function Header({
                 </div>
                 <div className="border-t border-dark-700 my-2" />
                 <h3 className="text-[10px] font-semibold text-text-dim uppercase tracking-wide mb-1.5">Tools</h3>
-                <a href="/" className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">
-                  <Home className="w-3.5 h-3.5 text-accent-amber" />
-                  undisputed noobs
-                </a>
-                <div className="border-t border-dark-700 my-1.5" />
                 <a href="/armor-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Rare Armor Tracker</a>
                 <a href="/exec-hangar-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Exec Hangar Tracker</a>
                 <a href="/wikelo-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Wikelo Tracker</a>
                 <a href="/loadout-planner/" className="block px-3 py-2 rounded-lg text-xs text-accent-amber font-medium">FPS Loadout Tracker</a>
                 <a href="/refining-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Refining Tracker</a>
                 <div className="border-t border-dark-700 my-1.5" />
+                <a href="/" className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">
+                  <Home className="w-3.5 h-3.5 text-accent-amber" />
+                  undisputed noobs
+                </a>
                 <a href="https://robertsspaceindustries.com/enlist?referral=STAR-23GB-5J3N" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-xs text-accent-blue hover:bg-dark-700 transition-all duration-200">
                   Play Star Citizen
                   <span className="text-[10px] text-text-muted">↗</span>
@@ -986,6 +978,9 @@ function LoadoutCard({
   });
   const filledSlots = visibleSlots.filter((s) => loadout.slots[s.id]?.item.trim()).length;
   const totalSlots = visibleSlots.length;
+  const filledWeapons = WEAPON_SLOTS.filter((s) => loadout.slots[s.id]?.item.trim()).length;
+  const filledConsumables = visibleSlots.filter((s) => s.group === "consumables" && loadout.slots[s.id]?.item.trim()).length;
+  const classLabel = effectiveClass.charAt(0).toUpperCase() + effectiveClass.slice(1);
 
   useEffect(() => {
     if (editingName) nameRef.current?.focus();
@@ -1110,18 +1105,20 @@ function LoadoutCard({
                 </div>
               )}
             </div>
-          </div>
-          <div className="flex items-center gap-3 mt-1">
-            <span className="text-xs text-text-muted font-mono">
-              {filledSlots}/{totalSlots} slots filled
+            <span className="text-xs text-text-muted font-mono shrink-0">
+              {filledSlots}/{totalSlots}
             </span>
-            <div className="flex-1 max-w-[120px] h-1 bg-dark-800 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-accent-amber rounded-full transition-all"
-                style={{ width: `${(filledSlots / totalSlots) * 100}%` }}
-              />
-            </div>
           </div>
+          {expanded && (
+            <div className="flex items-center gap-3 mt-1">
+              <div className="flex-1 max-w-[120px] h-1 bg-dark-800 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-accent-amber rounded-full transition-all"
+                  style={{ width: `${(filledSlots / totalSlots) * 100}%` }}
+                />
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="flex items-center gap-1">
@@ -1156,17 +1153,12 @@ function LoadoutCard({
         </div>
       </div>
 
-      {/* Collapsed Preview */}
+      {/* Collapsed: one-line stats (no item pills) */}
       {!expanded && filledSlots > 0 && (
-        <div className="mt-3 flex flex-wrap gap-1.5 cursor-pointer" onClick={onToggleExpanded}>
-          {visibleSlots.filter((s) => loadout.slots[s.id]?.item.trim()).map((s) => (
-            <span
-              key={s.id}
-              className="text-xs bg-dark-800 border border-dark-700 rounded px-2 py-0.5 text-text-dim"
-            >
-              <span className="text-text-muted">{s.label}:</span> {loadout.slots[s.id].item}
-            </span>
-          ))}
+        <div className="mt-1.5 text-xs text-text-muted cursor-pointer" onClick={onToggleExpanded}>
+          {classLabel}
+          {filledWeapons > 0 && ` · ${filledWeapons} weapon${filledWeapons !== 1 ? "s" : ""}`}
+          {filledConsumables > 0 && ` · ${filledConsumables} consumable${filledConsumables !== 1 ? "s" : ""}`}
         </div>
       )}
 
@@ -1349,7 +1341,6 @@ export default function App() {
       <Header
         count={loadouts.length}
         uexLoading={uexLoading}
-        uexItemCount={uexItems.length}
         onReset={resetAll}
         onRefreshData={handleRefreshData}
         isRefreshing={uexLoading}
