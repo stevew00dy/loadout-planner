@@ -1108,6 +1108,13 @@ function LoadoutCard({
             <span className="text-xs text-text-muted font-mono shrink-0">
               {filledSlots}/{totalSlots}
             </span>
+            {!expanded && filledSlots > 0 && (
+              <span className="text-xs text-text-muted shrink-0">
+                {classLabel}
+                {filledWeapons > 0 && ` · ${filledWeapons} weapon${filledWeapons !== 1 ? "s" : ""}`}
+                {filledConsumables > 0 && ` · ${filledConsumables} consumable${filledConsumables !== 1 ? "s" : ""}`}
+              </span>
+            )}
           </div>
           {expanded && (
             <div className="flex items-center gap-3 mt-1">
@@ -1152,15 +1159,6 @@ function LoadoutCard({
           </button>
         </div>
       </div>
-
-      {/* Collapsed: one-line stats (no item pills) */}
-      {!expanded && filledSlots > 0 && (
-        <div className="mt-1.5 text-xs text-text-muted cursor-pointer" onClick={onToggleExpanded}>
-          {classLabel}
-          {filledWeapons > 0 && ` · ${filledWeapons} weapon${filledWeapons !== 1 ? "s" : ""}`}
-          {filledConsumables > 0 && ` · ${filledConsumables} consumable${filledConsumables !== 1 ? "s" : ""}`}
-        </div>
-      )}
 
       {/* Expanded Editor */}
       {expanded && (
