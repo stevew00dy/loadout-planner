@@ -380,7 +380,12 @@ function SlotGroup({
           const isAmmo = slot.group === "ammo";
           const isBackpack = slot.id === "backpack";
           const hasFilter = group === "armor" && ARMOR_FILTER_SLOTS.has(slot.id);
-          const backpackWarning = isBackpack && armorClass && armorClass !== "heavy" && val.item.trim();
+          const backpackClass = isBackpack && val.item.trim() && armorClassMap
+            ? armorClassMap[val.item.trim().toLowerCase()]
+            : undefined;
+          const CLASS_RANK: Record<string, number> = { light: 1, medium: 2, heavy: 3 };
+          const backpackWarning = isBackpack && backpackClass && armorClass
+            && (CLASS_RANK[backpackClass] ?? 0) > (CLASS_RANK[armorClass] ?? 0);
           const selectOptions = isMultitool ? MULTITOOL_OPTIONS : isThrowable ? GRENADE_OPTIONS : null;
           const activeFilter = hasFilter ? slotClasses?.[slot.id] : undefined;
           const detectedClass = hasFilter && val.item.trim() && armorClassMap
@@ -452,7 +457,7 @@ function SlotGroup({
               </div>
               {backpackWarning && (
                 <p className="text-[10px] text-accent-amber mt-0.5 sm:ml-[128px]">
-                  ⚠ Large backpacks require heavy armor
+                  ⚠ {backpackClass} backpack requires {backpackClass} or heavier chest armor
                 </p>
               )}
             </div>
