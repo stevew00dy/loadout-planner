@@ -363,7 +363,9 @@ function LoadoutCard({
   const [expanded, setExpanded] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameValue, setNameValue] = useState(loadout.name);
+  const [editingType, setEditingType] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
+  const typeRef = useRef<HTMLDivElement>(null);
 
   const filledSlots = Object.values(loadout.slots).filter((v) => v.item.trim()).length;
   const totalSlots = SLOTS.length;
@@ -371,6 +373,17 @@ function LoadoutCard({
   useEffect(() => {
     if (editingName) nameRef.current?.focus();
   }, [editingName]);
+
+  useEffect(() => {
+    if (!editingType) return;
+    function handleClick(e: MouseEvent) {
+      if (typeRef.current && !typeRef.current.contains(e.target as Node)) {
+        setEditingType(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [editingType]);
 
   const handleNameBlur = () => {
     setEditingName(false);
@@ -429,9 +442,36 @@ function LoadoutCard({
                 {loadout.name}
               </button>
             )}
-            <span className={`mission-badge ${MISSION_COLORS[loadout.missionType]}`}>
-              {loadout.missionType}
-            </span>
+            <div ref={typeRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setEditingType(!editingType)}
+                className={`mission-badge ${MISSION_COLORS[loadout.missionType]} hover:brightness-125 transition-all`}
+                title="Click to change type"
+              >
+                {loadout.missionType}
+              </button>
+              {editingType && (
+                <div className="absolute left-0 top-full mt-1 z-50 w-40 rounded-lg border border-dark-700 bg-dark-900/98 backdrop-blur-md shadow-2xl py-1">
+                  {MISSION_TYPES.map((type) => (
+                    <button
+                      key={type}
+                      onClick={() => {
+                        onUpdate(loadout.id, { missionType: type });
+                        setEditingType(false);
+                      }}
+                      className={`block w-full text-left px-3 py-1.5 text-xs transition-colors ${
+                        type === loadout.missionType
+                          ? "text-accent-amber font-medium bg-accent-amber/5"
+                          : "text-text-secondary hover:bg-dark-700"
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
           <div className="flex items-center gap-3 mt-1">
             <span className="text-xs text-text-muted font-mono">
