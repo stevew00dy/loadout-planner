@@ -10,10 +10,12 @@ export const SLOTS: SlotDefinition[] = [
   { id: "primary1", label: "Primary 1", group: "weapons", placeholder: "e.g. Gallant Rifle" },
   { id: "primary2", label: "Primary 2", group: "weapons", placeholder: "e.g. Devastator Shotgun" },
   { id: "sidearm", label: "Sidearm", group: "weapons", placeholder: "e.g. Arclight Pistol" },
-  { id: "utility1", label: "Utility 1", group: "utilities", placeholder: "e.g. Multi-Tool (Mining)" },
-  { id: "utility2", label: "Utility 2", group: "utilities", placeholder: "e.g. MedPen" },
-  { id: "utility3", label: "Utility 3", group: "utilities", placeholder: "e.g. Frag Grenade" },
-  { id: "utility4", label: "Utility 4", group: "utilities", placeholder: "e.g. OxyPen" },
+  { id: "multitool1", label: "Multitool 1 (Left)", group: "utilities", placeholder: "e.g. Multi-Tool (OreBit)" },
+  { id: "multitool2", label: "Multitool 2 (Right)", group: "utilities", placeholder: "e.g. Multi-Tool (TruHold)" },
+  { id: "utility1", label: "Utility 1", group: "utilities", placeholder: "e.g. MedPen" },
+  { id: "utility2", label: "Utility 2", group: "utilities", placeholder: "e.g. Frag Grenade" },
+  { id: "utility3", label: "Utility 3", group: "utilities", placeholder: "e.g. OxyPen" },
+  { id: "utility4", label: "Utility 4", group: "utilities", placeholder: "e.g. Food / Water" },
 ];
 
 export const MISSION_TYPES: MissionType[] = [
@@ -57,21 +59,22 @@ export const MISSION_PRESETS: Record<string, Partial<Record<string, SlotValue>>>
   Mining: {
     core: { item: "", notes: "Light/medium with good temp range" },
     backpack: { item: "", notes: "Large backpack for ore" },
-    utility1: { item: "Multi-Tool (OreBit)", notes: "Mining attachment" },
-    utility2: { item: "MedPen", notes: "" },
+    multitool1: { item: "Multi-Tool (OreBit)", notes: "Mining attachment" },
+    multitool2: { item: "Multi-Tool (TruHold)", notes: "Tractor beam" },
+    utility1: { item: "MedPen", notes: "" },
   },
   Medical: {
     core: { item: "", notes: "Support-category armor" },
+    multitool1: { item: "CureLife Medical Tool", notes: "" },
     utility1: { item: "MedPen (Hemozal)", notes: "" },
     utility2: { item: "AdrenaPen", notes: "" },
     utility3: { item: "CorticoPen", notes: "" },
-    utility4: { item: "CureLife Medical Tool", notes: "" },
   },
   Salvage: {
     core: { item: "", notes: "Utility armor" },
     backpack: { item: "", notes: "Large backpack" },
-    utility1: { item: "Multi-Tool (Salvage)", notes: "" },
-    utility2: { item: "MedPen", notes: "" },
+    multitool1: { item: "Multi-Tool (Salvage)", notes: "" },
+    utility1: { item: "MedPen", notes: "" },
   },
   EVA: {
     undersuit: { item: "", notes: "Good temp range essential" },
@@ -84,10 +87,10 @@ export const MISSION_PRESETS: Record<string, Partial<Record<string, SlotValue>>>
     core: { item: "", notes: "Medium armor — balanced" },
     primary1: { item: "", notes: "Versatile weapon" },
     sidearm: { item: "", notes: "Backup" },
-    utility1: { item: "Multi-Tool", notes: "" },
-    utility2: { item: "MedPen", notes: "" },
-    utility3: { item: "OxyPen", notes: "" },
-    utility4: { item: "Food / Water", notes: "" },
+    multitool1: { item: "Multi-Tool", notes: "" },
+    utility1: { item: "MedPen", notes: "" },
+    utility2: { item: "OxyPen", notes: "" },
+    utility3: { item: "Food / Water", notes: "" },
   },
 };
 
