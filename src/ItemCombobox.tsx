@@ -17,7 +17,7 @@ interface Props {
   detectedClass?: ArmorClass;
 }
 
-const MAX_RESULTS = 10;
+const MAX_RESULTS = 25;
 const MAX_LOCATIONS = 5;
 const SYSTEM_ORDER = ["Stanton", "Pyro", "Nyx"];
 
@@ -75,7 +75,7 @@ export default function ItemCombobox({
   const hasQuery = query.length > 0;
 
   const filtered = useMemo(() => {
-    if (!hasQuery) return slotItems.slice(0, MAX_RESULTS);
+    if (!hasQuery) return slotItems;
     const matches: UexItem[] = [];
     for (const item of slotItems) {
       if (item.name.toLowerCase().includes(query)) {
@@ -430,6 +430,11 @@ export default function ItemCombobox({
               No matches — type freely
             </li>
           ) : null}
+          {slotItems.length > filtered.length && (
+            <li className="px-3 py-1.5 text-[11px] text-text-muted/60 border-t border-dark-700">
+              {hasQuery ? `${filtered.length} of ` : ""}{slotItems.length} items — type to search
+            </li>
+          )}
         </ul>
       )}
     </div>

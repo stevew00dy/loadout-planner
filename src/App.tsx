@@ -90,6 +90,14 @@ type WeaponStatsMap = Record<string, WeaponStats>;
 const weaponStats: WeaponStatsMap = weaponStatsData as WeaponStatsMap;
 
 const WEAPON_WEIGHT_SLOTS = ["primary1", "primary2", "sidearm"] as const;
+
+function findWeaponStats(name: string): WeaponStats | undefined {
+  const key = name.toLowerCase();
+  if (weaponStats[key]) return weaponStats[key];
+  const base = key.replace(/"[^"]*"\s*/g, "").replace(/\s+/g, " ").trim();
+  if (weaponStats[base]) return weaponStats[base];
+  return Object.values(weaponStats).find((w) => key.includes(w.name.toLowerCase()));
+}
 const MULTITOOL_WEIGHT: Record<string, number> = {
   "Mining": 1.5,
   "Salvage": 1.5,
@@ -199,7 +207,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
   for (const slotId of WEAPON_WEIGHT_SLOTS) {
     const val = slots[slotId]?.item?.trim();
     if (!val) continue;
-    const w = weaponStats[val.toLowerCase()];
+    const w = findWeaponStats(val);
     if (w) {
       totalWeight += w.mass;
       weightBreakdown.push({ slot: slotId, label: SLOT_LABEL[slotId] ?? slotId, weight: w.mass });
@@ -226,7 +234,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
   for (const slotId of [...WEAPON_WEIGHT_SLOTS, "multitool1", "multitool2"] as const) {
     const val = slots[slotId]?.item?.trim();
     if (!val) continue;
-    const ws = weaponStats[val.toLowerCase()];
+    const ws = findWeaponStats(val);
     if (ws && ws.dps > 0) equippedWeapons.push({ slot: slotId, stats: ws });
   }
 
