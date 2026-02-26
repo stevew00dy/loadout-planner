@@ -887,19 +887,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
               <Info className="w-3 h-3 text-text-muted" />
             </button>
           </div>
-          {showWeaponInfo && (
-            <div className="mb-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
-              <div className="flex flex-col gap-1 text-[10px]">
-                <div className="flex justify-between"><span className="text-text-muted font-medium">DPS</span><span className="text-text-dim">Damage Per Second</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">RPM</span><span className="text-text-dim">Rounds Per Minute</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">Dmg/Shot</span><span className="text-text-dim">Damage Per Shot</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">STK</span><span className="text-text-dim">Shots To Kill</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">TTK</span><span className="text-text-dim">Time To Kill</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">Ammo</span><span className="text-text-dim">Magazine Size</span></div>
-                <div className="flex justify-between"><span className="text-text-muted font-medium">Range</span><span className="text-text-dim">Effective Range</span></div>
-              </div>
-            </div>
-          )}
           <div className="flex flex-col gap-2.5">
             {stats.equippedWeapons.map((w) => {
               const SLOT_LABELS: Record<string, string> = { primary1: "Primary", primary2: "Secondary", sidearm: "Sidearm" };
@@ -978,6 +965,19 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
               );
             })}
           </div>
+          {showWeaponInfo && (
+            <div className="mt-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
+              <div className="flex flex-col gap-1 text-[10px]">
+                <div className="flex justify-between"><span className="text-text-muted font-medium">DPS</span><span className="text-text-dim">Damage Per Second</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">RPM</span><span className="text-text-dim">Rounds Per Minute</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Dmg/Shot</span><span className="text-text-dim">Damage Per Shot</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">STK</span><span className="text-text-dim">Shots To Kill</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">TTK</span><span className="text-text-dim">Time To Kill</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Ammo</span><span className="text-text-dim">Magazine Size</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Range</span><span className="text-text-dim">Effective Range</span></div>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
