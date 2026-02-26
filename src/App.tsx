@@ -185,9 +185,15 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     for (const k of RESISTANCE_KEYS) resistance[k] *= stats.resistance[k];
   }
 
+  const SLOT_LABEL: Record<string, string> = {
+    undersuit: "Undersuit", helmet: "Helmet", core: "Core", arms: "Arms", legs: "Legs", backpack: "Backpack",
+    primary1: "Primary", primary2: "Primary 2", sidearm: "Sidearm",
+    multitool1: "Multitool", multitool2: "Multitool 2",
+  };
+
   const weightBreakdown: WeightEntry[] = pieces
     .filter((p) => p.weight > 0)
-    .map((p) => ({ slot: p.slot, label: p.stats.name, weight: p.weight }));
+    .map((p) => ({ slot: p.slot, label: SLOT_LABEL[p.slot] ?? p.slot, weight: p.weight }));
 
   for (const slotId of WEAPON_WEIGHT_SLOTS) {
     const val = slots[slotId]?.item?.trim();
@@ -195,7 +201,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     const w = weaponStats[val.toLowerCase()];
     if (w) {
       totalWeight += w.mass;
-      weightBreakdown.push({ slot: slotId, label: w.name, weight: w.mass });
+      weightBreakdown.push({ slot: slotId, label: SLOT_LABEL[slotId] ?? slotId, weight: w.mass });
     }
   }
 
@@ -203,7 +209,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     const val = slots[slotId]?.item?.trim();
     if (val && MULTITOOL_WEIGHT[val]) {
       totalWeight += MULTITOOL_WEIGHT[val];
-      weightBreakdown.push({ slot: slotId, label: val, weight: MULTITOOL_WEIGHT[val] });
+      weightBreakdown.push({ slot: slotId, label: SLOT_LABEL[slotId] ?? slotId, weight: MULTITOOL_WEIGHT[val] });
     }
   }
 
@@ -211,7 +217,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     const val = slots[`throwable${i}`]?.item?.trim();
     if (val) {
       totalWeight += GRENADE_WEIGHT;
-      weightBreakdown.push({ slot: `throwable${i}`, label: val, weight: GRENADE_WEIGHT });
+      weightBreakdown.push({ slot: `throwable${i}`, label: "Throwable", weight: GRENADE_WEIGHT });
     }
   }
 
