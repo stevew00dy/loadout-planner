@@ -952,15 +952,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
         </div>
       )}
 
-      {/* Piece breakdown */}
-      <div className="text-[10px] text-text-muted/60 pt-1 border-t border-dark-700/50">
-        {stats.pieces.map((p) => (
-          <div key={p.slot} className="flex justify-between py-0.5">
-            <span className="capitalize">{p.slot}</span>
-            <span className="font-mono">{Math.round(p.stats.dmgReduction * 100)}% DR</span>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
