@@ -25,6 +25,7 @@ import {
   ShieldCheck,
   Package,
   Gauge,
+  Info,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -680,6 +681,7 @@ const RESISTANCE_LABELS: Record<string, { label: string; color: string }> = {
 };
 
 function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; loadoutName?: string }) {
+  const [showWeightInfo, setShowWeightInfo] = useState(false);
   if (!stats) {
     return (
       <div className="card flex flex-col items-center justify-center py-10 text-center">
@@ -714,11 +716,40 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
       </div>
 
       {/* Weight & Speed */}
-      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50 relative">
         <div className="flex items-center gap-1.5 mb-1.5">
           <Gauge className="w-3.5 h-3.5 text-accent-amber" />
           <span className="text-[11px] text-text-muted font-medium">Weight & Speed</span>
+          <button
+            onClick={() => setShowWeightInfo((v) => !v)}
+            className="ml-auto w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors"
+            title="Weight milestones"
+          >
+            <Info className="w-3 h-3 text-text-muted" />
+          </button>
         </div>
+        {showWeightInfo && (
+          <div className="mb-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
+            <table className="w-full text-[10px]">
+              <thead>
+                <tr className="text-text-muted">
+                  <th className="text-left font-medium pb-1">Weight</th>
+                  <th className="text-right font-medium pb-1">Speed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className={`${stats.speedPct === 100 ? "text-accent-green font-bold" : "text-text-dim"}`}>
+                  <td>&lt; 20 kg</td><td className="text-right font-mono">100%</td>
+                </tr>
+                {SPEED_BREAKPOINTS.map((bp) => (
+                  <tr key={bp.kg} className={`${stats.speedPct === bp.pct ? "text-accent-amber font-bold" : bp.pct <= 60 ? "text-accent-red/70" : "text-text-dim"}`}>
+                    <td>{bp.kg} kg</td><td className="text-right font-mono">{bp.pct}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
         <div className="flex items-baseline justify-between">
           <div>
             <span className="text-lg font-mono font-bold text-text">{stats.totalWeight}</span>
