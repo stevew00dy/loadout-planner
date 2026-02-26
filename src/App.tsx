@@ -641,9 +641,18 @@ const RESISTANCE_LABELS: Record<string, { label: string; color: string }> = {
   stun: { label: "Stun", color: "text-accent-yellow" },
 };
 
+const STAT_SECTION_KEYS = ["weight", "damage", "temperature", "radiation", "resistances", "carry", "weapons"] as const;
+const defaultStatOpen: Record<string, boolean> = Object.fromEntries(STAT_SECTION_KEYS.map((k) => [k, true]));
+
 function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; loadoutName?: string }) {
   const [showWeightInfo, setShowWeightInfo] = useState(false);
   const [showWeaponInfo, setShowWeaponInfo] = useState(false);
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>(defaultStatOpen);
+
+  const toggleSection = (key: string) => setOpenSections((prev) => ({ ...prev, [key]: !prev[key] }));
+  const expandAll = () => setOpenSections({ ...defaultStatOpen });
+  const collapseAll = () => setOpenSections(Object.fromEntries(STAT_SECTION_KEYS.map((k) => [k, false])));
+
   if (!stats) {
     return (
       <div className="card flex flex-col items-center justify-center py-10 text-center">
@@ -657,27 +666,31 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
 
   return (
     <div className="card flex flex-col gap-3">
-      <div className="flex items-center gap-2">
-        <Activity className="w-4 h-4 text-accent-amber" />
-        <span className="text-xs text-text-muted uppercase tracking-wider font-semibold">Stats</span>
+      <div className="flex items-center justify-between gap-2 flex-wrap">
+        <div className="flex items-center gap-2 min-w-0">
+          <Activity className="w-4 h-4 text-accent-amber shrink-0" />
+          <span className="text-xs text-text-muted uppercase tracking-wider font-semibold">Stats</span>
+          {loadoutName && <span className="text-sm font-medium text-text truncate">{loadoutName}</span>}
+        </div>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <button type="button" onClick={expandAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Expand all</button>
+          <span className="text-dark-600">|</span>
+          <button type="button" onClick={collapseAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Collapse all</button>
+        </div>
       </div>
-      {loadoutName && (
-        <p className="text-sm font-medium text-text truncate -mt-1">{loadoutName}</p>
-      )}
 
       {/* Weight & Speed */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50 relative">
-        <div className="flex items-center gap-1.5 mb-1.5">
-          <Gauge className="w-3.5 h-3.5 text-accent-amber" />
+        <button type="button" onClick={() => toggleSection("weight")} className="w-full flex items-center gap-1.5 mb-1.5 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <Gauge className="w-3.5 h-3.5 text-accent-amber shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Weight & Speed</span>
-          <button
-            onClick={() => setShowWeightInfo((v) => !v)}
-            className="ml-auto w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors"
-            title="Weight milestones"
-          >
+          {openSections.weight ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+          <button onClick={(e) => { e.stopPropagation(); setShowWeightInfo((v) => !v); }} className="w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors shrink-0" title="Weight milestones">
             <Info className="w-3 h-3 text-text-muted" />
           </button>
-        </div>
+        </button>
+        {openSections.weight && (
+        <>
         <div className="flex items-baseline justify-between">
           <div>
             <span className="text-lg font-mono font-bold text-text">{stats.totalWeight}</span>
@@ -725,26 +738,36 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             </table>
           </div>
         )}
+        </>
+        )}
       </div>
 
       {/* Damage Reduction */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center gap-1.5 mb-1.5">
-          <ShieldCheck className="w-3.5 h-3.5 text-accent-green" />
+        <button type="button" onClick={() => toggleSection("damage")} className="w-full flex items-center gap-1.5 mb-1.5 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <ShieldCheck className="w-3.5 h-3.5 text-accent-green shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Damage Reduction</span>
-        </div>
+          {openSections.damage ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+        </button>
+        {openSections.damage && (
+        <>
         <span className="text-xl font-mono font-bold text-accent-green">{dmgPct}%</span>
         <div className="mt-1.5 h-1.5 bg-dark-900 rounded-full overflow-hidden">
           <div className="h-full bg-accent-green/70 rounded-full transition-all" style={{ width: `${Math.min(dmgPct, 100)}%` }} />
         </div>
+        </>
+        )}
       </div>
 
       {/* Temperature */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center gap-1.5 mb-1.5">
-          <Thermometer className="w-3.5 h-3.5 text-accent-blue" />
+        <button type="button" onClick={() => toggleSection("temperature")} className="w-full flex items-center gap-1.5 mb-1.5 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <Thermometer className="w-3.5 h-3.5 text-accent-blue shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Temperature</span>
-        </div>
+          {openSections.temperature ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+        </button>
+        {openSections.temperature && (
+        <>
         {stats.tempMin !== null && stats.tempMax !== null ? (
           <div className="flex items-baseline gap-1.5">
             <span className="text-lg font-mono font-bold text-accent-blue">{stats.tempMin}°</span>
@@ -754,14 +777,19 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
         ) : (
           <span className="text-sm text-text-muted">—</span>
         )}
+        </>
+        )}
       </div>
 
       {/* Radiation */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center gap-1.5 mb-1.5">
-          <Radiation className="w-3.5 h-3.5 text-accent-amber" />
+        <button type="button" onClick={() => toggleSection("radiation")} className="w-full flex items-center gap-1.5 mb-1.5 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <Radiation className="w-3.5 h-3.5 text-accent-amber shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Radiation</span>
-        </div>
+          {openSections.radiation ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+        </button>
+        {openSections.radiation && (
+        <>
         <div className="flex items-baseline gap-1">
           <span className="text-lg font-mono font-bold text-accent-amber">{stats.radResistance.toLocaleString()}</span>
           <span className="text-[10px] text-text-muted">REM</span>
@@ -769,16 +797,18 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
         <div className="text-[10px] text-text-muted mt-0.5">
           Scrub: <span className="font-mono text-text-dim">{stats.radScrubRate.toFixed(1)}</span> REM/s
         </div>
+        </>
+        )}
       </div>
 
       {/* Resistances */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-1.5">
-            <Shield className="w-3.5 h-3.5 text-accent-purple" />
-            <span className="text-[11px] text-text-muted font-medium">Resistances</span>
-          </div>
-        </div>
+        <button type="button" onClick={() => toggleSection("resistances")} className="w-full flex items-center gap-1.5 mb-2 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <Shield className="w-3.5 h-3.5 text-accent-purple shrink-0" />
+          <span className="text-[11px] text-text-muted font-medium">Resistances</span>
+          {openSections.resistances ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+        </button>
+        {openSections.resistances && (
         <div className="flex flex-col gap-2">
           {RESISTANCE_KEYS.map((key) => {
             const { label, color } = RESISTANCE_LABELS[key];
@@ -802,17 +832,18 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             );
           })}
         </div>
+        )}
       </div>
 
       {/* Carry Capacity */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center gap-1.5 mb-2">
-          <Package className="w-3.5 h-3.5 text-accent-blue" />
+        <button type="button" onClick={() => toggleSection("carry")} className="w-full flex items-center gap-1.5 mb-2 text-left cursor-pointer hover:opacity-90 transition-opacity">
+          <Package className="w-3.5 h-3.5 text-accent-blue shrink-0" />
           <span className="text-[11px] text-text-muted font-medium">Carry Capacity</span>
-          <span className="text-sm font-mono font-bold text-accent-blue ml-auto">
-            {stats.totalCargo} µSCU
-          </span>
-        </div>
+          <span className="text-sm font-mono font-bold text-accent-blue ml-auto">{stats.totalCargo} µSCU</span>
+          {openSections.carry ? <ChevronUp className="w-3.5 h-3.5 text-text-muted shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted shrink-0" />}
+        </button>
+        {openSections.carry && (
         <div className="flex flex-col gap-1">
           {stats.pieces.filter((p) => p.stats.cargo > 0).map((p) => (
             <div key={p.slot} className="flex justify-between text-[10px]">
@@ -821,22 +852,22 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             </div>
           ))}
         </div>
+        )}
       </div>
 
       {/* Weapon Stats */}
       {stats.equippedWeapons.length > 0 && (
         <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-          <div className="flex items-center gap-1.5 mb-2">
-            <Crosshair className="w-3.5 h-3.5 text-accent-red" />
+          <button type="button" onClick={() => toggleSection("weapons")} className="w-full flex items-center gap-1.5 mb-2 text-left cursor-pointer hover:opacity-90 transition-opacity">
+            <Crosshair className="w-3.5 h-3.5 text-accent-red shrink-0" />
             <span className="text-[11px] text-text-muted font-medium">Weapons</span>
-            <button
-              onClick={() => setShowWeaponInfo((v) => !v)}
-              className="ml-auto w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors"
-              title="Stat abbreviations"
-            >
+            {openSections.weapons ? <ChevronUp className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" /> : <ChevronDown className="w-3.5 h-3.5 text-text-muted ml-auto shrink-0" />}
+            <button onClick={(e) => { e.stopPropagation(); setShowWeaponInfo((v) => !v); }} className="w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors shrink-0" title="Stat abbreviations">
               <Info className="w-3 h-3 text-text-muted" />
             </button>
-          </div>
+          </button>
+          {openSections.weapons && (
+          <>
           <div className="flex flex-col gap-2.5">
             {stats.equippedWeapons.map((w) => {
               const SLOT_LABELS: Record<string, string> = { primary1: "Primary", primary2: "Secondary", sidearm: "Sidearm" };
@@ -927,6 +958,8 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
                 <div className="flex justify-between"><span className="text-text-muted font-medium">Range</span><span className="text-text-dim">Effective Range</span></div>
               </div>
             </div>
+          )}
+          </>
           )}
         </div>
       )}
@@ -1049,11 +1082,15 @@ function LoadoutCard({
   return (
     <div className="card">
       {/* Card Header — click anywhere to expand/collapse */}
-      <div className="flex items-start justify-between gap-3">
-        <div
-          className="flex-1 min-w-0 cursor-pointer"
-          onClick={onToggleExpanded}
-        >
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={onToggleExpanded}
+        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onToggleExpanded(); } }}
+        className="flex items-start justify-between gap-3 cursor-pointer rounded-lg -m-1 p-1 min-h-[2.5rem]"
+        aria-label={expanded ? "Collapse loadout" : "Expand loadout"}
+      >
+        <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
             {editingName ? (
               <input
@@ -1128,8 +1165,9 @@ function LoadoutCard({
           )}
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 shrink-0" onClick={(e) => e.stopPropagation()}>
           <button
+            type="button"
             onClick={() => exportSingleLoadout(loadout)}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
             title="Export loadout"
@@ -1137,6 +1175,7 @@ function LoadoutCard({
             <Download className="w-4 h-4" />
           </button>
           <button
+            type="button"
             onClick={() => onDuplicate(loadout.id)}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
             title="Duplicate"
@@ -1144,6 +1183,7 @@ function LoadoutCard({
             <Copy className="w-4 h-4" />
           </button>
           <button
+            type="button"
             onClick={handleDelete}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-accent-red transition-colors"
             title="Delete"
@@ -1151,6 +1191,7 @@ function LoadoutCard({
             <Trash2 className="w-4 h-4" />
           </button>
           <button
+            type="button"
             onClick={onToggleExpanded}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
             aria-label={expanded ? "Collapse loadout" : "Expand loadout"}
