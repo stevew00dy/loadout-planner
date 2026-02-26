@@ -34,7 +34,7 @@ import type { UexItem, ThumbnailMap, BuyableSet, ArmorClassMap } from "./uex-api
 import { getItems, clearUexCache, fetchThumbnails, fetchBuyableSet, getArmorClassMap } from "./uex-api";
 import ItemCombobox from "./ItemCombobox";
 import armorStatsData from "./armor-data.json";
-import weaponMassData from "./weapon-mass.json";
+import weaponStatsData from "./weapon-stats.json";
 
 /* ─── Armor Stats ─── */
 
@@ -66,8 +66,27 @@ const armorStats: ArmorStatsMap = armorStatsData as ArmorStatsMap;
 
 const STAT_SLOTS = ["undersuit", "helmet", "core", "arms", "legs", "backpack"] as const;
 
-type WeaponMassMap = Record<string, { name: string; mass: number; massWithMags: number }>;
-const weaponMass: WeaponMassMap = weaponMassData as WeaponMassMap;
+interface WeaponStats {
+  name: string;
+  category: string;
+  mass: number;
+  massWithMags: number;
+  ammoCount: number;
+  fireMode: string | null;
+  ammoSpeed: number;
+  range: number;
+  pellets: number;
+  dmgPerPellet: number;
+  dmgPerShot: number;
+  rpm: number;
+  dps: number;
+  dpsSustained: number | null;
+  dpsBurst: number | null;
+  ttk: (number | null)[] | null;
+}
+
+type WeaponStatsMap = Record<string, WeaponStats>;
+const weaponStats: WeaponStatsMap = weaponStatsData as WeaponStatsMap;
 
 const WEAPON_WEIGHT_SLOTS = ["primary1", "primary2", "sidearm"] as const;
 const MULTITOOL_WEIGHT: Record<string, number> = {
@@ -128,6 +147,7 @@ interface AggregatedStats {
   effectiveSpeed: number;
   pieces: { slot: string; stats: ArmorPieceStats; weight: number }[];
   weightBreakdown: WeightEntry[];
+  equippedWeapons: { slot: string; stats: WeaponStats }[];
 }
 
 function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStats | null {
@@ -172,7 +192,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
   for (const slotId of WEAPON_WEIGHT_SLOTS) {
     const val = slots[slotId]?.item?.trim();
     if (!val) continue;
-    const w = weaponMass[val.toLowerCase()];
+    const w = weaponStats[val.toLowerCase()];
     if (w) {
       totalWeight += w.mass;
       weightBreakdown.push({ slot: slotId, label: w.name, weight: w.mass });
@@ -195,10 +215,18 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     }
   }
 
+  const equippedWeapons: { slot: string; stats: WeaponStats }[] = [];
+  for (const slotId of [...WEAPON_WEIGHT_SLOTS, "multitool1", "multitool2"] as const) {
+    const val = slots[slotId]?.item?.trim();
+    if (!val) continue;
+    const ws = weaponStats[val.toLowerCase()];
+    if (ws && ws.dps > 0) equippedWeapons.push({ slot: slotId, stats: ws });
+  }
+
   const speedPct = getSpeedPct(totalWeight);
   const effectiveSpeed = Math.round((BASE_SPEED * speedPct) / 100 * 100) / 100;
 
-  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, totalWeight, speedPct, effectiveSpeed, resistance, pieces, weightBreakdown };
+  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, totalWeight, speedPct, effectiveSpeed, resistance, pieces, weightBreakdown, equippedWeapons };
 }
 
 /* ─── Header ─── */
@@ -798,6 +826,89 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           ))}
         </div>
       </div>
+
+      {/* Weapon Stats */}
+      {stats.equippedWeapons.length > 0 && (
+        <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+          <div className="flex items-center gap-1.5 mb-2">
+            <Crosshair className="w-3.5 h-3.5 text-accent-red" />
+            <span className="text-[11px] text-text-muted font-medium">Weapons</span>
+          </div>
+          <div className="flex flex-col gap-2.5">
+            {stats.equippedWeapons.map((w) => {
+              const SLOT_LABELS: Record<string, string> = { primary1: "Primary", primary2: "Secondary", sidearm: "Sidearm" };
+              const slotLabel = SLOT_LABELS[w.slot] || w.slot;
+              const catColors: Record<string, string> = {
+                assault_rifle: "text-accent-blue",
+                sniper_rifle: "text-accent-purple",
+                lmg: "text-accent-amber",
+                shotgun: "text-accent-red",
+                smg: "text-accent-green",
+                pistol: "text-text-dim",
+                heavy: "text-accent-red",
+              };
+              const catLabels: Record<string, string> = {
+                assault_rifle: "AR",
+                sniper_rifle: "Sniper",
+                lmg: "LMG",
+                shotgun: "Shotgun",
+                smg: "SMG",
+                pistol: "Pistol",
+                heavy: "Heavy",
+                mounted: "Mounted",
+              };
+              return (
+                <div key={w.slot} className="border-b border-dark-700/30 last:border-0 pb-2 last:pb-0">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] text-text-muted uppercase">{slotLabel}</span>
+                    <span className={`text-[9px] font-semibold uppercase px-1.5 py-0.5 rounded-full bg-dark-900/80 ${catColors[w.stats.category] ?? "text-text-dim"}`}>
+                      {catLabels[w.stats.category] ?? w.stats.category}
+                    </span>
+                  </div>
+                  <p className="text-xs font-medium text-text truncate mb-1.5">{w.stats.name}</p>
+                  <div className="grid grid-cols-2 gap-x-3 gap-y-1">
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">DPS</span>
+                      <span className="font-mono text-accent-red font-bold">{w.stats.dps}</span>
+                    </div>
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">RPM</span>
+                      <span className="font-mono text-text-dim">{w.stats.rpm}</span>
+                    </div>
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">Dmg</span>
+                      <span className="font-mono text-text-dim">{w.stats.dmgPerShot}{w.stats.pellets > 1 ? ` (${w.stats.pellets}×${w.stats.dmgPerPellet})` : ""}</span>
+                    </div>
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">Range</span>
+                      <span className="font-mono text-text-dim">{w.stats.range >= 1000 ? `${(w.stats.range / 1000).toFixed(1)}km` : `${w.stats.range}m`}</span>
+                    </div>
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">Ammo</span>
+                      <span className="font-mono text-text-dim">{w.stats.ammoCount}</span>
+                    </div>
+                    <div className="flex justify-between text-[10px]">
+                      <span className="text-text-muted">Mass</span>
+                      <span className="font-mono text-text-dim">{w.stats.mass}kg</span>
+                    </div>
+                    {w.stats.ttk && w.stats.ttk[0] !== null && (
+                      <>
+                        <div className="flex justify-between text-[10px] col-span-2 pt-0.5 border-t border-dark-700/30">
+                          <span className="text-text-muted">TTK</span>
+                          <span className="font-mono text-accent-amber font-bold">{w.stats.ttk[0]}s</span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  {w.stats.fireMode && (
+                    <div className="text-[9px] text-text-muted mt-1">{w.stats.fireMode}</div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Piece breakdown */}
       <div className="text-[10px] text-text-muted/60 pt-1 border-t border-dark-700/50">
