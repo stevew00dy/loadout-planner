@@ -1096,9 +1096,12 @@ function LoadoutCard({
 
   return (
     <div className="card">
-      {/* Card Header */}
+      {/* Card Header — click anywhere to expand/collapse */}
       <div className="flex items-start justify-between gap-3">
-        <div className="flex-1 min-w-0">
+        <div
+          className="flex-1 min-w-0 cursor-pointer"
+          onClick={onToggleExpanded}
+        >
           <div className="flex items-center gap-2 flex-wrap">
             {editingName ? (
               <input
@@ -1107,19 +1110,20 @@ function LoadoutCard({
                 onChange={(e) => setNameValue(e.target.value)}
                 onBlur={handleNameBlur}
                 onKeyDown={handleNameKey}
+                onClick={(e) => e.stopPropagation()}
                 className="slot-input text-base font-semibold !p-1 !px-2 max-w-[260px]"
               />
             ) : (
               <button
                 type="button"
                 className="text-base font-semibold hover:text-accent-amber transition-colors truncate text-left bg-transparent border-none p-0 text-text"
-                onClick={() => setEditingName(true)}
+                onClick={(e) => { e.stopPropagation(); setEditingName(true); }}
                 title="Click to rename"
               >
                 {loadout.name}
               </button>
             )}
-            <div ref={typeRef} className="relative">
+            <div ref={typeRef} className="relative" onClick={(e) => e.stopPropagation()}>
               <button
                 type="button"
                 onClick={() => setEditingType(!editingType)}
@@ -1197,7 +1201,7 @@ function LoadoutCard({
 
       {/* Collapsed Preview */}
       {!expanded && filledSlots > 0 && (
-        <div className="mt-3 flex flex-wrap gap-1.5">
+        <div className="mt-3 flex flex-wrap gap-1.5 cursor-pointer" onClick={onToggleExpanded}>
           {visibleSlots.filter((s) => loadout.slots[s.id]?.item.trim()).map((s) => (
             <span
               key={s.id}
