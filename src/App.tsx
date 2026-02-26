@@ -17,12 +17,15 @@ import {
   X,
   Home,
   Menu,
+  Bomb,
+  Heart,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
-import { SLOTS, MISSION_TYPES, MISSION_COLORS, createEmptyLoadout } from "./data";
+import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
+import type { ArmorClass, SlotGroup as SlotGroupType } from "./types";
 import { useLoadouts, exportAllData, importAllData, exportSingleLoadout, importSingleLoadout } from "./hooks";
-import type { UexItem } from "./uex-api";
-import { getItems, clearUexCache } from "./uex-api";
+import type { UexItem, ThumbnailMap, BuyableSet, ArmorClassMap } from "./uex-api";
+import { getItems, clearUexCache, fetchThumbnails, fetchBuyableSet, getArmorClassMap } from "./uex-api";
 import ItemCombobox from "./ItemCombobox";
 
 /* ─── Header ─── */
@@ -288,20 +291,47 @@ function NewLoadoutDialog({
 
 const ARMOR_SLOTS = SLOTS.filter((s) => s.group === "armor");
 const WEAPON_SLOTS = SLOTS.filter((s) => s.group === "weapons");
-const UTILITY_SLOTS = SLOTS.filter((s) => s.group === "utilities");
+const MULTITOOL_SLOTS = SLOTS.filter((s) => s.group === "multitools");
+const AMMO_SLOTS = SLOTS.filter((s) => s.group === "ammo");
+const THROWABLE_SLOTS = SLOTS.filter((s) => s.group === "throwables");
+const CONSUMABLE_SLOTS = SLOTS.filter((s) => s.group === "consumables");
 
 /* ─── Slot Group ─── */
-const GROUP_ICONS = {
+const GROUP_ICONS: Record<SlotGroupType, typeof Shield> = {
   armor: Shield,
   weapons: Sword,
-  utilities: Wrench,
-} as const;
+  multitools: Wrench,
+  ammo: Crosshair,
+  throwables: Bomb,
+  consumables: Heart,
+};
 
-const GROUP_LABELS = {
+const GROUP_LABELS: Record<SlotGroupType, string> = {
   armor: "Armor",
   weapons: "Weapons",
-  utilities: "Utilities & Consumables",
-} as const;
+  multitools: "Multitools",
+  ammo: "Ammo / Magazines",
+  throwables: "Throwables",
+  consumables: "Consumables",
+};
+
+function getMaxSlots(group: SlotGroupType, armorClass?: ArmorClass): number {
+  if (!armorClass) return 99;
+  switch (group) {
+    case "ammo": return ARMOR_CLASS_AMMO_SLOTS[armorClass];
+    case "throwables": return ARMOR_CLASS_THROWABLE_SLOTS[armorClass];
+    case "consumables": return ARMOR_CLASS_CONSUMABLE_SLOTS[armorClass];
+    default: return 99;
+  }
+}
+
+const ARMOR_FILTER_SLOTS = new Set(["helmet", "core", "arms", "legs", "backpack"]);
+
+const CLASS_FILTERS: { value: ArmorClass; short: string }[] = [
+  { value: "light", short: "L" },
+  { value: "medium", short: "M" },
+  { value: "heavy", short: "H" },
+];
 
 function SlotGroup({
   group,
@@ -309,14 +339,28 @@ function SlotGroup({
   values,
   onChange,
   allItems,
+  thumbnails,
+  buyable,
+  armorClass,
+  slotClasses,
+  onSlotClassChange,
+  armorClassMap,
 }: {
-  group: "armor" | "weapons" | "utilities";
+  group: SlotGroupType;
   slots: typeof SLOTS;
   values: Record<string, SlotValue>;
   onChange: (slotId: string, value: SlotValue) => void;
   allItems: UexItem[];
+  thumbnails: ThumbnailMap;
+  buyable?: BuyableSet;
+  armorClass?: ArmorClass;
+  slotClasses?: Partial<Record<string, ArmorClass>>;
+  onSlotClassChange?: (slotId: string, ac: ArmorClass | undefined) => void;
+  armorClassMap?: ArmorClassMap;
 }) {
   const Icon = GROUP_ICONS[group];
+  const maxSlots = getMaxSlots(group, armorClass);
+
   return (
     <div>
       <div className="flex items-center gap-2 mb-3">
@@ -324,20 +368,93 @@ function SlotGroup({
         <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wider">
           {GROUP_LABELS[group]}
         </h4>
+        {(group === "ammo" || group === "throwables" || group === "consumables") && armorClass && (
+          <span className="text-[10px] text-text-muted/60 font-mono">{maxSlots} slots</span>
+        )}
       </div>
       <div className="grid gap-2">
-        {slots.map((slot) => {
+        {slots.map((slot, idx) => {
           const val = values[slot.id] || { item: "", notes: "" };
+          const isMultitool = slot.id.startsWith("multitool");
+          const isThrowable = slot.group === "throwables";
+          const isAmmo = slot.group === "ammo";
+          const isBackpack = slot.id === "backpack";
+          const hasFilter = group === "armor" && ARMOR_FILTER_SLOTS.has(slot.id);
+          const backpackWarning = isBackpack && armorClass && armorClass !== "heavy" && val.item.trim();
+          const selectOptions = isMultitool ? MULTITOOL_OPTIONS : isThrowable ? GRENADE_OPTIONS : null;
+          const activeFilter = hasFilter ? slotClasses?.[slot.id] : undefined;
+          const detectedClass = hasFilter && val.item.trim() && armorClassMap
+            ? armorClassMap[val.item.trim().toLowerCase()]
+            : undefined;
+
+          if (idx >= maxSlots) return null;
+
           return (
-            <div key={slot.id} className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-1 sm:gap-2 sm:items-start">
-              <span className="text-sm text-text-dim truncate mt-2">{slot.label}</span>
-              <ItemCombobox
-                value={val.item}
-                onChange={(v) => onChange(slot.id, { ...val, item: v })}
-                placeholder={slot.placeholder}
-                slotId={slot.id}
-                allItems={allItems}
-              />
+            <div key={slot.id}>
+              <div className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-1 sm:gap-2 sm:items-start">
+                <span className="text-sm text-text-dim truncate mt-2">{slot.label}</span>
+                <div className={hasFilter ? "flex gap-1.5 items-start" : ""}>
+                  <div className={hasFilter ? "flex-1 min-w-0" : ""}>
+                    {selectOptions ? (
+                      <select
+                        value={val.item}
+                        onChange={(e) => onChange(slot.id, { ...val, item: e.target.value })}
+                        className="w-full bg-dark-800 border border-dark-700 rounded-lg px-3 py-2 text-sm text-text outline-none appearance-none cursor-pointer hover:border-dark-600 transition-colors"
+                      >
+                        {selectOptions.map((opt) => (
+                          <option key={opt.value} value={opt.value}>
+                            {opt.label}
+                          </option>
+                        ))}
+                      </select>
+                    ) : isAmmo ? (
+                      <input
+                        value={val.item}
+                        onChange={(e) => onChange(slot.id, { ...val, item: e.target.value })}
+                        placeholder={slot.placeholder}
+                        className="w-full bg-dark-800 border border-dark-700 rounded-lg px-3 py-2 text-sm text-text placeholder:text-text-muted outline-none"
+                      />
+                    ) : (
+                      <ItemCombobox
+                        value={val.item}
+                        onChange={(v) => onChange(slot.id, { ...val, item: v })}
+                        placeholder={slot.placeholder}
+                        slotId={slot.id}
+                        allItems={allItems}
+                        thumbnails={thumbnails}
+                        buyable={buyable}
+                        classFilter={activeFilter}
+                        armorClassMap={armorClassMap}
+                        detectedClass={detectedClass}
+                      />
+                    )}
+                  </div>
+                  {hasFilter && onSlotClassChange && (
+                    <div className="flex rounded border border-dark-700 overflow-hidden shrink-0 self-center">
+                      {CLASS_FILTERS.map((ac) => (
+                        <button
+                          key={ac.value}
+                          type="button"
+                          onClick={() => onSlotClassChange(slot.id, activeFilter === ac.value ? undefined : ac.value)}
+                          className={`px-1.5 py-0.5 text-[10px] font-semibold transition-colors ${
+                            activeFilter === ac.value
+                              ? "bg-accent-amber/20 text-accent-amber"
+                              : "bg-dark-800 text-text-muted/50 hover:text-text-muted"
+                          }`}
+                          title={`Filter: ${ac.value}`}
+                        >
+                          {ac.short}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+              {backpackWarning && (
+                <p className="text-[10px] text-accent-amber mt-0.5 sm:ml-[128px]">
+                  ⚠ Large backpacks require heavy armor
+                </p>
+              )}
             </div>
           );
         })}
@@ -353,12 +470,18 @@ function LoadoutCard({
   onDelete,
   onDuplicate,
   allItems,
+  thumbnails,
+  buyable,
+  armorClassMap,
 }: {
   loadout: Loadout;
   onUpdate: (id: string, updates: Partial<Loadout>) => void;
   onDelete: (id: string) => void;
   onDuplicate: (id: string) => void;
   allItems: UexItem[];
+  thumbnails: ThumbnailMap;
+  buyable?: BuyableSet;
+  armorClassMap: ArmorClassMap;
 }) {
   const [expanded, setExpanded] = useState(false);
   const [editingName, setEditingName] = useState(false);
@@ -367,8 +490,20 @@ function LoadoutCard({
   const nameRef = useRef<HTMLInputElement>(null);
   const typeRef = useRef<HTMLDivElement>(null);
 
-  const filledSlots = Object.values(loadout.slots).filter((v) => v.item.trim()).length;
-  const totalSlots = SLOTS.length;
+  const effectiveClass = getEffectiveArmorClass(loadout.slotClasses);
+  const maxAmmo = ARMOR_CLASS_AMMO_SLOTS[effectiveClass];
+  const maxThrowable = ARMOR_CLASS_THROWABLE_SLOTS[effectiveClass];
+  const maxConsumable = ARMOR_CLASS_CONSUMABLE_SLOTS[effectiveClass];
+  const visibleSlots = SLOTS.filter((s) => {
+    const slotsInGroup = SLOTS.filter((x) => x.group === s.group);
+    const idxInGroup = slotsInGroup.indexOf(s);
+    if (s.group === "ammo") return idxInGroup < maxAmmo;
+    if (s.group === "throwables") return idxInGroup < maxThrowable;
+    if (s.group === "consumables") return idxInGroup < maxConsumable;
+    return true;
+  });
+  const filledSlots = visibleSlots.filter((s) => loadout.slots[s.id]?.item.trim()).length;
+  const totalSlots = visibleSlots.length;
 
   useEffect(() => {
     if (editingName) nameRef.current?.focus();
@@ -404,9 +539,26 @@ function LoadoutCard({
   };
 
   const handleSlotChange = (slotId: string, value: SlotValue) => {
-    onUpdate(loadout.id, {
+    const updates: Partial<Loadout> = {
       slots: { ...loadout.slots, [slotId]: value },
-    });
+    };
+    if (ARMOR_FILTER_SLOTS.has(slotId) && value.item.trim()) {
+      const detected = armorClassMap[value.item.toLowerCase()];
+      if (detected) {
+        updates.slotClasses = { ...loadout.slotClasses, [slotId]: detected };
+      }
+    }
+    onUpdate(loadout.id, updates);
+  };
+
+  const handleSlotClassChange = (slotId: string, ac: ArmorClass | undefined) => {
+    const next = { ...loadout.slotClasses };
+    if (ac === undefined) {
+      delete next[slotId];
+    } else {
+      next[slotId] = ac;
+    }
+    onUpdate(loadout.id, { slotClasses: next });
   };
 
   const handleNotesChange = (notes: string) => {
@@ -521,7 +673,7 @@ function LoadoutCard({
       {/* Collapsed Preview */}
       {!expanded && filledSlots > 0 && (
         <div className="mt-3 flex flex-wrap gap-1.5">
-          {SLOTS.filter((s) => loadout.slots[s.id]?.item.trim()).map((s) => (
+          {visibleSlots.filter((s) => loadout.slots[s.id]?.item.trim()).map((s) => (
             <span
               key={s.id}
               className="text-xs bg-dark-800 border border-dark-700 rounded px-2 py-0.5 text-text-dim"
@@ -535,9 +687,12 @@ function LoadoutCard({
       {/* Expanded Editor */}
       {expanded && (
         <div className="mt-4 flex flex-col gap-5">
-          <SlotGroup group="armor" slots={ARMOR_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} />
-          <SlotGroup group="weapons" slots={WEAPON_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} />
-          <SlotGroup group="utilities" slots={UTILITY_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} />
+          <SlotGroup group="armor" slots={ARMOR_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} slotClasses={loadout.slotClasses} onSlotClassChange={handleSlotClassChange} armorClassMap={armorClassMap} />
+          <SlotGroup group="weapons" slots={WEAPON_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} />
+          <SlotGroup group="multitools" slots={MULTITOOL_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} />
+          <SlotGroup group="ammo" slots={AMMO_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} />
+          <SlotGroup group="throwables" slots={THROWABLE_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} />
+          <SlotGroup group="consumables" slots={CONSUMABLE_SLOTS} values={loadout.slots} onChange={handleSlotChange} allItems={allItems} thumbnails={thumbnails} buyable={buyable} armorClass={effectiveClass} />
 
           <div>
             <label className="text-xs text-text-muted uppercase tracking-wider font-semibold block mb-2">
@@ -642,20 +797,49 @@ export default function App() {
   const importFileRef = useRef<HTMLInputElement>(null);
   const [uexItems, setUexItems] = useState<UexItem[]>([]);
   const [uexLoading, setUexLoading] = useState(false);
+  const [thumbs, setThumbs] = useState<ThumbnailMap>({});
+  const [buyable, setBuyable] = useState<BuyableSet>(new Set());
+  const [armorClassMap] = useState<ArmorClassMap>(() => getArmorClassMap());
 
   useEffect(() => {
     setUexLoading(true);
     getItems()
-      .then(setUexItems)
+      .then((items) => {
+        setUexItems(items);
+        fetchThumbnails(items).then(setThumbs).catch(() => {});
+        fetchBuyableSet().then(setBuyable).catch(() => {});
+      })
       .catch(() => {})
       .finally(() => setUexLoading(false));
   }, []);
+
+  useEffect(() => {
+    if (Object.keys(armorClassMap).length === 0) return;
+    for (const loadout of loadouts) {
+      const newClasses = { ...loadout.slotClasses };
+      let changed = false;
+      for (const slotId of ["helmet", "core", "arms", "legs", "backpack"]) {
+        const itemName = loadout.slots[slotId]?.item?.trim();
+        if (!itemName) continue;
+        const detected = armorClassMap[itemName.toLowerCase()];
+        if (detected && newClasses[slotId] !== detected) {
+          newClasses[slotId] = detected;
+          changed = true;
+        }
+      }
+      if (changed) updateLoadout(loadout.id, { slotClasses: newClasses });
+    }
+  }, [armorClassMap]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleRefreshData = useCallback(() => {
     clearUexCache();
     setUexLoading(true);
     getItems(true)
-      .then(setUexItems)
+      .then((items) => {
+        setUexItems(items);
+        fetchThumbnails(items).then(setThumbs).catch(() => {});
+        fetchBuyableSet().then(setBuyable).catch(() => {});
+      })
       .catch(() => {})
       .finally(() => {
         setUexLoading(false);
@@ -747,6 +931,9 @@ export default function App() {
                   onDelete={deleteLoadout}
                   onDuplicate={duplicateLoadout}
                   allItems={uexItems}
+                  thumbnails={thumbs}
+                  buyable={buyable}
+                  armorClassMap={armorClassMap}
                 />
               ))}
               {filtered.length === 0 && (

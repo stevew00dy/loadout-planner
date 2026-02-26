@@ -20,9 +20,35 @@ function saveJson<T>(key: string, value: T) {
   }
 }
 
+function migrateLoadout(l: any): Loadout {
+  const slots = l.slots as Record<string, any>;
+  if (slots.utility1 && !slots.consumable1) {
+    slots.consumable1 = slots.utility1;
+    delete slots.utility1;
+  }
+  if (slots.utility2 && !slots.consumable2) {
+    slots.consumable2 = slots.utility2;
+    delete slots.utility2;
+  }
+  if (slots.utility3 && !slots.throwable1) {
+    slots.throwable1 = slots.utility3;
+    delete slots.utility3;
+  }
+  if (slots.utility4 && !slots.consumable3) {
+    slots.consumable3 = slots.utility4;
+    delete slots.utility4;
+  }
+  if (!l.slotClasses) {
+    const ac = l.armorClass ?? "medium";
+    l.slotClasses = { helmet: ac, core: ac, arms: ac, legs: ac, backpack: ac };
+  }
+  delete l.armorClass;
+  return l as Loadout;
+}
+
 export function useLoadouts() {
   const [loadouts, setLoadouts] = useState<Loadout[]>(() =>
-    loadJson(STORAGE_KEY, [])
+    loadJson<Loadout[]>(STORAGE_KEY, []).map(migrateLoadout)
   );
 
   const persist = useCallback((updater: (prev: Loadout[]) => Loadout[]) => {
@@ -127,6 +153,7 @@ export function importSingleLoadout(file: File): Promise<Loadout> {
         if (!loadout.name || !loadout.slots) throw new Error("Invalid loadout data");
 
         loadout.id = crypto.randomUUID();
+        migrateLoadout(loadout);
         const now = new Date().toISOString();
         loadout.createdAt = now;
         loadout.updatedAt = now;
