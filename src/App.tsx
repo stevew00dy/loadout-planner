@@ -23,6 +23,7 @@ import {
   Radiation,
   Activity,
   ShieldCheck,
+  Package,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -71,6 +72,7 @@ interface AggregatedStats {
   radResistance: number;
   radScrubRate: number;
   resistance: Record<string, number>;
+  totalCargo: number;
   pieces: { slot: string; stats: ArmorPieceStats }[];
 }
 
@@ -89,6 +91,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
   let tempMax: number | null = null;
   let radResistance = 0;
   let radScrubRate = 0;
+  let totalCargo = 0;
   const resistance: Record<string, number> = {};
   for (const k of RESISTANCE_KEYS) resistance[k] = 1;
 
@@ -98,10 +101,11 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     if (stats.tempMax !== null) tempMax = tempMax === null ? stats.tempMax : Math.min(tempMax, stats.tempMax);
     radResistance += stats.radResistance;
     radScrubRate += stats.radScrubRate;
+    totalCargo += stats.cargo;
     for (const k of RESISTANCE_KEYS) resistance[k] *= stats.resistance[k];
   }
 
-  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, resistance, pieces };
+  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, resistance, pieces };
 }
 
 /* ─── Header ─── */
@@ -644,6 +648,25 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Carry Capacity */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-2">
+          <Package className="w-3.5 h-3.5 text-accent-blue" />
+          <span className="text-[11px] text-text-muted font-medium">Carry Capacity</span>
+          <span className="text-sm font-mono font-bold text-accent-blue ml-auto">
+            {stats.totalCargo} µSCU
+          </span>
+        </div>
+        <div className="flex flex-col gap-1">
+          {stats.pieces.filter((p) => p.stats.cargo > 0).map((p) => (
+            <div key={p.slot} className="flex justify-between text-[10px]">
+              <span className="capitalize text-text-muted">{p.slot}</span>
+              <span className="font-mono text-text-dim">{p.stats.cargo} µSCU</span>
+            </div>
+          ))}
         </div>
       </div>
 

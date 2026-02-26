@@ -3318,7 +3318,7 @@
       "stun": 0.7
     },
     "volume": 12000,
-    "cargo": 0,
+    "cargo": 75,
     "grade": "A"
   },
   "corbel helmet crush": {
@@ -3736,7 +3736,7 @@
       "stun": 0.55
     },
     "volume": 17000,
-    "cargo": 0,
+    "cargo": 4,
     "grade": "A"
   },
   "defiance helmet": {
@@ -5342,7 +5342,7 @@
       "stun": 0.55
     },
     "volume": 17000,
-    "cargo": 0,
+    "cargo": 4,
     "grade": "A"
   },
   "horizon helmet": {
@@ -11744,7 +11744,7 @@
       "stun": 0.55
     },
     "volume": 17000,
-    "cargo": 0,
+    "cargo": 4,
     "grade": "A"
   },
   "the hill horror helmet": {
@@ -14494,7 +14494,7 @@
       "stun": 0.7
     },
     "volume": 8000,
-    "cargo": 0,
+    "cargo": 75,
     "grade": "A"
   },
   "citadel arms": {
@@ -19994,7 +19994,7 @@
       "stun": 0.7
     },
     "volume": 8000,
-    "cargo": 0,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor arms grey": {
@@ -20016,7 +20016,7 @@
       "stun": 0.7
     },
     "volume": 8000,
-    "cargo": 0,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor arms olive": {
@@ -20038,7 +20038,7 @@
       "stun": 0.7
     },
     "volume": 8000,
-    "cargo": 0,
+    "cargo": 2,
     "grade": "A"
   },
   "stitcher arms": {
@@ -21028,7 +21028,7 @@
       "stun": 0.7
     },
     "volume": 8000,
-    "cargo": 0,
+    "cargo": 2,
     "grade": "A"
   },
   "venture arms black": {
@@ -21622,7 +21622,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core aqua": {
@@ -21644,7 +21644,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core black": {
@@ -21666,7 +21666,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core blue": {
@@ -21688,7 +21688,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core crusader edition": {
@@ -21710,7 +21710,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core dark green": {
@@ -21732,7 +21732,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core dark red": {
@@ -21754,7 +21754,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core executive": {
@@ -21776,7 +21776,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core green": {
@@ -21798,7 +21798,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core grey": {
@@ -21820,7 +21820,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core hurston edition": {
@@ -21842,7 +21842,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core imperial": {
@@ -21864,7 +21864,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core olive": {
@@ -21886,7 +21886,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core orange": {
@@ -21908,7 +21908,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core platinum": {
@@ -21930,7 +21930,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core purple": {
@@ -21952,7 +21952,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core red": {
@@ -21974,7 +21974,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core seagreen": {
@@ -21996,7 +21996,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core sienna": {
@@ -22018,7 +22018,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core tan": {
@@ -22040,7 +22040,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core twilight": {
@@ -22062,7 +22062,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core violet": {
@@ -22084,7 +22084,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core white": {
@@ -22106,7 +22106,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp core yellow": {
@@ -22128,7 +22128,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core": {
@@ -22150,7 +22150,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core big boss": {
@@ -22172,7 +22172,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core exec": {
@@ -22194,7 +22194,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core justified": {
@@ -22216,7 +22216,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core red alert": {
@@ -22238,7 +22238,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core righteous": {
@@ -22260,7 +22260,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 core woodland": {
@@ -22282,7 +22282,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "ana core endro": {
@@ -22304,7 +22304,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "ana core wao": {
@@ -22326,7 +22326,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core": {
@@ -22348,7 +22348,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core jet": {
@@ -22370,7 +22370,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core maroon": {
@@ -22392,7 +22392,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core midnight sun": {
@@ -22414,7 +22414,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core moss camo": {
@@ -22436,7 +22436,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core sand": {
@@ -22458,7 +22458,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium core storm": {
@@ -22480,7 +22480,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "arden-sl core": {
@@ -22502,7 +22502,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core archangel": {
@@ -22524,7 +22524,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core balefire": {
@@ -22546,7 +22546,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core coramor edition \"fate\"": {
@@ -22568,7 +22568,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core coramor edition \"kismet\"": {
@@ -22590,7 +22590,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core red alert": {
@@ -22612,7 +22612,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl core rime": {
@@ -22634,7 +22634,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "aril core": {
@@ -22656,7 +22656,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aril core black cherry": {
@@ -22678,7 +22678,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aril core harvester": {
@@ -22700,7 +22700,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aril core hazard": {
@@ -22722,7 +22722,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aril core quicksilver": {
@@ -22744,7 +22744,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aril core red alert": {
@@ -22766,7 +22766,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core": {
@@ -22788,7 +22788,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core canuto": {
@@ -22810,7 +22810,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core chairman's club": {
@@ -22832,7 +22832,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 0,
     "grade": "A"
   },
   "artimex core elysium": {
@@ -22854,7 +22854,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core hurston dynamics executive security": {
@@ -22876,7 +22876,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core lodestone": {
@@ -22898,7 +22898,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core red alert": {
@@ -22920,7 +22920,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core starchaser": {
@@ -22942,7 +22942,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "artimex core wildwood": {
@@ -22964,7 +22964,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aves core": {
@@ -22986,7 +22986,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aves core epoque": {
@@ -23008,7 +23008,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aves shrike core": {
@@ -23030,7 +23030,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aves starchaser core": {
@@ -23052,7 +23052,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aves talon core": {
@@ -23074,7 +23074,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "aztalan core": {
@@ -23096,7 +23096,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "aztalan galena core": {
@@ -23118,7 +23118,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "aztalan tamarack core": {
@@ -23140,7 +23140,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "bokto core": {
@@ -23162,7 +23162,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "calico core desert": {
@@ -23184,7 +23184,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "calico core tactical": {
@@ -23206,7 +23206,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex armor core": {
@@ -23228,7 +23228,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carnifex armor core brassy": {
@@ -23250,7 +23250,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carnifex armor core bruiser": {
@@ -23272,7 +23272,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carnifex armor core shutdown": {
@@ -23294,7 +23294,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carnifex armor lucky break": {
@@ -23316,7 +23316,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carnifex core windfall": {
@@ -23338,7 +23338,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 0,
     "grade": "A"
   },
   "carrion core": {
@@ -23360,7 +23360,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "carrion core ashen": {
@@ -23382,7 +23382,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "carrion core maniac": {
@@ -23404,7 +23404,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "carrion core payback": {
@@ -23426,7 +23426,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "carrion core stalker": {
@@ -23448,7 +23448,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "chiron core": {
@@ -23470,7 +23470,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "chiron core aa support": {
@@ -23492,7 +23492,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 4,
     "grade": "A"
   },
   "chiron core heartthrob": {
@@ -23514,7 +23514,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 75,
     "grade": "A"
   },
   "citadel core": {
@@ -23536,7 +23536,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core base": {
@@ -23558,7 +23558,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core brimstone": {
@@ -23580,7 +23580,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core dark red": {
@@ -23602,7 +23602,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core earthwork": {
@@ -23624,7 +23624,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core icefall": {
@@ -23646,7 +23646,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core ignitor": {
@@ -23668,7 +23668,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core outcrop": {
@@ -23690,7 +23690,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel core roughshod": {
@@ -23712,7 +23712,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se core dark green": {
@@ -23734,7 +23734,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se core maroon": {
@@ -23756,7 +23756,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se core white": {
@@ -23778,7 +23778,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "clash core": {
@@ -23800,7 +23800,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "corbel core crush": {
@@ -23822,7 +23822,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel core halcyon": {
@@ -23844,7 +23844,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel core mire": {
@@ -23866,7 +23866,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel core patina": {
@@ -23888,7 +23888,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel core smolder": {
@@ -23910,7 +23910,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core clawed steel": {
@@ -23932,7 +23932,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core cobalt camo": {
@@ -23954,7 +23954,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core hunter camo": {
@@ -23976,7 +23976,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core jungle camo": {
@@ -23998,7 +23998,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core new dawn": {
@@ -24020,7 +24020,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor core true valor": {
@@ -24042,7 +24042,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core": {
@@ -24064,7 +24064,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core charcoal": {
@@ -24086,7 +24086,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core desert": {
@@ -24108,7 +24108,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core firestarter": {
@@ -24130,7 +24130,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core hailstorm": {
@@ -24152,7 +24152,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core scorched": {
@@ -24174,7 +24174,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core sunchaser": {
@@ -24196,7 +24196,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance core tactical": {
@@ -24218,7 +24218,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dust devil armor core": {
@@ -24240,7 +24240,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dust devil core epoque": {
@@ -24262,7 +24262,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 10500,
+    "cargo": 8,
     "grade": "A"
   },
   "dustup core desert": {
@@ -24284,7 +24284,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "dustup core firestarter": {
@@ -24306,7 +24306,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "dustup core scorched": {
@@ -24328,7 +24328,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "dustup core tactical": {
@@ -24350,7 +24350,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "fbl-8a core (modified)": {
@@ -24372,7 +24372,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a core arctic digital": {
@@ -24394,7 +24394,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a core desert digital": {
@@ -24416,7 +24416,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a core imperial red": {
@@ -24438,7 +24438,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a core justified": {
@@ -24460,7 +24460,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a core righteous": {
@@ -24482,7 +24482,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "field recon suit core": {
@@ -24504,7 +24504,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "gcd-army core": {
@@ -24526,7 +24526,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "geist armor core": {
@@ -24548,7 +24548,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor core asd edition": {
@@ -24570,7 +24570,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "geist armor core desert": {
@@ -24592,7 +24592,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor core epoque": {
@@ -24614,7 +24614,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "geist armor core forest": {
@@ -24636,7 +24636,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor core golden blossom": {
@@ -24658,7 +24658,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "geist armor core rogue": {
@@ -24680,7 +24680,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor core snow camo": {
@@ -24702,7 +24702,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "geist armor core whiteout": {
@@ -24724,7 +24724,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 2,
     "grade": "A"
   },
   "inquisitor core": {
@@ -24746,7 +24746,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core aqua": {
@@ -24768,7 +24768,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core black": {
@@ -24790,7 +24790,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core black steel": {
@@ -24812,7 +24812,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core blue": {
@@ -24834,7 +24834,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core brimstone": {
@@ -24856,7 +24856,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core dark green": {
@@ -24878,7 +24878,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core dark red": {
@@ -24900,7 +24900,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core earthwork": {
@@ -24922,7 +24922,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core green": {
@@ -24944,7 +24944,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core grey": {
@@ -24966,7 +24966,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core icefall": {
@@ -24988,7 +24988,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core ignitor": {
@@ -25010,7 +25010,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core imperial": {
@@ -25032,7 +25032,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core neon pink": {
@@ -25054,7 +25054,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core olive": {
@@ -25076,7 +25076,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core orange": {
@@ -25098,7 +25098,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core outcrop": {
@@ -25120,7 +25120,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core purple": {
@@ -25142,7 +25142,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core rager": {
@@ -25164,7 +25164,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core raven": {
@@ -25186,7 +25186,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core red": {
@@ -25208,7 +25208,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core roughshod": {
@@ -25230,7 +25230,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core seagreen": {
@@ -25252,7 +25252,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core sienna": {
@@ -25274,7 +25274,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core tan": {
@@ -25296,7 +25296,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core twilight": {
@@ -25318,7 +25318,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core violet": {
@@ -25340,7 +25340,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core white": {
@@ -25362,7 +25362,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "inquisitor core yellow": {
@@ -25384,7 +25384,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "item_name_srvl_combat_heavy_core_03_01_01": {
@@ -25406,7 +25406,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 0,
     "grade": "A"
   },
   "lynx core": {
@@ -25428,7 +25428,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core abyss": {
@@ -25450,7 +25450,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core aqua": {
@@ -25472,7 +25472,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core black": {
@@ -25494,7 +25494,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core bloodstorm": {
@@ -25516,7 +25516,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core blue": {
@@ -25538,7 +25538,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core cold steel": {
@@ -25560,7 +25560,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core dark green": {
@@ -25582,7 +25582,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core dark red": {
@@ -25604,7 +25604,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core draas": {
@@ -25626,7 +25626,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core embark": {
@@ -25648,7 +25648,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core ferrum": {
@@ -25670,7 +25670,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core firebrick": {
@@ -25692,7 +25692,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core frostline": {
@@ -25714,7 +25714,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core green": {
@@ -25736,7 +25736,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core grey": {
@@ -25758,7 +25758,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core imperial": {
@@ -25780,7 +25780,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core lichen": {
@@ -25802,7 +25802,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core olive": {
@@ -25824,7 +25824,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core orange": {
@@ -25846,7 +25846,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core pariah": {
@@ -25868,7 +25868,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core purple": {
@@ -25890,7 +25890,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core rager": {
@@ -25912,7 +25912,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core red": {
@@ -25934,7 +25934,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core sandstorm": {
@@ -25956,7 +25956,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core seagreen": {
@@ -25978,7 +25978,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core sienna": {
@@ -26000,7 +26000,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core tan": {
@@ -26022,7 +26022,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core twilight": {
@@ -26044,7 +26044,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core violet": {
@@ -26066,7 +26066,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core white": {
@@ -26088,7 +26088,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "lynx core yellow": {
@@ -26110,7 +26110,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "macflex core": {
@@ -26132,7 +26132,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core \"rucksack\"": {
@@ -26154,7 +26154,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core \"rust society\"": {
@@ -26176,7 +26176,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core aqua": {
@@ -26198,7 +26198,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core black": {
@@ -26220,7 +26220,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core blue": {
@@ -26242,7 +26242,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core dark green": {
@@ -26264,7 +26264,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core dark red": {
@@ -26286,7 +26286,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core green": {
@@ -26308,7 +26308,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core grey": {
@@ -26330,7 +26330,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core imperial": {
@@ -26352,7 +26352,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core olive": {
@@ -26374,7 +26374,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core orange": {
@@ -26396,7 +26396,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core purple": {
@@ -26418,7 +26418,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core red": {
@@ -26440,7 +26440,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core seagreen": {
@@ -26462,7 +26462,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core sienna": {
@@ -26484,7 +26484,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core tan": {
@@ -26506,7 +26506,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core twilight": {
@@ -26528,7 +26528,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core violet": {
@@ -26550,7 +26550,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core white": {
@@ -26572,7 +26572,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex core yellow": {
@@ -26594,7 +26594,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core": {
@@ -26616,7 +26616,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core badland": {
@@ -26638,7 +26638,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core crucible": {
@@ -26660,7 +26660,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core lodestone": {
@@ -26682,7 +26682,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core lowland": {
@@ -26704,7 +26704,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit core nomad": {
@@ -26726,7 +26726,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "morozov-sh core": {
@@ -26748,7 +26748,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core aftershock": {
@@ -26770,7 +26770,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core brushdrift": {
@@ -26792,7 +26792,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core crusader edition": {
@@ -26814,7 +26814,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core iceflow": {
@@ -26836,7 +26836,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core red alert": {
@@ -26858,7 +26858,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core redshift": {
@@ -26880,7 +26880,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core smokescreen": {
@@ -26902,7 +26902,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core snowdrift": {
@@ -26924,7 +26924,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core spite": {
@@ -26946,7 +26946,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core spitfire": {
@@ -26968,7 +26968,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core terracotta": {
@@ -26990,7 +26990,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core terrene": {
@@ -27012,7 +27012,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core thule": {
@@ -27034,7 +27034,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh core vesper": {
@@ -27056,7 +27056,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh-i core gideon": {
@@ -27078,7 +27078,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh-i core lifeforce": {
@@ -27100,7 +27100,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "morozov-sh-i core pyrotechnic": {
@@ -27122,7 +27122,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "morozov-sh-i core pyrotechnic horizon": {
@@ -27144,7 +27144,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "orc-mkv core": {
@@ -27166,7 +27166,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core aqua": {
@@ -27188,7 +27188,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core black": {
@@ -27210,7 +27210,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core blue": {
@@ -27232,7 +27232,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core covalex edition": {
@@ -27254,7 +27254,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core crusader edition": {
@@ -27276,7 +27276,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core cry-astro edition": {
@@ -27298,7 +27298,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core dark green": {
@@ -27320,7 +27320,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core dark red": {
@@ -27342,7 +27342,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core desert": {
@@ -27364,7 +27364,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core executive": {
@@ -27386,7 +27386,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core green": {
@@ -27408,7 +27408,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core grey": {
@@ -27430,7 +27430,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core greycat edition": {
@@ -27452,7 +27452,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core hurston edition": {
@@ -27474,7 +27474,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core imperial": {
@@ -27496,7 +27496,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core microtech edition": {
@@ -27518,7 +27518,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core orange": {
@@ -27540,7 +27540,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core purple": {
@@ -27562,7 +27562,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core red": {
@@ -27584,7 +27584,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core sakura sun edition": {
@@ -27606,7 +27606,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core scorched": {
@@ -27628,7 +27628,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core seagreen": {
@@ -27650,7 +27650,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core sienna": {
@@ -27672,7 +27672,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core tan": {
@@ -27694,7 +27694,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core twilight": {
@@ -27716,7 +27716,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core violet": {
@@ -27738,7 +27738,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core white": {
@@ -27760,7 +27760,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkv core yellow": {
@@ -27782,7 +27782,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkx core": {
@@ -27804,7 +27804,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkx core arctic": {
@@ -27826,7 +27826,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core autumn": {
@@ -27848,7 +27848,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core desert": {
@@ -27870,7 +27870,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core iceborn": {
@@ -27892,7 +27892,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core justified": {
@@ -27914,7 +27914,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkx core nightfire": {
@@ -27936,7 +27936,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core righteous": {
@@ -27958,7 +27958,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "orc-mkx core singularity": {
@@ -27980,7 +27980,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core twilight": {
@@ -28002,7 +28002,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "orc-mkx core woodland": {
@@ -28024,7 +28024,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "overlord core cardinal": {
@@ -28046,7 +28046,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core dust storm": {
@@ -28068,7 +28068,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core flashback": {
@@ -28090,7 +28090,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core gilded": {
@@ -28112,7 +28112,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core mirador": {
@@ -28134,7 +28134,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core polarity": {
@@ -28156,7 +28156,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core predator": {
@@ -28178,7 +28178,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core riptide": {
@@ -28200,7 +28200,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core skimmer": {
@@ -28222,7 +28222,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core stinger": {
@@ -28244,7 +28244,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core supernova": {
@@ -28266,7 +28266,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core switchback": {
@@ -28288,7 +28288,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "overlord core tempered": {
@@ -28310,7 +28310,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 12000,
+    "cargo": 12,
     "grade": "A"
   },
   "pab-1 core": {
@@ -28332,7 +28332,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core aqua": {
@@ -28354,7 +28354,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core black": {
@@ -28376,7 +28376,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core blue": {
@@ -28398,7 +28398,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core covalex edition": {
@@ -28420,7 +28420,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core crusader edition": {
@@ -28442,7 +28442,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core cry-astro edition": {
@@ -28464,7 +28464,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core dark green": {
@@ -28486,7 +28486,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core dark red": {
@@ -28508,7 +28508,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core desert": {
@@ -28530,7 +28530,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core executive": {
@@ -28552,7 +28552,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core green": {
@@ -28574,7 +28574,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core grey": {
@@ -28596,7 +28596,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core greycat edition": {
@@ -28618,7 +28618,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core imperial": {
@@ -28640,7 +28640,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core orange": {
@@ -28662,7 +28662,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core purple": {
@@ -28684,7 +28684,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core red": {
@@ -28706,7 +28706,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core sakura sun edition": {
@@ -28728,7 +28728,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core seagreen": {
@@ -28750,7 +28750,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core sienna": {
@@ -28772,7 +28772,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core tan": {
@@ -28794,7 +28794,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core twilight": {
@@ -28816,7 +28816,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core violet": {
@@ -28838,7 +28838,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core white": {
@@ -28860,7 +28860,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 core yellow": {
@@ -28882,7 +28882,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 4000,
+    "cargo": 2,
     "grade": "A"
   },
   "palatino core": {
@@ -28904,7 +28904,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core daystar": {
@@ -28926,7 +28926,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core deadlock": {
@@ -28948,7 +28948,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core mark i": {
@@ -28970,7 +28970,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core metropolis": {
@@ -28992,7 +28992,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core moonfall": {
@@ -29014,7 +29014,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core necropolis": {
@@ -29036,7 +29036,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core shadow gild": {
@@ -29058,7 +29058,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino core sunstone": {
@@ -29080,7 +29080,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "piecemeal armor core": {
@@ -29102,7 +29102,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor core grey": {
@@ -29124,7 +29124,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor core olive": {
@@ -29146,7 +29146,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "sol-iii core aviator": {
@@ -29168,7 +29168,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "sol-iii core bombardier": {
@@ -29190,7 +29190,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "stitcher core": {
@@ -29212,7 +29212,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 7500,
+    "cargo": 6.4,
     "grade": "A"
   },
   "strata core": {
@@ -29234,7 +29234,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core arccorp black": {
@@ -29256,7 +29256,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core arccorp edition": {
@@ -29278,7 +29278,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core crusader black": {
@@ -29300,7 +29300,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core crusader edition": {
@@ -29322,7 +29322,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core greycat edition": {
@@ -29344,7 +29344,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core heatwave": {
@@ -29366,7 +29366,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core hurston black": {
@@ -29388,7 +29388,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core hurston edition": {
@@ -29410,7 +29410,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core microtech black": {
@@ -29432,7 +29432,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core microtech edition": {
@@ -29454,7 +29454,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core pyrotechnic edition": {
@@ -29476,7 +29476,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "strata core shubin edition": {
@@ -29498,7 +29498,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 15000,
+    "cargo": 15,
     "grade": "A"
   },
   "testudo core": {
@@ -29520,7 +29520,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core clanguard": {
@@ -29542,7 +29542,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core combustion": {
@@ -29564,7 +29564,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core deathblow": {
@@ -29586,7 +29586,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core disrupt camo": {
@@ -29608,7 +29608,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core earthshake": {
@@ -29630,7 +29630,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core nightveil": {
@@ -29652,7 +29652,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "testudo core turfwar": {
@@ -29674,7 +29674,7 @@
       "stun": 0.55
     },
     "volume": 42000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "truedef-pro core": {
@@ -29696,7 +29696,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core aqua/black": {
@@ -29718,7 +29718,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core base": {
@@ -29740,7 +29740,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/aqua/silver": {
@@ -29762,7 +29762,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/gold/silver": {
@@ -29784,7 +29784,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/grey": {
@@ -29806,7 +29806,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/grey/red": {
@@ -29828,7 +29828,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/pink/purple": {
@@ -29850,7 +29850,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/silver": {
@@ -29872,7 +29872,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/silver/blue": {
@@ -29894,7 +29894,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/silver/green": {
@@ -29916,7 +29916,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/silver/yellow": {
@@ -29938,7 +29938,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core black/white/violet": {
@@ -29960,7 +29960,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core cdf": {
@@ -29982,7 +29982,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core gold/grey/black": {
@@ -30004,7 +30004,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core grey/green": {
@@ -30026,7 +30026,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core red/silver": {
@@ -30048,7 +30048,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core silver/gold/grey": {
@@ -30070,7 +30070,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core white/silver/grey": {
@@ -30092,7 +30092,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core yellow/black": {
@@ -30114,7 +30114,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro core yellow/grey": {
@@ -30136,7 +30136,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core": {
@@ -30158,7 +30158,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core \"rust society\"": {
@@ -30180,7 +30180,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core aqua": {
@@ -30202,7 +30202,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core ascension": {
@@ -30224,7 +30224,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core black": {
@@ -30246,7 +30246,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core blue": {
@@ -30268,7 +30268,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core dark green": {
@@ -30290,7 +30290,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core dark red": {
@@ -30312,7 +30312,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core envy": {
@@ -30334,7 +30334,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 0,
     "grade": "A"
   },
   "venture core executive": {
@@ -30356,7 +30356,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core green": {
@@ -30378,7 +30378,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core grey": {
@@ -30400,7 +30400,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core imperial": {
@@ -30422,7 +30422,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core lovestruck": {
@@ -30444,7 +30444,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core olive": {
@@ -30466,7 +30466,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core orange": {
@@ -30488,7 +30488,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core pathfinder": {
@@ -30510,7 +30510,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core purple": {
@@ -30532,7 +30532,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core red": {
@@ -30554,7 +30554,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core seagreen": {
@@ -30576,7 +30576,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core sienna": {
@@ -30598,7 +30598,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core starcrossed": {
@@ -30620,7 +30620,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core tan": {
@@ -30642,7 +30642,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core twilight": {
@@ -30664,7 +30664,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core violet": {
@@ -30686,7 +30686,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core voyager": {
@@ -30708,7 +30708,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core white": {
@@ -30730,7 +30730,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture core yellow": {
@@ -30752,7 +30752,7 @@
       "stun": 0.7
     },
     "volume": 34000,
-    "cargo": 9000,
+    "cargo": 2,
     "grade": "A"
   },
   "wrecker core ashen": {
@@ -30774,7 +30774,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "wrecker core payback": {
@@ -30796,7 +30796,7 @@
       "stun": 0.4
     },
     "volume": 55000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs aqua": {
@@ -30818,7 +30818,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs black": {
@@ -30840,7 +30840,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs blue": {
@@ -30862,7 +30862,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs crusader edition": {
@@ -30884,7 +30884,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs dark green": {
@@ -30906,7 +30906,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs dark red": {
@@ -30928,7 +30928,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs executive": {
@@ -30950,7 +30950,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs green": {
@@ -30972,7 +30972,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs grey": {
@@ -30994,7 +30994,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs hurston edition": {
@@ -31016,7 +31016,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs imperial": {
@@ -31038,7 +31038,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs olive": {
@@ -31060,7 +31060,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs orange": {
@@ -31082,7 +31082,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs platinum": {
@@ -31104,7 +31104,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs purple": {
@@ -31126,7 +31126,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs red": {
@@ -31148,7 +31148,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs seagreen": {
@@ -31170,7 +31170,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs sienna": {
@@ -31192,7 +31192,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs tan": {
@@ -31214,7 +31214,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs twilight": {
@@ -31236,7 +31236,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs violet": {
@@ -31258,7 +31258,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs white": {
@@ -31280,7 +31280,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs woodland": {
@@ -31302,7 +31302,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp legs yellow": {
@@ -31324,7 +31324,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs": {
@@ -31346,7 +31346,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs big boss": {
@@ -31368,7 +31368,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs exec": {
@@ -31390,7 +31390,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs justified": {
@@ -31412,7 +31412,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs red alert": {
@@ -31434,7 +31434,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs rigteous": {
@@ -31456,7 +31456,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "adp-mk4 legs woodland": {
@@ -31478,7 +31478,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "ana legs endro": {
@@ -31500,7 +31500,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "ana legs wao": {
@@ -31522,7 +31522,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs": {
@@ -31544,7 +31544,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs jet": {
@@ -31566,7 +31566,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs maroon": {
@@ -31588,7 +31588,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs midnight sun": {
@@ -31610,7 +31610,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs moss camo": {
@@ -31632,7 +31632,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs sand": {
@@ -31654,7 +31654,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "antium legs storm": {
@@ -31676,7 +31676,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "arden-sl legs": {
@@ -31698,7 +31698,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs archangel": {
@@ -31720,7 +31720,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs balefire": {
@@ -31742,7 +31742,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs coramor edition \"fate\"": {
@@ -31764,7 +31764,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs coramor edition \"kismet\"": {
@@ -31786,7 +31786,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs red alert": {
@@ -31808,7 +31808,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "arden-sl legs rime": {
@@ -31830,7 +31830,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "aril legs": {
@@ -31852,7 +31852,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "aril legs black cherry": {
@@ -31874,7 +31874,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "aril legs harvester": {
@@ -31896,7 +31896,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "aril legs hazard": {
@@ -31918,7 +31918,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "aril legs quicksilver": {
@@ -31940,7 +31940,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "aril legs red alert": {
@@ -31962,7 +31962,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs": {
@@ -31984,7 +31984,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs canuto": {
@@ -32006,7 +32006,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs chairman's club": {
@@ -32028,7 +32028,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 0,
     "grade": "A"
   },
   "artimex legs elysium": {
@@ -32050,7 +32050,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs hurston dynamics executive security": {
@@ -32072,7 +32072,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs lodestone": {
@@ -32094,7 +32094,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs red alert": {
@@ -32116,7 +32116,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs starchaser": {
@@ -32138,7 +32138,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "artimex legs wildwood": {
@@ -32160,7 +32160,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "aves legs": {
@@ -32182,7 +32182,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "aves legs epoque": {
@@ -32204,7 +32204,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "aves shrike legs": {
@@ -32226,7 +32226,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "aves starchaser legs": {
@@ -32248,7 +32248,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "aves talon legs": {
@@ -32270,7 +32270,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "aztalan galena legs": {
@@ -32292,7 +32292,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "aztalan legs": {
@@ -32314,7 +32314,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "aztalan tamarack legs": {
@@ -32336,7 +32336,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "bokto legs": {
@@ -32358,7 +32358,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "calico legs": {
@@ -32380,7 +32380,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "calico legs desert": {
@@ -32402,7 +32402,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "calico legs tactical": {
@@ -32424,7 +32424,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex armor legs": {
@@ -32446,7 +32446,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex armor legs brassy": {
@@ -32468,7 +32468,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex armor legs bruiser": {
@@ -32490,7 +32490,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex armor legs shutdown": {
@@ -32512,7 +32512,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex pants lucky break": {
@@ -32534,7 +32534,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carnifex pants windfall": {
@@ -32556,7 +32556,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 2,
     "grade": "A"
   },
   "carrion legs": {
@@ -32578,7 +32578,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "carrion legs ashen": {
@@ -32600,7 +32600,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "carrion legs maniac": {
@@ -32622,7 +32622,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "carrion legs payback": {
@@ -32644,7 +32644,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "carrion legs stalker": {
@@ -32666,7 +32666,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "chiron legs": {
@@ -32688,7 +32688,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "chiron legs aa support": {
@@ -32710,7 +32710,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "chiron legs heartthrob": {
@@ -32732,7 +32732,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 75,
     "grade": "A"
   },
   "citadel legs base": {
@@ -32754,7 +32754,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs brimstone": {
@@ -32776,7 +32776,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs dark red": {
@@ -32798,7 +32798,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs earthwork": {
@@ -32820,7 +32820,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs icefall": {
@@ -32842,7 +32842,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs ignitor": {
@@ -32864,7 +32864,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs outcrop": {
@@ -32886,7 +32886,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel legs roughshod": {
@@ -32908,7 +32908,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se legs dark green": {
@@ -32930,7 +32930,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se legs maroon": {
@@ -32952,7 +32952,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "citadel-se legs white": {
@@ -32974,7 +32974,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "clash legs": {
@@ -32996,7 +32996,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "corbel legs crush": {
@@ -33018,7 +33018,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel legs halcyon": {
@@ -33040,7 +33040,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel legs mire": {
@@ -33062,7 +33062,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel legs patina": {
@@ -33084,7 +33084,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "corbel legs smolder": {
@@ -33106,7 +33106,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs clawed steel": {
@@ -33128,7 +33128,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs cobalt camo": {
@@ -33150,7 +33150,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs hunter camo": {
@@ -33172,7 +33172,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs jungle camo": {
@@ -33194,7 +33194,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs new dawn": {
@@ -33216,7 +33216,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dcp armor legs true valor": {
@@ -33238,7 +33238,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs": {
@@ -33260,7 +33260,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs charcoal": {
@@ -33282,7 +33282,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs desert": {
@@ -33304,7 +33304,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs firestarter": {
@@ -33326,7 +33326,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs hailstorm": {
@@ -33348,7 +33348,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs sunchaser": {
@@ -33370,7 +33370,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "defiance legs tactical": {
@@ -33392,7 +33392,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dust devil armor legs": {
@@ -33414,7 +33414,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dust devil legs epoque": {
@@ -33436,7 +33436,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 6500,
+    "cargo": 8,
     "grade": "A"
   },
   "dustup legs desert": {
@@ -33458,7 +33458,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "dustup legs tactical": {
@@ -33480,7 +33480,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "fbl-8a legs (modified)": {
@@ -33502,7 +33502,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a legs arctic digital": {
@@ -33524,7 +33524,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a legs desert digital": {
@@ -33546,7 +33546,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a legs imperial red": {
@@ -33568,7 +33568,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a legs justified": {
@@ -33590,7 +33590,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "fbl-8a legs righteous": {
@@ -33612,7 +33612,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "field recon suit legs": {
@@ -33634,7 +33634,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "gcd-army legs": {
@@ -33656,7 +33656,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "geist armor legs": {
@@ -33678,7 +33678,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor legs asd edition": {
@@ -33700,7 +33700,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "geist armor legs desert": {
@@ -33722,7 +33722,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor legs epoque": {
@@ -33744,7 +33744,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "geist armor legs forest": {
@@ -33766,7 +33766,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor legs golden blossom": {
@@ -33788,7 +33788,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "geist armor legs rogue": {
@@ -33810,7 +33810,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "geist armor legs snow camo": {
@@ -33832,7 +33832,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2.5,
     "grade": "A"
   },
   "geist armor legs whiteout": {
@@ -33854,7 +33854,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "inquisitor legs": {
@@ -33876,7 +33876,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs aqua": {
@@ -33898,7 +33898,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs base": {
@@ -33920,7 +33920,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs black": {
@@ -33942,7 +33942,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs black steel": {
@@ -33964,7 +33964,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs blue": {
@@ -33986,7 +33986,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs brimstone": {
@@ -34008,7 +34008,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs dark green": {
@@ -34030,7 +34030,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs dark red": {
@@ -34052,7 +34052,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs earthwork": {
@@ -34074,7 +34074,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs green": {
@@ -34096,7 +34096,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs grey": {
@@ -34118,7 +34118,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs icefall": {
@@ -34140,7 +34140,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs ignitor": {
@@ -34162,7 +34162,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs imperial": {
@@ -34184,7 +34184,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs neon pink": {
@@ -34206,7 +34206,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs olive": {
@@ -34228,7 +34228,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs orange": {
@@ -34250,7 +34250,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs outcrop": {
@@ -34272,7 +34272,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs purple": {
@@ -34294,7 +34294,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs rager": {
@@ -34316,7 +34316,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs raven": {
@@ -34338,7 +34338,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs red": {
@@ -34360,7 +34360,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs roughshod": {
@@ -34382,7 +34382,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs scorched": {
@@ -34404,7 +34404,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs seagreen": {
@@ -34426,7 +34426,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs sienna": {
@@ -34448,7 +34448,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs tan": {
@@ -34470,7 +34470,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs twilight": {
@@ -34492,7 +34492,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs violet": {
@@ -34514,7 +34514,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs white": {
@@ -34536,7 +34536,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "inquisitor legs yellow": {
@@ -34558,7 +34558,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 5500,
+    "cargo": 4,
     "grade": "A"
   },
   "item_name_srvl_combat_heavy_legs_03_01_01": {
@@ -34580,7 +34580,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 0,
     "grade": "A"
   },
   "lynx legs abyss": {
@@ -34602,7 +34602,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs aqua": {
@@ -34624,7 +34624,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs black": {
@@ -34646,7 +34646,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs bloodstorm": {
@@ -34668,7 +34668,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs blue": {
@@ -34690,7 +34690,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs cold steel": {
@@ -34712,7 +34712,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs dark green": {
@@ -34734,7 +34734,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs dark red": {
@@ -34756,7 +34756,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs draas": {
@@ -34778,7 +34778,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs embark": {
@@ -34800,7 +34800,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs ferrum": {
@@ -34822,7 +34822,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs firebrick": {
@@ -34844,7 +34844,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs frostline": {
@@ -34866,7 +34866,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs green": {
@@ -34888,7 +34888,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs grey": {
@@ -34910,7 +34910,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs imperial": {
@@ -34932,7 +34932,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs lichen": {
@@ -34954,7 +34954,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs olive": {
@@ -34976,7 +34976,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs orange": {
@@ -34998,7 +34998,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs pariah": {
@@ -35020,7 +35020,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs purple": {
@@ -35042,7 +35042,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs rager": {
@@ -35064,7 +35064,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs red": {
@@ -35086,7 +35086,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs sandstorm": {
@@ -35108,7 +35108,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs seagreen": {
@@ -35130,7 +35130,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs sienna": {
@@ -35152,7 +35152,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs tan": {
@@ -35174,7 +35174,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs twilight": {
@@ -35196,7 +35196,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs violet": {
@@ -35218,7 +35218,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs white": {
@@ -35240,7 +35240,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs yellow": {
@@ -35262,7 +35262,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "lynx legs": {
@@ -35284,7 +35284,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 5000,
+    "cargo": 5,
     "grade": "A"
   },
   "macflex legs": {
@@ -35306,7 +35306,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs \"rust society\"": {
@@ -35328,7 +35328,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs aqua": {
@@ -35350,7 +35350,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs black": {
@@ -35372,7 +35372,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs blue": {
@@ -35394,7 +35394,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs dark green": {
@@ -35416,7 +35416,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs dark red": {
@@ -35438,7 +35438,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs green": {
@@ -35460,7 +35460,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs grey": {
@@ -35482,7 +35482,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs imperial": {
@@ -35504,7 +35504,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs olive": {
@@ -35526,7 +35526,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs orange": {
@@ -35548,7 +35548,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs purple": {
@@ -35570,7 +35570,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs red": {
@@ -35592,7 +35592,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs seagreen": {
@@ -35614,7 +35614,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs sienna": {
@@ -35636,7 +35636,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs tan": {
@@ -35658,7 +35658,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs twilight": {
@@ -35680,7 +35680,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs violet": {
@@ -35702,7 +35702,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs white": {
@@ -35724,7 +35724,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "macflex legs yellow": {
@@ -35746,7 +35746,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs": {
@@ -35768,7 +35768,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs badland": {
@@ -35790,7 +35790,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs crucible": {
@@ -35812,7 +35812,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs lodestone": {
@@ -35834,7 +35834,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs lowland": {
@@ -35856,7 +35856,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "microid battle suit legs nomad": {
@@ -35878,7 +35878,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "morozov-sh legs": {
@@ -35900,7 +35900,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs aftershock": {
@@ -35922,7 +35922,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs brushdrift": {
@@ -35944,7 +35944,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs crusader edition": {
@@ -35966,7 +35966,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs iceflow": {
@@ -35988,7 +35988,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs red alert": {
@@ -36010,7 +36010,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs redshift": {
@@ -36032,7 +36032,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs scorched": {
@@ -36054,7 +36054,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs smokescreen": {
@@ -36076,7 +36076,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs snowdrift": {
@@ -36098,7 +36098,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs spite": {
@@ -36120,7 +36120,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs spitfire": {
@@ -36142,7 +36142,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs terracotta": {
@@ -36164,7 +36164,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs terrene": {
@@ -36186,7 +36186,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs thule": {
@@ -36208,7 +36208,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh legs vesper": {
@@ -36230,7 +36230,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh-i legs gideon": {
@@ -36252,7 +36252,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 0,
     "grade": "A"
   },
   "morozov-sh-i legs lifeforce": {
@@ -36274,7 +36274,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "morozov-sh-i legs pyrotechnic": {
@@ -36296,7 +36296,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "morozov-sh-i legs pyrotechnic horizon": {
@@ -36318,7 +36318,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "orc-mkv legs": {
@@ -36340,7 +36340,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs aqua": {
@@ -36362,7 +36362,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs black": {
@@ -36384,7 +36384,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs blue": {
@@ -36406,7 +36406,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs covalex edition": {
@@ -36428,7 +36428,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs crusader edition": {
@@ -36450,7 +36450,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs cry-astro edition": {
@@ -36472,7 +36472,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs dark green": {
@@ -36494,7 +36494,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs dark red": {
@@ -36516,7 +36516,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs desert": {
@@ -36538,7 +36538,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs executive": {
@@ -36560,7 +36560,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs green": {
@@ -36582,7 +36582,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs grey": {
@@ -36604,7 +36604,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs greycat edition": {
@@ -36626,7 +36626,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs hurston edition": {
@@ -36648,7 +36648,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs imperial": {
@@ -36670,7 +36670,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs orange": {
@@ -36692,7 +36692,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs purple": {
@@ -36714,7 +36714,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs red": {
@@ -36736,7 +36736,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs sakura sun edition": {
@@ -36758,7 +36758,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs scorched": {
@@ -36780,7 +36780,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs seagreen": {
@@ -36802,7 +36802,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs sienna": {
@@ -36824,7 +36824,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs tan": {
@@ -36846,7 +36846,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs twilight": {
@@ -36868,7 +36868,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs violet": {
@@ -36890,7 +36890,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs white": {
@@ -36912,7 +36912,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkv legs yellow": {
@@ -36934,7 +36934,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs": {
@@ -36956,7 +36956,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs arctic": {
@@ -36978,7 +36978,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs autumn": {
@@ -37000,7 +37000,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs desert": {
@@ -37022,7 +37022,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs iceborn": {
@@ -37044,7 +37044,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs justified": {
@@ -37066,7 +37066,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs nightfire": {
@@ -37088,7 +37088,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs righteous": {
@@ -37110,7 +37110,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs singularity": {
@@ -37132,7 +37132,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs twilight": {
@@ -37154,7 +37154,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "orc-mkx legs woodland": {
@@ -37176,7 +37176,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "overlord legs cardinal": {
@@ -37198,7 +37198,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs dust storm": {
@@ -37220,7 +37220,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs flashback": {
@@ -37242,7 +37242,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs gilded": {
@@ -37264,7 +37264,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs mirador": {
@@ -37286,7 +37286,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs polarity": {
@@ -37308,7 +37308,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs predator": {
@@ -37330,7 +37330,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs riptide": {
@@ -37352,7 +37352,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs skimmer": {
@@ -37374,7 +37374,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs stinger": {
@@ -37396,7 +37396,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs supernova": {
@@ -37418,7 +37418,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs switchback": {
@@ -37440,7 +37440,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "overlord legs tempered": {
@@ -37462,7 +37462,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 7500,
+    "cargo": 7.5,
     "grade": "A"
   },
   "pab-1 legs": {
@@ -37484,7 +37484,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs aqua": {
@@ -37506,7 +37506,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs black": {
@@ -37528,7 +37528,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs blue": {
@@ -37550,7 +37550,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs covalex edition": {
@@ -37572,7 +37572,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs crusader edition": {
@@ -37594,7 +37594,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs cry-astro edition": {
@@ -37616,7 +37616,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs dark green": {
@@ -37638,7 +37638,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs dark red": {
@@ -37660,7 +37660,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs desert": {
@@ -37682,7 +37682,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs executive": {
@@ -37704,7 +37704,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs green": {
@@ -37726,7 +37726,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs grey": {
@@ -37748,7 +37748,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs greycat edition": {
@@ -37770,7 +37770,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs imperial": {
@@ -37792,7 +37792,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs orange": {
@@ -37814,7 +37814,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs purple": {
@@ -37836,7 +37836,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs red": {
@@ -37858,7 +37858,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs sakura sun edition": {
@@ -37880,7 +37880,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs seagreen": {
@@ -37902,7 +37902,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs sienna": {
@@ -37924,7 +37924,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs tan": {
@@ -37946,7 +37946,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs twilight": {
@@ -37968,7 +37968,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs violet": {
@@ -37990,7 +37990,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs white": {
@@ -38012,7 +38012,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "pab-1 legs yellow": {
@@ -38034,7 +38034,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2500,
+    "cargo": 2,
     "grade": "A"
   },
   "palatino legs": {
@@ -38056,7 +38056,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs daystar": {
@@ -38078,7 +38078,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs deadlock": {
@@ -38100,7 +38100,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs mark i": {
@@ -38122,7 +38122,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs metropolis": {
@@ -38144,7 +38144,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs moonfall": {
@@ -38166,7 +38166,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs necropolis": {
@@ -38188,7 +38188,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs shadow gild": {
@@ -38210,7 +38210,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "palatino legs sunstone": {
@@ -38232,7 +38232,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "piecemeal armor legs": {
@@ -38254,7 +38254,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor legs grey": {
@@ -38276,7 +38276,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "piecemeal armor legs olive": {
@@ -38298,7 +38298,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 2000,
+    "cargo": 2,
     "grade": "A"
   },
   "stitcher legs": {
@@ -38320,7 +38320,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4500,
+    "cargo": 4,
     "grade": "A"
   },
   "strata legs": {
@@ -38342,7 +38342,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs arccorp black": {
@@ -38364,7 +38364,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs arccorp edition": {
@@ -38386,7 +38386,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs crusader black": {
@@ -38408,7 +38408,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs crusader edition": {
@@ -38430,7 +38430,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs greycat edition": {
@@ -38452,7 +38452,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs heatwave": {
@@ -38474,7 +38474,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs hurston black": {
@@ -38496,7 +38496,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs hurston edition": {
@@ -38518,7 +38518,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs microtech black": {
@@ -38540,7 +38540,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs microtech edition": {
@@ -38562,7 +38562,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs pyrotechnic edition": {
@@ -38584,7 +38584,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "strata legs shubin edition": {
@@ -38606,7 +38606,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 10000,
+    "cargo": 10,
     "grade": "A"
   },
   "testudo legs": {
@@ -38628,7 +38628,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs clanguard": {
@@ -38650,7 +38650,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs combustion": {
@@ -38672,7 +38672,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs deathblow": {
@@ -38694,7 +38694,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs disrupt camo": {
@@ -38716,7 +38716,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs earthshake": {
@@ -38738,7 +38738,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs nightveil": {
@@ -38760,7 +38760,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "testudo legs turfwar": {
@@ -38782,7 +38782,7 @@
       "stun": 0.55
     },
     "volume": 68000,
-    "cargo": 4000,
+    "cargo": 4,
     "grade": "A"
   },
   "trudef-pro legs scorched": {
@@ -38804,7 +38804,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs": {
@@ -38826,7 +38826,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs aqua/black": {
@@ -38848,7 +38848,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/aqua/silver": {
@@ -38870,7 +38870,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/gold/silver": {
@@ -38892,7 +38892,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/grey": {
@@ -38914,7 +38914,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/grey/red": {
@@ -38936,7 +38936,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/pink/purple": {
@@ -38958,7 +38958,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/silver": {
@@ -38980,7 +38980,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/silver/blue": {
@@ -39002,7 +39002,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/silver/green": {
@@ -39024,7 +39024,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/silver/yellow": {
@@ -39046,7 +39046,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs black/white/violet": {
@@ -39068,7 +39068,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs gold/grey/black": {
@@ -39090,7 +39090,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs grey/green": {
@@ -39112,7 +39112,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs red/silver": {
@@ -39134,7 +39134,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs silver/gold/grey": {
@@ -39156,7 +39156,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs white/silver/grey": {
@@ -39178,7 +39178,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs yellow/black": {
@@ -39200,7 +39200,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "truedef-pro legs yellow/grey": {
@@ -39222,7 +39222,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 3000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs": {
@@ -39244,7 +39244,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs \"rust society\"": {
@@ -39266,7 +39266,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs aqua": {
@@ -39288,7 +39288,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs ascension": {
@@ -39310,7 +39310,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs black": {
@@ -39332,7 +39332,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs blue": {
@@ -39354,7 +39354,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs dark green": {
@@ -39376,7 +39376,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs dark red": {
@@ -39398,7 +39398,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs envy": {
@@ -39420,7 +39420,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs executive": {
@@ -39442,7 +39442,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs green": {
@@ -39464,7 +39464,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs grey": {
@@ -39486,7 +39486,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs imperial": {
@@ -39508,7 +39508,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs lovestruck": {
@@ -39530,7 +39530,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs olive": {
@@ -39552,7 +39552,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs orange": {
@@ -39574,7 +39574,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs pathfinder": {
@@ -39596,7 +39596,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs purple": {
@@ -39618,7 +39618,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs red": {
@@ -39640,7 +39640,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs seagreen": {
@@ -39662,7 +39662,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs sienna": {
@@ -39684,7 +39684,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs starcrossed": {
@@ -39706,7 +39706,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs tan": {
@@ -39728,7 +39728,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs twilight": {
@@ -39750,7 +39750,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs violet": {
@@ -39772,7 +39772,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs voyager": {
@@ -39794,7 +39794,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs white": {
@@ -39816,7 +39816,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "venture legs yellow": {
@@ -39838,7 +39838,7 @@
       "stun": 0.7
     },
     "volume": 36000,
-    "cargo": 6000,
+    "cargo": 2,
     "grade": "A"
   },
   "wrecker legs ashen": {
@@ -39860,7 +39860,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "wrecker legs payback": {
@@ -39882,7 +39882,7 @@
       "stun": 0.4
     },
     "volume": 71000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "arden-cl backpack": {
@@ -39904,7 +39904,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack archangel": {
@@ -39926,7 +39926,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack balefire": {
@@ -39948,7 +39948,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack chairman's club": {
@@ -39970,7 +39970,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack elysium": {
@@ -39992,7 +39992,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack red alert": {
@@ -40014,7 +40014,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "arden-cl backpack rime": {
@@ -40036,7 +40036,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 40,
     "grade": "A"
   },
   "aril backpack": {
@@ -40058,7 +40058,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "aril backpack black cherry": {
@@ -40080,7 +40080,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "aril backpack harvester": {
@@ -40102,7 +40102,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "aril backpack hazard": {
@@ -40124,7 +40124,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "aril backpack quicksilver": {
@@ -40146,7 +40146,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "aril backpack red alert": {
@@ -40168,7 +40168,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 85,
     "grade": "A"
   },
   "cataby backpack lifeforce edition": {
@@ -40190,7 +40190,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 75,
     "grade": "A"
   },
   "cataby backpack mpuv-1c edition": {
@@ -40212,7 +40212,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 75,
     "grade": "A"
   },
   "chiron backpack": {
@@ -40234,7 +40234,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 75,
     "grade": "A"
   },
   "chiron backpack heartthrob": {
@@ -40256,7 +40256,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 75,
     "grade": "A"
   },
   "csp-68h backpack": {
@@ -40278,7 +40278,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "csp-68h backpack red alert": {
@@ -40300,7 +40300,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "csp-68l backpack": {
@@ -40322,7 +40322,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "csp-68l backpack cayman": {
@@ -40344,7 +40344,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "csp-68l backpack epoque": {
@@ -40366,7 +40366,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "csp-68l backpack forest camo": {
@@ -40388,7 +40388,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "csp-68l backpack night camo": {
@@ -40410,7 +40410,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "csp-68m backpack": {
@@ -40432,7 +40432,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 70,
     "grade": "A"
   },
   "csp-68m backpack epoque": {
@@ -40454,7 +40454,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 70,
     "grade": "A"
   },
   "gcd-army backpack": {
@@ -40476,7 +40476,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "geist backpack": {
@@ -40498,7 +40498,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack asd edition": {
@@ -40520,7 +40520,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack desert": {
@@ -40542,7 +40542,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack forest": {
@@ -40564,7 +40564,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack golden blossom": {
@@ -40586,7 +40586,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack rogue": {
@@ -40608,7 +40608,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack snow camo": {
@@ -40630,7 +40630,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "geist backpack whiteout": {
@@ -40652,7 +40652,7 @@
       "stun": 1
     },
     "volume": 20000,
-    "cargo": 54000,
+    "cargo": 54,
     "grade": "A"
   },
   "inmate workpack": {
@@ -40674,7 +40674,7 @@
       "stun": 1
     },
     "volume": 51000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex \"rucksack\" backpack": {
@@ -40696,7 +40696,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex backpack canary yellow": {
@@ -40718,7 +40718,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex backpack granite red": {
@@ -40740,7 +40740,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex backpack grey": {
@@ -40762,7 +40762,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex backpack orange": {
@@ -40784,7 +40784,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "macflex backpack white": {
@@ -40806,7 +40806,7 @@
       "stun": 1
     },
     "volume": 26000,
-    "cargo": 75000,
+    "cargo": 50,
     "grade": "A"
   },
   "morozov-ch backpack": {
@@ -40828,7 +40828,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack aftershock": {
@@ -40850,7 +40850,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack brushdrift": {
@@ -40872,7 +40872,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack crusader edition": {
@@ -40894,7 +40894,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack lifeforce": {
@@ -40916,7 +40916,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack pyrotechnic": {
@@ -40938,7 +40938,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack pyrotechnic horizon": {
@@ -40960,7 +40960,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack red alert": {
@@ -40982,7 +40982,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack redshift": {
@@ -41004,7 +41004,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack snowdrift": {
@@ -41026,7 +41026,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack terracotta": {
@@ -41048,7 +41048,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-ch backpack thule": {
@@ -41070,7 +41070,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "morozov-sh-i backpack gideon": {
@@ -41092,7 +41092,7 @@
       "stun": 1
     },
     "volume": 53000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "novikov \"ascension\" backpack": {
@@ -41114,7 +41114,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov \"expo\" backpack": {
@@ -41136,7 +41136,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack": {
@@ -41158,7 +41158,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack crush": {
@@ -41180,7 +41180,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack halcyon": {
@@ -41202,7 +41202,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack mire": {
@@ -41224,7 +41224,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack patina": {
@@ -41246,7 +41246,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "novikov backpack smolder": {
@@ -41268,7 +41268,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack": {
@@ -41290,7 +41290,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack daystar": {
@@ -41312,7 +41312,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack deadlock": {
@@ -41334,7 +41334,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack mark i": {
@@ -41356,7 +41356,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack metropolis": {
@@ -41378,7 +41378,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack moonfall": {
@@ -41400,7 +41400,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack necropolis": {
@@ -41422,7 +41422,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack shadow gild": {
@@ -41444,7 +41444,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "palatino backpack sunstone": {
@@ -41466,7 +41466,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "pembroke backpack": {
@@ -41488,7 +41488,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "pembroke backpack rsi edition": {
@@ -41510,7 +41510,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "pembroke backpack rsi graphite edition": {
@@ -41532,7 +41532,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "pembroke backpack rsi ivory edition": {
@@ -41554,7 +41554,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "pembroke backpack rsi sunburst edition": {
@@ -41576,7 +41576,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "sinkhole backpack": {
@@ -41598,7 +41598,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 70,
     "grade": "A"
   },
   "stirling exploration backpack": {
@@ -41620,7 +41620,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack alkaline edition": {
@@ -41642,7 +41642,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack asd edition": {
@@ -41664,7 +41664,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack chroma edition": {
@@ -41686,7 +41686,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack granite edition": {
@@ -41708,7 +41708,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack olympian edition": {
@@ -41730,7 +41730,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack sandstorm edition": {
@@ -41752,7 +41752,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack sediment edition": {
@@ -41774,7 +41774,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack transistor edition": {
@@ -41796,7 +41796,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling exploration backpack tungsten edition": {
@@ -41818,7 +41818,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "stirling hazard backpack": {
@@ -41840,7 +41840,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "strata backpack": {
@@ -41862,7 +41862,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack arccorp black": {
@@ -41884,7 +41884,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack arccorp edition": {
@@ -41906,7 +41906,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack crusader black": {
@@ -41928,7 +41928,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack crusader edition": {
@@ -41950,7 +41950,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack greycat edition": {
@@ -41972,7 +41972,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack heatwave": {
@@ -41994,7 +41994,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack hurston black": {
@@ -42016,7 +42016,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack hurston edition": {
@@ -42038,7 +42038,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack microtech black": {
@@ -42060,7 +42060,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack microtech edition": {
@@ -42082,7 +42082,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack pyrotechnic edition": {
@@ -42104,7 +42104,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "strata backpack shubin edition": {
@@ -42126,7 +42126,7 @@
       "stun": 1
     },
     "volume": 43000,
-    "cargo": 127500,
+    "cargo": 127.5,
     "grade": "A"
   },
   "testudo backpack": {
@@ -42148,7 +42148,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack clanguard": {
@@ -42170,7 +42170,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack combustion": {
@@ -42192,7 +42192,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack deathblow": {
@@ -42214,7 +42214,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack disrupt camo": {
@@ -42236,7 +42236,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack earthshake": {
@@ -42258,7 +42258,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack nightveil": {
@@ -42280,7 +42280,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "testudo backpack turfwar": {
@@ -42302,7 +42302,7 @@
       "stun": 1
     },
     "volume": 36000,
-    "cargo": 105000,
+    "cargo": 105,
     "grade": "A"
   },
   "warden backpack": {
@@ -42324,7 +42324,7 @@
       "stun": 1
     },
     "volume": 51000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "warden backpack epoque": {
@@ -42346,7 +42346,7 @@
       "stun": 1
     },
     "volume": 51000,
-    "cargo": 150000,
+    "cargo": 150,
     "grade": "A"
   },
   "zeus exploration backpack starscape": {
@@ -42368,7 +42368,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "zeus exploration suit backpack": {
@@ -42390,7 +42390,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "zeus exploration suit backpack solar": {
@@ -42412,7 +42412,7 @@
       "stun": 1
     },
     "volume": 62000,
-    "cargo": 180000,
+    "cargo": 180,
     "grade": "A"
   },
   "ace interceptor flight suit": {
@@ -42434,7 +42434,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "advocacy interceptor undersuit": {
@@ -42456,7 +42456,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit": {
@@ -42478,7 +42478,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit \"rust society\"": {
@@ -42500,7 +42500,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit brown/black": {
@@ -42522,7 +42522,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit crimson": {
@@ -42544,7 +42544,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit dark grey": {
@@ -42566,7 +42566,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit green/black": {
@@ -42588,7 +42588,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit green/white": {
@@ -42610,7 +42610,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit grey": {
@@ -42632,7 +42632,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit grey/aqua": {
@@ -42654,7 +42654,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit orange": {
@@ -42676,7 +42676,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit orange/black": {
@@ -42698,7 +42698,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit pink/white": {
@@ -42720,7 +42720,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit purple": {
@@ -42742,7 +42742,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit purple/black": {
@@ -42764,7 +42764,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit red/black": {
@@ -42786,7 +42786,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit sky/grey": {
@@ -42808,7 +42808,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit tan/brown": {
@@ -42830,7 +42830,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit twilight": {
@@ -42852,7 +42852,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit white": {
@@ -42874,7 +42874,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit woodland": {
@@ -42896,7 +42896,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "beacon undersuit yellow": {
@@ -42918,7 +42918,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit": {
@@ -42940,7 +42940,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit brassy": {
@@ -42962,7 +42962,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit bruiser": {
@@ -42984,7 +42984,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit lucky break": {
@@ -43006,7 +43006,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit river rock": {
@@ -43028,7 +43028,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit shutdown": {
@@ -43050,7 +43050,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "deep-space undersuit windfall": {
@@ -43072,7 +43072,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "fbl-8u undersuit arctic digital": {
@@ -43160,7 +43160,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit autumn camo": {
@@ -43182,7 +43182,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/blue": {
@@ -43204,7 +43204,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/gold": {
@@ -43226,7 +43226,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/grey/orange": {
@@ -43248,7 +43248,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/grey/tan": {
@@ -43270,7 +43270,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/orange": {
@@ -43292,7 +43292,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/purple": {
@@ -43314,7 +43314,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/red": {
@@ -43336,7 +43336,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/seagreen": {
@@ -43358,7 +43358,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit black/yellow": {
@@ -43380,7 +43380,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit blue/black/tan": {
@@ -43402,7 +43402,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit digicamo": {
@@ -43424,7 +43424,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit ember camo": {
@@ -43446,7 +43446,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit forest digi": {
@@ -43468,7 +43468,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit greys": {
@@ -43490,7 +43490,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit ocean camo": {
@@ -43512,7 +43512,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit pink camo": {
@@ -43534,7 +43534,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit purple/gold": {
@@ -43556,7 +43556,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit wood camo": {
@@ -43578,7 +43578,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "forceflex undersuit woodland digi": {
@@ -43600,7 +43600,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "fortuna racing flight suit": {
@@ -43622,7 +43622,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "gcd-army undersuit": {
@@ -43666,7 +43666,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "lamont arroyo undersuit": {
@@ -43688,7 +43688,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "lamont corvus undersuit": {
@@ -43710,7 +43710,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "lamont tawny undersuit": {
@@ -43732,7 +43732,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "lamont umbra undersuit": {
@@ -43754,7 +43754,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "lamont undersuit": {
@@ -43776,7 +43776,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "levin undersuit": {
@@ -43798,7 +43798,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "levin undersuit electrum": {
@@ -43820,7 +43820,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "levin undersuit greyscale": {
@@ -43842,7 +43842,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "levin undersuit limelight": {
@@ -43864,7 +43864,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "levin undersuit ochre": {
@@ -43886,7 +43886,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit": {
@@ -43908,7 +43908,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit basalt": {
@@ -43930,7 +43930,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit deadwood": {
@@ -43952,7 +43952,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit jasper": {
@@ -43974,7 +43974,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit pyrotechnic": {
@@ -43996,7 +43996,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "markanda undersuit silt": {
@@ -44018,7 +44018,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "mirai racing flight suit\\n": {
@@ -44040,7 +44040,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "murray cup racing flight suit": {
@@ -44062,7 +44062,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "novikov \"ascension\" exploration suit": {
@@ -44084,7 +44084,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "novikov \"expo\" exploration suit": {
@@ -44106,7 +44106,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "novikov exploration suit": {
@@ -44128,7 +44128,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit alpha": {
@@ -44150,7 +44150,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit autumn": {
@@ -44172,7 +44172,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit black/blue": {
@@ -44194,7 +44194,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit brown/grey": {
@@ -44216,7 +44216,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit exec": {
@@ -44238,7 +44238,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit green/black": {
@@ -44260,7 +44260,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit grey/black": {
@@ -44282,7 +44282,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit multi": {
@@ -44304,7 +44304,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit orange/black": {
@@ -44326,7 +44326,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit pink/black": {
@@ -44348,7 +44348,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit purple/black": {
@@ -44370,7 +44370,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit red/black": {
@@ -44392,7 +44392,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit seagreen/black": {
@@ -44414,7 +44414,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit sky/black": {
@@ -44436,7 +44436,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit sunset": {
@@ -44458,7 +44458,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit tan/black": {
@@ -44480,7 +44480,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit violet/black": {
@@ -44502,7 +44502,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit white/black": {
@@ -44524,7 +44524,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit woodland": {
@@ -44546,7 +44546,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "odyssey ii undersuit yellow/black": {
@@ -44568,7 +44568,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "omni-afs-sapphire armored flight suit": {
@@ -44590,7 +44590,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "omni-afs-sapphire armored flight suit alpine": {
@@ -44612,7 +44612,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "omni-afs-sapphire armored flight suit jungle": {
@@ -44634,7 +44634,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "omni-afs-sapphire armored flight suit slate": {
@@ -44656,7 +44656,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "omni-cfs-diamond flight suit": {
@@ -44700,7 +44700,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "one light undersuit red": {
@@ -44722,7 +44722,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "one light undersuit teal": {
@@ -44744,7 +44744,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "origin 350r racing flight suit": {
@@ -44766,7 +44766,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "origin racing flight suit": {
@@ -44788,7 +44788,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit": {
@@ -44810,7 +44810,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit rsi edition": {
@@ -44832,7 +44832,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit rsi graphite edition": {
@@ -44854,7 +44854,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit rsi ivory edition": {
@@ -44876,7 +44876,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit rsi sunburst edition": {
@@ -44898,7 +44898,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 22000,
+    "cargo": 8,
     "grade": "A"
   },
   "pembroke exploration suit starchaser edition": {
@@ -44920,7 +44920,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "sabine undersuit": {
@@ -45052,7 +45052,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "scaleweave undersuit barrens": {
@@ -45074,7 +45074,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "scaleweave undersuit driftwood": {
@@ -45096,7 +45096,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "scaleweave undersuit ironclad": {
@@ -45118,7 +45118,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "scaleweave undersuit quagmire": {
@@ -45140,7 +45140,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "scaleweave undersuit whetstone": {
@@ -45162,7 +45162,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "second life undersuit": {
@@ -45184,7 +45184,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "sol-iii flight suit aviator": {
@@ -45250,7 +45250,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit": {
@@ -45272,7 +45272,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit alkaline edition": {
@@ -45294,7 +45294,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit asd edition": {
@@ -45316,7 +45316,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit chroma edition": {
@@ -45338,7 +45338,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit granite edition": {
@@ -45360,7 +45360,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit olympian edition": {
@@ -45382,7 +45382,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit sandstorm edition": {
@@ -45404,7 +45404,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit sediment edition": {
@@ -45426,7 +45426,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit transistor edition": {
@@ -45448,7 +45448,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling exploration suit tungsten edition": {
@@ -45470,7 +45470,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stirling hazard suit": {
@@ -45492,7 +45492,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "stoneskin agra undersuit": {
@@ -45514,7 +45514,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "stoneskin undersuit": {
@@ -45536,7 +45536,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "tcs-4 undersuit": {
@@ -45756,7 +45756,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit alpha": {
@@ -45778,7 +45778,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit ascension": {
@@ -45800,7 +45800,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit base": {
@@ -45822,7 +45822,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit black/aqua": {
@@ -45844,7 +45844,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit black/grey": {
@@ -45866,7 +45866,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit black/red": {
@@ -45888,7 +45888,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit blue": {
@@ -45910,7 +45910,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit blue/black": {
@@ -45932,7 +45932,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit crimson": {
@@ -45954,7 +45954,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit envy": {
@@ -45976,7 +45976,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit executive": {
@@ -45998,7 +45998,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit green/black": {
@@ -46020,7 +46020,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit grey/white": {
@@ -46042,7 +46042,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit lovestruck": {
@@ -46064,7 +46064,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit olive/black": {
@@ -46086,7 +46086,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit orange": {
@@ -46108,7 +46108,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit orange/black": {
@@ -46130,7 +46130,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit pathfinder": {
@@ -46152,7 +46152,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit pink/black": {
@@ -46174,7 +46174,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit purple/black": {
@@ -46196,7 +46196,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit purple/violet": {
@@ -46218,7 +46218,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit red/white": {
@@ -46240,7 +46240,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit seagreen": {
@@ -46262,7 +46262,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit seagreen/black": {
@@ -46284,7 +46284,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit starcrossed": {
@@ -46306,7 +46306,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit tan/brown": {
@@ -46328,7 +46328,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit voyager": {
@@ -46350,7 +46350,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "venture undersuit yellow": {
@@ -46372,7 +46372,7 @@
       "stun": 0.85
     },
     "volume": 23000,
-    "cargo": 0,
+    "cargo": 8,
     "grade": "A"
   },
   "wastelander undersuit": {
@@ -46438,7 +46438,7 @@
       "stun": 0.75
     },
     "volume": 150000,
-    "cargo": 6500,
+    "cargo": 6.5,
     "grade": "A"
   },
   "xanthule sehya suit": {
@@ -46460,7 +46460,7 @@
       "stun": 0.75
     },
     "volume": 150000,
-    "cargo": 6500,
+    "cargo": 6.5,
     "grade": "A"
   },
   "xanthule suit": {
@@ -46482,7 +46482,7 @@
       "stun": 0.75
     },
     "volume": 150000,
-    "cargo": 6500,
+    "cargo": 6.5,
     "grade": "A"
   },
   "xanthule tahn suit": {
@@ -46504,7 +46504,7 @@
       "stun": 0.75
     },
     "volume": 150000,
-    "cargo": 6500,
+    "cargo": 6.5,
     "grade": "A"
   },
   "zeus exploration suit": {
@@ -46526,7 +46526,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "zeus exploration suit solar": {
@@ -46548,7 +46548,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   },
   "zeus exploration suit starscape": {
@@ -46570,7 +46570,7 @@
       "stun": 0.4
     },
     "volume": 150000,
-    "cargo": 8000,
+    "cargo": 8,
     "grade": "A"
   }
 }

@@ -5,6 +5,10 @@
  */
 
 const clean = (s) => s.replace(/\s*\([^)]*\)\s*$/, "").trim();
+const parseCargo = (desc) => {
+  const m = (desc ?? "").match(/Carrying Capacity:\s*([\d.]+)/);
+  return m ? parseFloat(m[1]) : 0;
+};
 const parseClass = (s) => {
   const l = (s ?? "").toLowerCase();
   if (l.includes("light")) return "light";
@@ -56,7 +60,7 @@ for (const cat of CATEGORIES) {
           stun: item.ArmordmgreductionStunResistance ?? 1,
         },
         volume: item.Volume ?? 0,
-        cargo: item.Acargo ?? 0,
+        cargo: parseCargo(item.Desc),
         grade: item.Grade ?? null,
       };
     }
