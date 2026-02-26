@@ -238,6 +238,7 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     if (ws && ws.dps > 0) equippedWeapons.push({ slot: slotId, stats: ws });
   }
 
+  totalWeight = Math.round(totalWeight * 100) / 100;
   const speedPct = getSpeedPct(totalWeight);
   const effectiveSpeed = Math.round((BASE_SPEED * speedPct) / 100 * 100) / 100;
 
