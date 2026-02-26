@@ -270,7 +270,7 @@ export default function ItemCombobox({
       {locsExpanded && hasLocs && (
         <div className="bg-dark-800 border border-dark-700 border-t-0 rounded-b-lg px-3 pb-2 pt-1">
           {matchedItem && thumbnails?.[matchedItem.name] && (
-            <div className="flex items-center gap-2.5 mb-2 pt-1">
+            <div className="mb-2 pt-1">
               <img
                 src={thumbnails[matchedItem.name].replace(/\/40px-/, "/80px-")}
                 alt={matchedItem.name}
@@ -279,10 +279,6 @@ export default function ItemCombobox({
                 onClick={() => setLightbox(true)}
                 onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
-              <div className="min-w-0">
-                <span className="text-xs text-text font-medium block truncate">{matchedItem.name}</span>
-                <span className="text-[10px] text-text-muted">{matchedItem.company_name}</span>
-              </div>
             </div>
           )}
           {systems.length > 0 && (
@@ -383,12 +379,12 @@ export default function ItemCombobox({
           ref={listRef}
           className="absolute z-50 left-0 right-0 mt-1 max-h-[240px] overflow-y-auto rounded-lg border border-dark-700 bg-dark-900 shadow-xl"
         >
-          {matchedItem && !hasQuery && (
+          {!hasQuery && (
             <li
               className={`flex items-center gap-2 px-3 py-1.5 text-sm cursor-pointer transition-colors border-b border-dark-700 ${
                 highlighted === -1
-                  ? "bg-accent-red/10 text-accent-red"
-                  : "text-text-muted hover:bg-dark-800 hover:text-accent-red"
+                  ? "bg-accent-amber/10 text-accent-amber"
+                  : "text-text-muted hover:bg-dark-800"
               }`}
               onMouseDown={(e) => {
                 e.preventDefault();

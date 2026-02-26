@@ -19,6 +19,10 @@ import {
   Menu,
   Bomb,
   Heart,
+  Thermometer,
+  Radiation,
+  Activity,
+  ShieldCheck,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -27,6 +31,78 @@ import { useLoadouts, exportAllData, importAllData, exportSingleLoadout, importS
 import type { UexItem, ThumbnailMap, BuyableSet, ArmorClassMap } from "./uex-api";
 import { getItems, clearUexCache, fetchThumbnails, fetchBuyableSet, getArmorClassMap } from "./uex-api";
 import ItemCombobox from "./ItemCombobox";
+import armorStatsData from "./armor-data.json";
+
+/* ─── Armor Stats ─── */
+
+interface ArmorPieceStats {
+  name: string;
+  category: string;
+  manufacturer: string | null;
+  armorClass: string | null;
+  dmgReduction: number;
+  tempMin: number | null;
+  tempMax: number | null;
+  radResistance: number;
+  radScrubRate: number;
+  resistance: {
+    physical: number;
+    energy: number;
+    distortion: number;
+    thermal: number;
+    biochemical: number;
+    stun: number;
+  };
+  volume: number;
+  cargo: number;
+  grade: string | null;
+}
+
+type ArmorStatsMap = Record<string, ArmorPieceStats>;
+const armorStats: ArmorStatsMap = armorStatsData as ArmorStatsMap;
+
+const STAT_SLOTS = ["undersuit", "helmet", "core", "arms", "legs", "backpack"] as const;
+const RESISTANCE_KEYS = ["physical", "energy", "distortion", "thermal", "biochemical", "stun"] as const;
+
+interface AggregatedStats {
+  dmgReduction: number;
+  tempMin: number | null;
+  tempMax: number | null;
+  radResistance: number;
+  radScrubRate: number;
+  resistance: Record<string, number>;
+  pieces: { slot: string; stats: ArmorPieceStats }[];
+}
+
+function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStats | null {
+  const pieces: { slot: string; stats: ArmorPieceStats }[] = [];
+  for (const slotId of STAT_SLOTS) {
+    const val = slots[slotId]?.item?.trim();
+    if (!val) continue;
+    const stats = armorStats[val.toLowerCase()];
+    if (stats) pieces.push({ slot: slotId, stats });
+  }
+  if (pieces.length === 0) return null;
+
+  let dmgReduction = 0;
+  let tempMin: number | null = null;
+  let tempMax: number | null = null;
+  let radResistance = 0;
+  let radScrubRate = 0;
+  const resistance: Record<string, number> = {};
+  for (const k of RESISTANCE_KEYS) resistance[k] = 1;
+
+  for (const { stats } of pieces) {
+    dmgReduction += stats.dmgReduction;
+    if (stats.tempMin !== null) tempMin = tempMin === null ? stats.tempMin : Math.max(tempMin, stats.tempMin);
+    if (stats.tempMax !== null) tempMax = tempMax === null ? stats.tempMax : Math.min(tempMax, stats.tempMax);
+    radResistance += stats.radResistance;
+    radScrubRate += stats.radScrubRate;
+    for (const k of RESISTANCE_KEYS) resistance[k] *= stats.resistance[k];
+  }
+
+  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, resistance, pieces };
+}
 
 /* ─── Header ─── */
 function Header({
@@ -377,7 +453,6 @@ function SlotGroup({
           const val = values[slot.id] || { item: "", notes: "" };
           const isMultitool = slot.id.startsWith("multitool");
           const isThrowable = slot.group === "throwables";
-          const isAmmo = slot.group === "ammo";
           const isBackpack = slot.id === "backpack";
           const hasFilter = group === "armor" && ARMOR_FILTER_SLOTS.has(slot.id);
           const backpackClass = isBackpack && val.item.trim() && armorClassMap
@@ -412,13 +487,6 @@ function SlotGroup({
                           </option>
                         ))}
                       </select>
-                    ) : isAmmo ? (
-                      <input
-                        value={val.item}
-                        onChange={(e) => onChange(slot.id, { ...val, item: e.target.value })}
-                        placeholder={slot.placeholder}
-                        className="w-full bg-dark-800 border border-dark-700 rounded-lg px-3 py-2 text-sm text-text placeholder:text-text-muted outline-none"
-                      />
                     ) : (
                       <ItemCombobox
                         value={val.item}
@@ -469,6 +537,129 @@ function SlotGroup({
 }
 
 /* ─── Loadout Card ─── */
+/* ─── Stats Panel ─── */
+
+const RESISTANCE_LABELS: Record<string, { label: string; color: string }> = {
+  physical: { label: "Physical", color: "text-text-secondary" },
+  energy: { label: "Energy", color: "text-accent-blue" },
+  distortion: { label: "Distortion", color: "text-accent-purple" },
+  thermal: { label: "Thermal", color: "text-accent-red" },
+  biochemical: { label: "Biochemical", color: "text-accent-green" },
+  stun: { label: "Stun", color: "text-accent-yellow" },
+};
+
+function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; loadoutName?: string }) {
+  if (!stats) {
+    return (
+      <div className="card flex flex-col items-center justify-center py-10 text-center">
+        <Activity className="w-8 h-8 text-dark-600 mb-3" />
+        <p className="text-sm text-text-muted">Expand a loadout with armor equipped to see stats</p>
+      </div>
+    );
+  }
+
+  const dmgPct = Math.round(stats.dmgReduction * 100);
+
+  return (
+    <div className="card flex flex-col gap-3">
+      <div className="flex items-center gap-2">
+        <Activity className="w-4 h-4 text-accent-amber" />
+        <span className="text-xs text-text-muted uppercase tracking-wider font-semibold">Stats</span>
+      </div>
+      {loadoutName && (
+        <p className="text-sm font-medium text-text truncate -mt-1">{loadoutName}</p>
+      )}
+
+      {/* Damage Reduction */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-1.5">
+          <ShieldCheck className="w-3.5 h-3.5 text-accent-green" />
+          <span className="text-[11px] text-text-muted font-medium">Damage Reduction</span>
+        </div>
+        <span className="text-xl font-mono font-bold text-accent-green">{dmgPct}%</span>
+        <div className="mt-1.5 h-1.5 bg-dark-900 rounded-full overflow-hidden">
+          <div className="h-full bg-accent-green/70 rounded-full transition-all" style={{ width: `${Math.min(dmgPct, 100)}%` }} />
+        </div>
+      </div>
+
+      {/* Temperature */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-1.5">
+          <Thermometer className="w-3.5 h-3.5 text-accent-blue" />
+          <span className="text-[11px] text-text-muted font-medium">Temperature</span>
+        </div>
+        {stats.tempMin !== null && stats.tempMax !== null ? (
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-lg font-mono font-bold text-accent-blue">{stats.tempMin}°</span>
+            <span className="text-text-muted text-xs">to</span>
+            <span className="text-lg font-mono font-bold text-accent-red">{stats.tempMax}°</span>
+          </div>
+        ) : (
+          <span className="text-sm text-text-muted">—</span>
+        )}
+      </div>
+
+      {/* Radiation */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-1.5">
+          <Radiation className="w-3.5 h-3.5 text-accent-amber" />
+          <span className="text-[11px] text-text-muted font-medium">Radiation</span>
+        </div>
+        <div className="flex items-baseline gap-1">
+          <span className="text-lg font-mono font-bold text-accent-amber">{stats.radResistance.toLocaleString()}</span>
+          <span className="text-[10px] text-text-muted">REM</span>
+        </div>
+        <div className="text-[10px] text-text-muted mt-0.5">
+          Scrub: <span className="font-mono text-text-dim">{stats.radScrubRate.toFixed(1)}</span> REM/s
+        </div>
+      </div>
+
+      {/* Resistances */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-1.5">
+            <Shield className="w-3.5 h-3.5 text-accent-purple" />
+            <span className="text-[11px] text-text-muted font-medium">Resistances</span>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          {RESISTANCE_KEYS.map((key) => {
+            const { label, color } = RESISTANCE_LABELS[key];
+            const value = stats.resistance[key];
+            const protection = Math.round((1 - value) * 100);
+            return (
+              <div key={key}>
+                <div className="flex items-center justify-between mb-0.5">
+                  <span className={`text-[11px] font-medium ${color}`}>{label}</span>
+                  <span className="text-[11px] font-mono text-text-dim">{protection}%</span>
+                </div>
+                <div className="h-1.5 bg-dark-900 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full rounded-full transition-all ${
+                      protection >= 50 ? "bg-accent-green/70" : protection >= 25 ? "bg-accent-amber/70" : "bg-accent-red/70"
+                    }`}
+                    style={{ width: `${protection}%` }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Piece breakdown */}
+      <div className="text-[10px] text-text-muted/60 pt-1 border-t border-dark-700/50">
+        {stats.pieces.map((p) => (
+          <div key={p.slot} className="flex justify-between py-0.5">
+            <span className="capitalize">{p.slot}</span>
+            <span className="font-mono">{Math.round(p.stats.dmgReduction * 100)}% DR</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function LoadoutCard({
   loadout,
   onUpdate,
@@ -478,6 +669,8 @@ function LoadoutCard({
   thumbnails,
   buyable,
   armorClassMap,
+  expanded,
+  onToggleExpanded,
 }: {
   loadout: Loadout;
   onUpdate: (id: string, updates: Partial<Loadout>) => void;
@@ -487,8 +680,9 @@ function LoadoutCard({
   thumbnails: ThumbnailMap;
   buyable?: BuyableSet;
   armorClassMap: ArmorClassMap;
+  expanded: boolean;
+  onToggleExpanded: () => void;
 }) {
-  const [expanded, setExpanded] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameValue, setNameValue] = useState(loadout.name);
   const [editingType, setEditingType] = useState(false);
@@ -666,7 +860,7 @@ function LoadoutCard({
             <Trash2 className="w-4 h-4" />
           </button>
           <button
-            onClick={() => setExpanded(!expanded)}
+            onClick={onToggleExpanded}
             className="p-1.5 rounded hover:bg-dark-800 text-text-muted hover:text-text transition-colors"
             aria-label={expanded ? "Collapse loadout" : "Expand loadout"}
           >
@@ -710,6 +904,7 @@ function LoadoutCard({
               onChange={(e) => handleNotesChange(e.target.value)}
             />
           </div>
+
         </div>
       )}
     </div>
@@ -798,6 +993,7 @@ export default function App() {
   const [showNew, setShowNew] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [filter, setFilter] = useState<MissionType | "All">("All");
+  const [expandedId, setExpandedId] = useState<string | null>(null);
   const settingsRef = useRef<HTMLButtonElement>(null);
   const importFileRef = useRef<HTMLInputElement>(null);
   const [uexItems, setUexItems] = useState<UexItem[]>([]);
@@ -886,7 +1082,7 @@ export default function App() {
         />
       )}
 
-      <main className="flex-1 max-w-[900px] w-full mx-auto px-4 py-6">
+      <main className="flex-1 max-w-[1600px] w-full mx-auto px-4 py-6">
         {loadouts.length === 0 ? (
           <EmptyState onCreate={() => setShowNew(true)} />
         ) : (
@@ -927,25 +1123,36 @@ export default function App() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-              {filtered.map((l) => (
-                <LoadoutCard
-                  key={l.id}
-                  loadout={l}
-                  onUpdate={updateLoadout}
-                  onDelete={deleteLoadout}
-                  onDuplicate={duplicateLoadout}
-                  allItems={uexItems}
-                  thumbnails={thumbs}
-                  buyable={buyable}
-                  armorClassMap={armorClassMap}
+            <div className="flex gap-6 items-start">
+              <div className="flex-1 min-w-0 flex flex-col gap-4">
+                {filtered.map((l) => (
+                  <LoadoutCard
+                    key={l.id}
+                    loadout={l}
+                    onUpdate={updateLoadout}
+                    onDelete={deleteLoadout}
+                    onDuplicate={duplicateLoadout}
+                    allItems={uexItems}
+                    thumbnails={thumbs}
+                    buyable={buyable}
+                    armorClassMap={armorClassMap}
+                    expanded={expandedId === l.id}
+                    onToggleExpanded={() => setExpandedId(expandedId === l.id ? null : l.id)}
+                  />
+                ))}
+                {filtered.length === 0 && (
+                  <p className="text-center text-text-muted py-8 text-sm">
+                    No loadouts match this filter.
+                  </p>
+                )}
+              </div>
+
+              <div className="hidden lg:block w-[280px] shrink-0 sticky top-[65px]">
+                <StatsSidebar
+                  stats={expandedId ? aggregateLoadoutStats(loadouts.find((l) => l.id === expandedId)?.slots ?? {}) : null}
+                  loadoutName={loadouts.find((l) => l.id === expandedId)?.name}
                 />
-              ))}
-              {filtered.length === 0 && (
-                <p className="text-center text-text-muted py-8 text-sm">
-                  No loadouts match this filter.
-                </p>
-              )}
+              </div>
             </div>
           </>
         )}
