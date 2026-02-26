@@ -764,9 +764,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
                 </tr>
               </thead>
               <tbody>
-                <tr className={`${stats.speedPct === 100 ? "text-accent-green font-bold" : "text-text-dim"}`}>
-                  <td>&lt; 20 kg</td><td className="text-right font-mono">100%</td>
-                </tr>
                 {SPEED_BREAKPOINTS.map((bp) => (
                   <tr key={bp.kg} className={`${stats.speedPct === bp.pct ? "text-accent-amber font-bold" : bp.pct <= 60 ? "text-accent-red/70" : "text-text-dim"}`}>
                     <td>{bp.kg} kg</td><td className="text-right font-mono">{bp.pct}%</td>
