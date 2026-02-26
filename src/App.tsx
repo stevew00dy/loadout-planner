@@ -866,40 +866,45 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
                     </span>
                   </div>
                   <p className="text-xs font-medium text-text truncate mb-1.5">{w.stats.name}</p>
-                  <div className="grid grid-cols-2 gap-x-3 gap-y-1">
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">DPS</span>
-                      <span className="font-mono text-accent-red font-bold">{w.stats.dps}</span>
-                    </div>
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">RPM</span>
-                      <span className="font-mono text-text-dim">{w.stats.rpm}</span>
-                    </div>
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">Dmg</span>
-                      <span className="font-mono text-text-dim">{w.stats.dmgPerShot}{w.stats.pellets > 1 ? ` (${w.stats.pellets}×${w.stats.dmgPerPellet})` : ""}</span>
-                    </div>
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">Range</span>
-                      <span className="font-mono text-text-dim">{w.stats.range >= 1000 ? `${(w.stats.range / 1000).toFixed(1)}km` : `${w.stats.range}m`}</span>
-                    </div>
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">Ammo</span>
-                      <span className="font-mono text-text-dim">{w.stats.ammoCount}</span>
-                    </div>
-                    <div className="flex justify-between text-[10px]">
-                      <span className="text-text-muted">Mass</span>
-                      <span className="font-mono text-text-dim">{w.stats.mass}kg</span>
-                    </div>
-                    {w.stats.ttk && w.stats.ttk[0] !== null && (
-                      <>
-                        <div className="flex justify-between text-[10px] col-span-2 pt-0.5 border-t border-dark-700/30">
-                          <span className="text-text-muted">TTK</span>
-                          <span className="font-mono text-accent-amber font-bold">{w.stats.ttk[0]}s</span>
+                  {(() => {
+                    const stk = w.stats.dmgPerShot > 0 ? Math.ceil(100 / w.stats.dmgPerShot) : null;
+                    return (
+                      <div className="grid grid-cols-2 gap-x-3 gap-y-1">
+                        <div className="flex justify-between text-[10px]">
+                          <span className="text-text-muted">DPS</span>
+                          <span className="font-mono text-accent-red font-bold">{Math.round(w.stats.dps)}</span>
                         </div>
-                      </>
-                    )}
-                  </div>
+                        <div className="flex justify-between text-[10px]">
+                          <span className="text-text-muted">RPM</span>
+                          <span className="font-mono text-text-dim">{w.stats.rpm}</span>
+                        </div>
+                        <div className="flex justify-between text-[10px]">
+                          <span className="text-text-muted">Dmg/Shot</span>
+                          <span className="font-mono text-text-dim">{w.stats.dmgPerShot}{w.stats.pellets > 1 ? ` (${w.stats.pellets}×${w.stats.dmgPerPellet})` : ""}</span>
+                        </div>
+                        {stk !== null && (
+                          <div className="flex justify-between text-[10px]">
+                            <span className="text-text-muted">Shots to Kill</span>
+                            <span className={`font-mono font-bold ${stk <= 3 ? "text-accent-red" : stk <= 6 ? "text-accent-amber" : "text-text-dim"}`}>{stk}</span>
+                          </div>
+                        )}
+                        <div className="flex justify-between text-[10px]">
+                          <span className="text-text-muted">Range</span>
+                          <span className="font-mono text-text-dim">{w.stats.range >= 1000 ? `${(w.stats.range / 1000).toFixed(1)}km` : `${w.stats.range}m`}</span>
+                        </div>
+                        <div className="flex justify-between text-[10px]">
+                          <span className="text-text-muted">Ammo</span>
+                          <span className="font-mono text-text-dim">{w.stats.ammoCount}</span>
+                        </div>
+                        {w.stats.ttk && w.stats.ttk[0] !== null && (
+                          <div className="flex justify-between text-[10px] col-span-2 pt-0.5 border-t border-dark-700/30">
+                            <span className="text-text-muted">TTK</span>
+                            <span className="font-mono text-accent-amber font-bold">{w.stats.ttk[0]}s</span>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
                   {w.stats.fireMode && (
                     <div className="text-[9px] text-text-muted mt-1">{w.stats.fireMode}</div>
                   )}
