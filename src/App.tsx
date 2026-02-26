@@ -180,7 +180,7 @@ function Header({
               <Menu className="w-5 h-5" />
             </button>
             {navOpen && (
-              <div className="absolute right-0 top-full mt-2 w-56 p-2 shadow-xl z-50 rounded-xl border border-dark-700 bg-dark-900">
+              <div className="fixed sm:absolute right-2 sm:right-0 top-14 sm:top-full sm:mt-2 w-[calc(100vw-1rem)] sm:w-56 max-w-[14rem] p-2 shadow-xl z-50 rounded-xl border border-dark-700 bg-dark-900">
                 <a href="/" className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">
                   <Home className="w-3.5 h-3.5 text-accent-amber" />
                   undisputed noobs
