@@ -45,7 +45,7 @@ for (const r of ttkRows) {
   const fireMode = r[1] || "";
   const vals = r.slice(2, 12).map(v => parseFloat(v) || null);
   if (vals.some(v => v !== null)) {
-    const key = name.toLowerCase();
+    const key = name.toLowerCase().replace(/\u00a0/g, " ");
     if (!ttkMap[key]) ttkMap[key] = [];
     ttkMap[key].push({ fireMode, ttk: vals });
   }
@@ -101,14 +101,14 @@ for (let i = dataStart; i < allRows.length; i++) {
   // Skip consumables, throwables (already tracked differently)
   if (category === "consumable" || category === "throwable") continue;
 
-  const key = name.toLowerCase();
+  const key = name.toLowerCase().replace(/\u00a0/g, " ");
   
   // Get TTK data if available
   const ttkData = ttkMap[key] || [];
   const ttk = ttkData.length > 0 ? ttkData[0].ttk : null;
 
   weapons[key] = {
-    name,
+    name: name.replace(/\u00a0/g, " "),
     category,
     mass,
     massWithMags: parseFloat(r[6]) || mass,

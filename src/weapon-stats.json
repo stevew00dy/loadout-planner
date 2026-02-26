@@ -1,6 +1,6 @@
 {
-  "gallant rifle": {
-    "name": "Gallant Rifle",
+  "gallant rifle": {
+    "name": "Gallant Rifle",
     "category": "assault_rifle",
     "mass": 3.7,
     "massWithMags": 4.3,
@@ -28,8 +28,8 @@
       null
     ]
   },
-  "karna rifle": {
-    "name": "Karna Rifle",
+  "karna rifle": {
+    "name": "Karna Rifle",
     "category": "assault_rifle",
     "mass": 4.2,
     "massWithMags": 4.8,
@@ -86,8 +86,8 @@
       null
     ]
   },
-  "p4-ar rifle": {
-    "name": "P4-AR Rifle",
+  "p4-ar rifle": {
+    "name": "P4-AR Rifle",
     "category": "assault_rifle",
     "mass": 3.2,
     "massWithMags": 3.7,
@@ -173,8 +173,8 @@
       0.079
     ]
   },
-  "s71 rifle": {
-    "name": "S71 Rifle",
+  "s71 rifle": {
+    "name": "S71 Rifle",
     "category": "assault_rifle",
     "mass": 3.4,
     "massWithMags": 3.9,
@@ -202,8 +202,8 @@
       null
     ]
   },
-  "demeco lmg": {
-    "name": "Demeco LMG",
+  "demeco lmg": {
+    "name": "Demeco LMG",
     "category": "lmg",
     "mass": 10,
     "massWithMags": 11.62,
@@ -231,8 +231,8 @@
       0.075
     ]
   },
-  "f55 lmg": {
-    "name": "F55 LMG",
+  "f55 lmg": {
+    "name": "F55 LMG",
     "category": "lmg",
     "mass": 10,
     "massWithMags": 11.6,
@@ -289,8 +289,8 @@
       0.109
     ]
   },
-  "fs-9 lmg": {
-    "name": "FS-9 LMG",
+  "fs-9 lmg": {
+    "name": "FS-9 LMG",
     "category": "lmg",
     "mass": 10,
     "massWithMags": 11.6,
@@ -347,8 +347,8 @@
       null
     ]
   },
-  "arclight pistol": {
-    "name": "Arclight Pistol",
+  "arclight pistol": {
+    "name": "Arclight Pistol",
     "category": "pistol",
     "mass": 1.5,
     "massWithMags": 1.82,
@@ -376,8 +376,8 @@
       null
     ]
   },
-  "coda pistol": {
-    "name": "Coda Pistol",
+  "coda pistol": {
+    "name": "Coda Pistol",
     "category": "pistol",
     "mass": 1.1,
     "massWithMags": 1.4,
@@ -463,8 +463,8 @@
       0.12
     ]
   },
-  "s-38 pistol": {
-    "name": "S-38 Pistol",
+  "s-38 pistol": {
+    "name": "S-38 Pistol",
     "category": "pistol",
     "mass": 1.1,
     "massWithMags": 1.4,
@@ -550,8 +550,8 @@
       null
     ]
   },
-  "wowblast desperado toy pistol": {
-    "name": "WowBlast Desperado Toy Pistol",
+  "wowblast desperado toy pistol": {
+    "name": "WowBlast Desperado Toy Pistol",
     "category": "pistol",
     "mass": 1.1,
     "massWithMags": 1.4,
@@ -597,8 +597,8 @@
       null
     ]
   },
-  "br-2 shotgun": {
-    "name": "BR-2 Shotgun",
+  "br-2 shotgun": {
+    "name": "BR-2 Shotgun",
     "category": "shotgun",
     "mass": 4.5,
     "massWithMags": 5.48,
@@ -655,8 +655,8 @@
       null
     ]
   },
-  "devastator shotgun": {
-    "name": "Devastator Shotgun",
+  "devastator shotgun": {
+    "name": "Devastator Shotgun",
     "category": "shotgun",
     "mass": 4.3,
     "massWithMags": 5.18,
@@ -713,8 +713,8 @@
       null
     ]
   },
-  "r97 shotgun": {
-    "name": "R97 Shotgun",
+  "r97 shotgun": {
+    "name": "R97 Shotgun",
     "category": "shotgun",
     "mass": 4,
     "massWithMags": 4.88,
@@ -742,8 +742,8 @@
       null
     ]
   },
-  "ravager-212 twin shotgun": {
-    "name": "Ravager-212 Twin Shotgun",
+  "ravager-212 twin shotgun": {
+    "name": "Ravager-212 Twin Shotgun",
     "category": "shotgun",
     "mass": 4.3,
     "massWithMags": 5.26,
@@ -858,8 +858,8 @@
       null
     ]
   },
-  "p8-sc smg": {
-    "name": "P8-SC SMG",
+  "p8-sc smg": {
+    "name": "P8-SC SMG",
     "category": "smg",
     "mass": 2.75,
     "massWithMags": 3.18,
@@ -945,8 +945,8 @@
       0.101
     ]
   },
-  "a03 sniper rifle": {
-    "name": "A03 Sniper Rifle",
+  "a03 sniper rifle": {
+    "name": "A03 Sniper Rifle",
     "category": "sniper_rifle",
     "mass": 6,
     "massWithMags": 6.9,
@@ -974,8 +974,8 @@
       null
     ]
   },
-  "arrowhead sniper rifle": {
-    "name": "Arrowhead Sniper Rifle",
+  "arrowhead sniper rifle": {
+    "name": "Arrowhead Sniper Rifle",
     "category": "sniper_rifle",
     "mass": 7.5,
     "massWithMags": 8.24,
@@ -1032,8 +1032,8 @@
       null
     ]
   },
-  "p6-lr sniper rifle": {
-    "name": "P6-LR Sniper Rifle",
+  "p6-lr sniper rifle": {
+    "name": "P6-LR Sniper Rifle",
     "category": "sniper_rifle",
     "mass": 7.5,
     "massWithMags": 8.4,
@@ -1271,8 +1271,8 @@
     "dpsBurst": 31350,
     "ttk": null
   },
-  "paramed medical device": {
-    "name": "ParaMed Medical Device",
+  "paramed medical device": {
+    "name": "ParaMed Medical Device",
     "category": "tool",
     "mass": 1.5,
     "massWithMags": 1.82,
@@ -1505,8 +1505,8 @@
     "dpsBurst": null,
     "ttk": null
   },
-  "tbf-4 combat knife": {
-    "name": "TBF-4 Combat Knife",
+  "tbf-4 combat knife": {
+    "name": "TBF-4 Combat Knife",
     "category": "melee",
     "mass": 1,
     "massWithMags": 1,
