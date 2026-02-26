@@ -24,6 +24,7 @@ import {
   Activity,
   ShieldCheck,
   Package,
+  Gauge,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -65,6 +66,38 @@ const armorStats: ArmorStatsMap = armorStatsData as ArmorStatsMap;
 const STAT_SLOTS = ["undersuit", "helmet", "core", "arms", "legs", "backpack"] as const;
 const RESISTANCE_KEYS = ["physical", "energy", "distortion", "thermal", "biochemical", "stun"] as const;
 
+const ARMOR_WEIGHT: Record<string, Record<string, number>> = {
+  helmet:    { light: 2, medium: 2, heavy: 2 },
+  torso:     { light: 3, medium: 5, heavy: 7 },
+  arm:       { light: 2, medium: 4, heavy: 6 },
+  leg:       { light: 3, medium: 6, heavy: 8 },
+  backpack:  { light: 6, medium: 6, heavy: 6 },
+  undersuit: {},
+};
+
+const BASE_WEIGHT = 1;
+const BASE_SPEED = 8.06;
+const SPEED_BREAKPOINTS = [
+  { kg: 0,  pct: 100 },
+  { kg: 15, pct: 95 },
+  { kg: 25, pct: 90 },
+  { kg: 35, pct: 85 },
+  { kg: 45, pct: 80 },
+  { kg: 55, pct: 75 },
+  { kg: 60, pct: 70 },
+  { kg: 65, pct: 65 },
+  { kg: 70, pct: 60 },
+  { kg: 75, pct: 55 },
+  { kg: 80, pct: 50 },
+];
+
+function getSpeedPct(totalKg: number): number {
+  for (let i = SPEED_BREAKPOINTS.length - 1; i >= 0; i--) {
+    if (totalKg >= SPEED_BREAKPOINTS[i].kg) return SPEED_BREAKPOINTS[i].pct;
+  }
+  return 100;
+}
+
 interface AggregatedStats {
   dmgReduction: number;
   tempMin: number | null;
@@ -73,16 +106,23 @@ interface AggregatedStats {
   radScrubRate: number;
   resistance: Record<string, number>;
   totalCargo: number;
-  pieces: { slot: string; stats: ArmorPieceStats }[];
+  totalWeight: number;
+  speedPct: number;
+  effectiveSpeed: number;
+  pieces: { slot: string; stats: ArmorPieceStats; weight: number }[];
 }
 
 function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStats | null {
-  const pieces: { slot: string; stats: ArmorPieceStats }[] = [];
+  const pieces: { slot: string; stats: ArmorPieceStats; weight: number }[] = [];
   for (const slotId of STAT_SLOTS) {
     const val = slots[slotId]?.item?.trim();
     if (!val) continue;
     const stats = armorStats[val.toLowerCase()];
-    if (stats) pieces.push({ slot: slotId, stats });
+    if (!stats) continue;
+    const cat = stats.category;
+    const ac = stats.armorClass ?? "light";
+    const weight = ARMOR_WEIGHT[cat]?.[ac] ?? 0;
+    pieces.push({ slot: slotId, stats, weight });
   }
   if (pieces.length === 0) return null;
 
@@ -92,20 +132,25 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
   let radResistance = 0;
   let radScrubRate = 0;
   let totalCargo = 0;
+  let totalWeight = BASE_WEIGHT;
   const resistance: Record<string, number> = {};
   for (const k of RESISTANCE_KEYS) resistance[k] = 1;
 
-  for (const { stats } of pieces) {
+  for (const { stats, weight } of pieces) {
     dmgReduction += stats.dmgReduction;
     if (stats.tempMin !== null) tempMin = tempMin === null ? stats.tempMin : Math.max(tempMin, stats.tempMin);
     if (stats.tempMax !== null) tempMax = tempMax === null ? stats.tempMax : Math.min(tempMax, stats.tempMax);
     radResistance += stats.radResistance;
     radScrubRate += stats.radScrubRate;
     totalCargo += stats.cargo;
+    totalWeight += weight;
     for (const k of RESISTANCE_KEYS) resistance[k] *= stats.resistance[k];
   }
 
-  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, resistance, pieces };
+  const speedPct = getSpeedPct(totalWeight);
+  const effectiveSpeed = Math.round((BASE_SPEED * speedPct) / 100 * 100) / 100;
+
+  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, totalWeight, speedPct, effectiveSpeed, resistance, pieces };
 }
 
 /* ─── Header ─── */
@@ -586,6 +631,42 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
         </div>
       </div>
 
+      {/* Weight & Speed */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-1.5">
+          <Gauge className="w-3.5 h-3.5 text-accent-amber" />
+          <span className="text-[11px] text-text-muted font-medium">Weight & Speed</span>
+        </div>
+        <div className="flex items-baseline justify-between">
+          <div>
+            <span className="text-lg font-mono font-bold text-text">{stats.totalWeight}</span>
+            <span className="text-[10px] text-text-muted ml-0.5">kg</span>
+          </div>
+          <div className="text-right">
+            <span className={`text-lg font-mono font-bold ${
+              stats.speedPct >= 90 ? "text-accent-green" : stats.speedPct >= 70 ? "text-accent-amber" : "text-accent-red"
+            }`}>{stats.speedPct}%</span>
+            <span className="text-[10px] text-text-muted block">{stats.effectiveSpeed} m/s</span>
+          </div>
+        </div>
+        <div className="mt-1.5 h-1.5 bg-dark-900 rounded-full overflow-hidden">
+          <div
+            className={`h-full rounded-full transition-all ${
+              stats.speedPct >= 90 ? "bg-accent-green/70" : stats.speedPct >= 70 ? "bg-accent-amber/70" : "bg-accent-red/70"
+            }`}
+            style={{ width: `${stats.speedPct}%` }}
+          />
+        </div>
+        <div className="flex flex-col gap-0.5 mt-2">
+          {stats.pieces.filter((p) => p.weight > 0).map((p) => (
+            <div key={p.slot} className="flex justify-between text-[10px]">
+              <span className="capitalize text-text-muted">{p.slot}</span>
+              <span className="font-mono text-text-dim">{p.weight} kg</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Temperature */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
         <div className="flex items-center gap-1.5 mb-1.5">
@@ -948,7 +1029,7 @@ function Footer() {
           <a href="/refining-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Refining Tracker</a>
           <a href="https://www.youtube.com/@undisputednoobs" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-accent-amber transition-colors">YouTube</a>
         </div>
-        <p className="text-[10px] text-text-muted/50">Unofficial fan-made tool. Not affiliated with Cloud Imperium Games.</p>
+        <p className="text-[10px] text-text-muted/50">Unofficial fan-made tool. Not affiliated with Cloud Imperium Games. All data may be inaccurate — use at your own risk.</p>
       </div>
     </footer>
   );
