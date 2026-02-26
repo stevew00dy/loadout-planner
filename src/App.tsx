@@ -711,18 +711,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
         <p className="text-sm font-medium text-text truncate -mt-1">{loadoutName}</p>
       )}
 
-      {/* Damage Reduction */}
-      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
-        <div className="flex items-center gap-1.5 mb-1.5">
-          <ShieldCheck className="w-3.5 h-3.5 text-accent-green" />
-          <span className="text-[11px] text-text-muted font-medium">Damage Reduction</span>
-        </div>
-        <span className="text-xl font-mono font-bold text-accent-green">{dmgPct}%</span>
-        <div className="mt-1.5 h-1.5 bg-dark-900 rounded-full overflow-hidden">
-          <div className="h-full bg-accent-green/70 rounded-full transition-all" style={{ width: `${Math.min(dmgPct, 100)}%` }} />
-        </div>
-      </div>
-
       {/* Weight & Speed */}
       <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50 relative">
         <div className="flex items-center gap-1.5 mb-1.5">
@@ -786,6 +774,18 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             </table>
           </div>
         )}
+      </div>
+
+      {/* Damage Reduction */}
+      <div className="bg-dark-800/60 rounded-lg p-2.5 border border-dark-700/50">
+        <div className="flex items-center gap-1.5 mb-1.5">
+          <ShieldCheck className="w-3.5 h-3.5 text-accent-green" />
+          <span className="text-[11px] text-text-muted font-medium">Damage Reduction</span>
+        </div>
+        <span className="text-xl font-mono font-bold text-accent-green">{dmgPct}%</span>
+        <div className="mt-1.5 h-1.5 bg-dark-900 rounded-full overflow-hidden">
+          <div className="h-full bg-accent-green/70 rounded-full transition-all" style={{ width: `${Math.min(dmgPct, 100)}%` }} />
+        </div>
       </div>
 
       {/* Temperature */}
