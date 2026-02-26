@@ -111,7 +111,7 @@ const RESISTANCE_KEYS = ["physical", "energy", "distortion", "thermal", "biochem
 const ARMOR_WEIGHT: Record<string, Record<string, number>> = {
   helmet:    { light: 5.05, medium: 5.05, heavy: 5.05 },
   torso:     { light: 3, medium: 5, heavy: 7 },
-  arm:       { light: 0, medium: 0, heavy: 0 },
+  arm:       { light: 2, medium: 4, heavy: 5 },
   leg:       { light: 3, medium: 6, heavy: 8 },
   backpack:  { light: 6, medium: 6, heavy: 6 },
   undersuit: {},
