@@ -728,28 +728,6 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             <Info className="w-3 h-3 text-text-muted" />
           </button>
         </div>
-        {showWeightInfo && (
-          <div className="mb-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
-            <table className="w-full text-[10px]">
-              <thead>
-                <tr className="text-text-muted">
-                  <th className="text-left font-medium pb-1">Weight</th>
-                  <th className="text-right font-medium pb-1">Speed</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className={`${stats.speedPct === 100 ? "text-accent-green font-bold" : "text-text-dim"}`}>
-                  <td>&lt; 20 kg</td><td className="text-right font-mono">100%</td>
-                </tr>
-                {SPEED_BREAKPOINTS.map((bp) => (
-                  <tr key={bp.kg} className={`${stats.speedPct === bp.pct ? "text-accent-amber font-bold" : bp.pct <= 60 ? "text-accent-red/70" : "text-text-dim"}`}>
-                    <td>{bp.kg} kg</td><td className="text-right font-mono">{bp.pct}%</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
         <div className="flex items-baseline justify-between">
           <div>
             <span className="text-lg font-mono font-bold text-text">{stats.totalWeight}</span>
@@ -778,6 +756,28 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
             </div>
           ))}
         </div>
+        {showWeightInfo && (
+          <div className="mt-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
+            <table className="w-full text-[10px]">
+              <thead>
+                <tr className="text-text-muted">
+                  <th className="text-left font-medium pb-1">Weight</th>
+                  <th className="text-right font-medium pb-1">Speed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className={`${stats.speedPct === 100 ? "text-accent-green font-bold" : "text-text-dim"}`}>
+                  <td>&lt; 20 kg</td><td className="text-right font-mono">100%</td>
+                </tr>
+                {SPEED_BREAKPOINTS.map((bp) => (
+                  <tr key={bp.kg} className={`${stats.speedPct === bp.pct ? "text-accent-amber font-bold" : bp.pct <= 60 ? "text-accent-red/70" : "text-text-dim"}`}>
+                    <td>{bp.kg} kg</td><td className="text-right font-mono">{bp.pct}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       {/* Temperature */}
