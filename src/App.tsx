@@ -357,7 +357,7 @@ function Header({
                 <div className="border-t border-dark-700 my-1.5" />
                 <a href="/" className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">
                   <Home className="w-3.5 h-3.5 text-accent-amber" />
-                  undisputed noobs
+                  Undisputed Noobs
                 </a>
                 <a href="https://robertsspaceindustries.com/enlist?referral=STAR-23GB-5J3N" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-xs text-accent-blue hover:bg-dark-700 transition-all duration-200">
                   Play Star Citizen
