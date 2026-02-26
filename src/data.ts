@@ -26,6 +26,8 @@ export const MISSION_TYPES: MissionType[] = [
   "Salvage",
   "EVA",
   "Exploration",
+  "Uniform 1",
+  "Uniform 2",
   "Custom",
 ];
 
@@ -37,6 +39,8 @@ export const MISSION_COLORS: Record<MissionType, string> = {
   Salvage: "bg-accent-yellow/20 text-accent-yellow",
   EVA: "bg-accent-blue/20 text-accent-blue",
   Exploration: "bg-accent-blue/20 text-accent-blue",
+  "Uniform 1": "bg-sky-400/20 text-sky-400",
+  "Uniform 2": "bg-teal-400/20 text-teal-400",
   Custom: "bg-dark-600 text-text-dim",
 };
 
@@ -91,6 +95,22 @@ export const MISSION_PRESETS: Record<string, Partial<Record<string, SlotValue>>>
     utility1: { item: "MedPen", notes: "" },
     utility2: { item: "OxyPen", notes: "" },
     utility3: { item: "Food / Water", notes: "" },
+  },
+  "Uniform 1": {
+    undersuit: { item: "", notes: "Org-required undersuit" },
+    helmet: { item: "", notes: "Org-required helmet" },
+    core: { item: "", notes: "Org-required chest" },
+    arms: { item: "", notes: "Org-required arms" },
+    legs: { item: "", notes: "Org-required legs" },
+    backpack: { item: "", notes: "Org-required backpack" },
+  },
+  "Uniform 2": {
+    undersuit: { item: "", notes: "Org-required undersuit" },
+    helmet: { item: "", notes: "Org-required helmet" },
+    core: { item: "", notes: "Org-required chest" },
+    arms: { item: "", notes: "Org-required arms" },
+    legs: { item: "", notes: "Org-required legs" },
+    backpack: { item: "", notes: "Org-required backpack" },
   },
 };
 

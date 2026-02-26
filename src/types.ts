@@ -6,6 +6,8 @@ export type MissionType =
   | "Salvage"
   | "EVA"
   | "Exploration"
+  | "Uniform 1"
+  | "Uniform 2"
   | "Custom";
 
 export interface SlotValue {
