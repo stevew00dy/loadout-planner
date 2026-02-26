@@ -103,10 +103,11 @@ function Header({
                   undisputed noobs
                 </a>
                 <div className="border-t border-dark-700 my-1.5" />
-                <a href="/armor-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Armour Tracker</a>
+                <a href="/armor-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Rare Armor Tracker</a>
                 <a href="/exec-hangar-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Exec Hangar Tracker</a>
                 <a href="/wikelo-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Wikelo Tracker</a>
-                <a href="/loadout-planner/" className="block px-3 py-2 rounded-lg text-xs text-accent-amber font-medium">Loadout Planner</a>
+                <a href="/loadout-planner/" className="block px-3 py-2 rounded-lg text-xs text-accent-amber font-medium">FPS Loadout Tracker</a>
+                <a href="/refining-tracker/" className="block px-3 py-2 rounded-lg text-xs text-text-dim hover:text-text hover:bg-dark-700 transition-all duration-200">Refining Tracker</a>
                 <div className="border-t border-dark-700 my-1.5" />
                 <a href="https://robertsspaceindustries.com/enlist?referral=STAR-23GB-5J3N" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-xs text-accent-blue hover:bg-dark-700 transition-all duration-200">
                   Play Star Citizen
@@ -522,10 +523,11 @@ function Footer() {
       <div className="max-w-[1600px] mx-auto px-4 flex flex-col items-center gap-3">
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
           <a href="/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Home</a>
-          <a href="/armor-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Armour Tracker</a>
+          <a href="/armor-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Rare Armor Tracker</a>
           <a href="/exec-hangar-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Exec Hangar Tracker</a>
           <a href="/wikelo-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Wikelo Tracker</a>
-          <a href="/loadout-planner/" className="text-xs text-accent-amber font-medium">Loadout Planner</a>
+          <a href="/loadout-planner/" className="text-xs text-accent-amber font-medium">FPS Loadout Tracker</a>
+          <a href="/refining-tracker/" className="text-xs text-text-muted hover:text-accent-amber transition-colors">Refining Tracker</a>
           <a href="https://www.youtube.com/@undisputednoobs" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-accent-amber transition-colors">YouTube</a>
         </div>
         <p className="text-[10px] text-text-muted/50">Unofficial fan-made tool. Not affiliated with Cloud Imperium Games.</p>
