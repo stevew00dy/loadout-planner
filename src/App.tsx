@@ -34,6 +34,7 @@ import type { UexItem, ThumbnailMap, BuyableSet, ArmorClassMap } from "./uex-api
 import { getItems, clearUexCache, fetchThumbnails, fetchBuyableSet, getArmorClassMap } from "./uex-api";
 import ItemCombobox from "./ItemCombobox";
 import armorStatsData from "./armor-data.json";
+import weaponMassData from "./weapon-mass.json";
 
 /* ─── Armor Stats ─── */
 
@@ -64,18 +65,32 @@ type ArmorStatsMap = Record<string, ArmorPieceStats>;
 const armorStats: ArmorStatsMap = armorStatsData as ArmorStatsMap;
 
 const STAT_SLOTS = ["undersuit", "helmet", "core", "arms", "legs", "backpack"] as const;
+
+type WeaponMassMap = Record<string, { name: string; mass: number; massWithMags: number }>;
+const weaponMass: WeaponMassMap = weaponMassData as WeaponMassMap;
+
+const WEAPON_WEIGHT_SLOTS = ["primary1", "primary2", "sidearm"] as const;
+const MULTITOOL_WEIGHT: Record<string, number> = {
+  "Mining": 1.5,
+  "Salvage": 1.5,
+  "Cutter": 1.5,
+  "Tractor Beam": 4,
+  "Medical": 1.5,
+};
+const GRENADE_WEIGHT = 0.4;
 const RESISTANCE_KEYS = ["physical", "energy", "distortion", "thermal", "biochemical", "stun"] as const;
 
 const ARMOR_WEIGHT: Record<string, Record<string, number>> = {
-  helmet:    { light: 2, medium: 2, heavy: 2 },
+  helmet:    { light: 5.05, medium: 5.05, heavy: 5.05 },
   torso:     { light: 3, medium: 5, heavy: 7 },
-  arm:       { light: 2, medium: 4, heavy: 6 },
+  arm:       { light: 0, medium: 0, heavy: 0 },
   leg:       { light: 3, medium: 6, heavy: 8 },
   backpack:  { light: 6, medium: 6, heavy: 6 },
   undersuit: {},
 };
 
-const BASE_WEIGHT = 1;
+// Base clothing: hat 0.25 + gloves 0.1 + pants 0.4 + footwear 0.3 + mobiGlas 0.5 = 1.55kg
+const BASE_WEIGHT = 1.55;
 const BASE_SPEED = 8.06;
 const SPEED_BREAKPOINTS = [
   { kg: 0,  pct: 100 },
@@ -98,6 +113,8 @@ function getSpeedPct(totalKg: number): number {
   return 100;
 }
 
+interface WeightEntry { slot: string; label: string; weight: number }
+
 interface AggregatedStats {
   dmgReduction: number;
   tempMin: number | null;
@@ -110,6 +127,7 @@ interface AggregatedStats {
   speedPct: number;
   effectiveSpeed: number;
   pieces: { slot: string; stats: ArmorPieceStats; weight: number }[];
+  weightBreakdown: WeightEntry[];
 }
 
 function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStats | null {
@@ -147,10 +165,40 @@ function aggregateLoadoutStats(slots: Record<string, SlotValue>): AggregatedStat
     for (const k of RESISTANCE_KEYS) resistance[k] *= stats.resistance[k];
   }
 
+  const weightBreakdown: WeightEntry[] = pieces
+    .filter((p) => p.weight > 0)
+    .map((p) => ({ slot: p.slot, label: p.stats.name, weight: p.weight }));
+
+  for (const slotId of WEAPON_WEIGHT_SLOTS) {
+    const val = slots[slotId]?.item?.trim();
+    if (!val) continue;
+    const w = weaponMass[val.toLowerCase()];
+    if (w) {
+      totalWeight += w.mass;
+      weightBreakdown.push({ slot: slotId, label: w.name, weight: w.mass });
+    }
+  }
+
+  for (const slotId of ["multitool1", "multitool2"] as const) {
+    const val = slots[slotId]?.item?.trim();
+    if (val && MULTITOOL_WEIGHT[val]) {
+      totalWeight += MULTITOOL_WEIGHT[val];
+      weightBreakdown.push({ slot: slotId, label: val, weight: MULTITOOL_WEIGHT[val] });
+    }
+  }
+
+  for (let i = 1; i <= 4; i++) {
+    const val = slots[`throwable${i}`]?.item?.trim();
+    if (val) {
+      totalWeight += GRENADE_WEIGHT;
+      weightBreakdown.push({ slot: `throwable${i}`, label: val, weight: GRENADE_WEIGHT });
+    }
+  }
+
   const speedPct = getSpeedPct(totalWeight);
   const effectiveSpeed = Math.round((BASE_SPEED * speedPct) / 100 * 100) / 100;
 
-  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, totalWeight, speedPct, effectiveSpeed, resistance, pieces };
+  return { dmgReduction, tempMin, tempMax, radResistance, radScrubRate, totalCargo, totalWeight, speedPct, effectiveSpeed, resistance, pieces, weightBreakdown };
 }
 
 /* ─── Header ─── */
@@ -658,10 +706,10 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           />
         </div>
         <div className="flex flex-col gap-0.5 mt-2">
-          {stats.pieces.filter((p) => p.weight > 0).map((p) => (
-            <div key={p.slot} className="flex justify-between text-[10px]">
-              <span className="capitalize text-text-muted">{p.slot}</span>
-              <span className="font-mono text-text-dim">{p.weight} kg</span>
+          {stats.weightBreakdown.map((w, i) => (
+            <div key={`${w.slot}-${i}`} className="flex justify-between text-[10px]">
+              <span className="text-text-muted truncate mr-2">{w.label}</span>
+              <span className="font-mono text-text-dim shrink-0">{w.weight} kg</span>
             </div>
           ))}
         </div>
