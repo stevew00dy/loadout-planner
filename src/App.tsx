@@ -690,6 +690,7 @@ const RESISTANCE_LABELS: Record<string, { label: string; color: string }> = {
 
 function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; loadoutName?: string }) {
   const [showWeightInfo, setShowWeightInfo] = useState(false);
+  const [showWeaponInfo, setShowWeaponInfo] = useState(false);
   if (!stats) {
     return (
       <div className="card flex flex-col items-center justify-center py-10 text-center">
@@ -878,7 +879,27 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           <div className="flex items-center gap-1.5 mb-2">
             <Crosshair className="w-3.5 h-3.5 text-accent-red" />
             <span className="text-[11px] text-text-muted font-medium">Weapons</span>
+            <button
+              onClick={() => setShowWeaponInfo((v) => !v)}
+              className="ml-auto w-4 h-4 flex items-center justify-center rounded-full hover:bg-dark-700/60 transition-colors"
+              title="Stat abbreviations"
+            >
+              <Info className="w-3 h-3 text-text-muted" />
+            </button>
           </div>
+          {showWeaponInfo && (
+            <div className="mb-2 bg-dark-900/80 rounded-md border border-dark-700/50 p-2">
+              <div className="flex flex-col gap-1 text-[10px]">
+                <div className="flex justify-between"><span className="text-text-muted font-medium">DPS</span><span className="text-text-dim">Damage Per Second</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">RPM</span><span className="text-text-dim">Rounds Per Minute</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Dmg/Shot</span><span className="text-text-dim">Damage Per Shot</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">STK</span><span className="text-text-dim">Shots To Kill</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">TTK</span><span className="text-text-dim">Time To Kill</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Ammo</span><span className="text-text-dim">Magazine Size</span></div>
+                <div className="flex justify-between"><span className="text-text-muted font-medium">Range</span><span className="text-text-dim">Effective Range</span></div>
+              </div>
+            </div>
+          )}
           <div className="flex flex-col gap-2.5">
             {stats.equippedWeapons.map((w) => {
               const SLOT_LABELS: Record<string, string> = { primary1: "Primary", primary2: "Secondary", sidearm: "Sidearm" };
