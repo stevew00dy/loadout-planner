@@ -884,7 +884,7 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
                         </div>
                         {stk !== null && (
                           <div className="flex justify-between text-[10px]">
-                            <span className="text-text-muted">Shots to Kill</span>
+                            <span className="text-text-muted">STK <span className="text-[8px]">(no armor)</span></span>
                             <span className={`font-mono font-bold ${stk <= 3 ? "text-accent-red" : stk <= 6 ? "text-accent-amber" : "text-text-dim"}`}>{stk}</span>
                           </div>
                         )}
