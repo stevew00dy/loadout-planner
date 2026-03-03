@@ -24,7 +24,6 @@ import {
   ShieldCheck,
   Package,
   Gauge,
-  BarChart2,
 } from "lucide-react";
 import type { MissionType, Loadout, SlotValue } from "./types";
 import { SLOTS, MISSION_TYPES, MISSION_COLORS, MULTITOOL_OPTIONS, GRENADE_OPTIONS, ARMOR_CLASS_AMMO_SLOTS, ARMOR_CLASS_THROWABLE_SLOTS, ARMOR_CLASS_CONSUMABLE_SLOTS, getEffectiveArmorClass, createEmptyLoadout } from "./data";
@@ -277,7 +276,7 @@ function Header({
   }, [navOpen]);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-dark-700 bg-dark-950/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-30 border-b border-dark-700 bg-dark-900/80 backdrop-blur-sm">
       <div className="max-w-[1600px] mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Crosshair className="w-6 h-6 text-accent-amber" />
@@ -652,6 +651,8 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
   const toggleSection = (key: string) => setOpenSections((prev) => ({ ...prev, [key]: !prev[key] }));
   const expandAll = () => setOpenSections({ ...defaultStatOpen });
   const collapseAll = () => setOpenSections(Object.fromEntries(STAT_SECTION_KEYS.map((k) => [k, false])));
+  const allSectionsOpen = STAT_SECTION_KEYS.every((k) => openSections[k]);
+  const toggleExpandCollapse = () => (allSectionsOpen ? collapseAll() : expandAll());
 
   if (!stats) {
     return (
@@ -672,12 +673,19 @@ function StatsSidebar({ stats, loadoutName }: { stats: AggregatedStats | null; l
           <span className="text-xs text-text-muted uppercase tracking-wider font-semibold">Stats</span>
           {loadoutName && <span className="text-sm font-medium text-text truncate">{loadoutName}</span>}
         </div>
-        <div className="flex items-center gap-1.5 shrink-0">
-          <button type="button" onClick={expandAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Expand all</button>
-          <span className="text-dark-600">|</span>
-          <button type="button" onClick={collapseAll} className="text-[10px] text-text-muted hover:text-accent-amber transition-colors font-medium">Collapse all</button>
-          <BarChart2 className="w-4 h-4 text-text-muted shrink-0" aria-hidden />
-        </div>
+        <button
+          type="button"
+          onClick={toggleExpandCollapse}
+          className="p-1 rounded hover:bg-dark-700/60 transition-colors shrink-0 cursor-pointer"
+          title={allSectionsOpen ? "Collapse all" : "Expand all"}
+          aria-label={allSectionsOpen ? "Collapse all" : "Expand all"}
+        >
+          {allSectionsOpen ? (
+            <ChevronUp className="w-4 h-4 text-text-muted hover:text-accent-amber" />
+          ) : (
+            <ChevronDown className="w-4 h-4 text-text-muted hover:text-accent-amber" />
+          )}
+        </button>
       </div>
 
       {/* Weight & Speed */}
